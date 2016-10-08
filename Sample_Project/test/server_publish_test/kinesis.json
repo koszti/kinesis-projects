@@ -1,0 +1,24 @@
+{
+    "description": "First test October",
+    "name": "Test_1.1",
+    "tasks": [
+        {
+            "description": "try to publish",
+            "name": "Publish Unemployment in Europe",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/Unemployment in Europe.twbx",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "Unemployemnt in Europe Test",
+            "type": "publish_tableau"
+        },
+        {
+            "name": "login to tableau",
+            "password": "nemmondommeg",
+            "type": "login_tableau",
+            "url": "http://home.kollar.me",
+            "user": "admin"
+        }
+    ]
+}

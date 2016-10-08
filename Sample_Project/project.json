@@ -1,0 +1,7 @@
+{
+    "kinesisVersion": "1.0",
+    "name": "Test_1.1",
+    "description": "First test",
+    "srcDir": "src",
+    "jobDir": "test"
+}

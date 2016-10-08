@@ -1,0 +1,24 @@
+{
+    "description": "Mysql data load",
+    "name": "Test_1.3",
+    "tasks": [
+        {
+            "name": "load worldbank data mysql",
+            "source-csv": {
+                "data-file": "resources/worldbank_dev_indicators.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "classname": "com.mysql.jdbc.Driver",
+                "password": "kinesis",
+                "subname": "ycoders.com:13306/kinesis",
+                "subprotocol": "mysql",
+                "table": "worldbank_development_indicators",
+                "user": "kinesis"
+            },
+            "type": "load_data"
+        }
+    ]
+}
