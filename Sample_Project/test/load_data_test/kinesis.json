@@ -5,15 +5,15 @@
         {
             "name": "load worldbank data mysql",
             "source-csv": {
-                "data-file": "resources/worldbank_dev_indicators.csv",
                 "delimiter": ",",
                 "encoding": "utf8",
-                "newline-char": "\n"
+                "newline-char": "\r\n",
+                "url": "resources/worldbank_dev_indicators.csv"
             },
             "target-db": {
                 "classname": "com.mysql.jdbc.Driver",
                 "password": "kinesis",
-                "subname": "ycoders.com:13306/kinesis",
+                "subname": "//ycoders.com:13306/kinesis",
                 "subprotocol": "mysql",
                 "table": "worldbank_development_indicators",
                 "user": "kinesis"
