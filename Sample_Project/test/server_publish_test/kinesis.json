@@ -4,9 +4,9 @@
     "tasks": [
         {
             "description": "try to publish",
-            "name": "Publish Unemployment in Europe",
+            "name": "Publish Education and Innovation",
             "site-id": "Testing",
-            "source-doc-path": "../../src/Unemployment in Europe.twbx",
+            "source-doc-path": "../../src/Education and Innovation.twbx",
             "tableau-server-password": "nemmondommeg",
             "tableau-server-url": "http://home.kollar.me",
             "tableau-server-user": "admin",
