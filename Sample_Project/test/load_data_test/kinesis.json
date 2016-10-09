@@ -8,7 +8,7 @@
                 "delimiter": ",",
                 "encoding": "utf8",
                 "newline-char": "\r\n",
-                "url": "resources/worldbank_dev_indicators.csv"
+                "csv-path": "resources/worldbank_dev_indicators.csv"
             },
             "target-db": {
                 "classname": "com.mysql.jdbc.Driver",
