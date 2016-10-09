@@ -1,6 +1,6 @@
 {
     "description": "First test October",
-    "name": "Test_1.1",
+    "name": "server_publish_test",
     "tasks": [
         {
             "description": "try to publish",

@@ -1,6 +1,6 @@
 {
     "description": "Mysql data load",
-    "name": "Test_1.3",
+    "name": "load_data_test",
     "tasks": [
         {
             "name": "load worldbank data mysql",
