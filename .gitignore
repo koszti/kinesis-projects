@@ -1,0 +1,8 @@
+## macOS Folder view configuration files
+.DS_Store
+
+## Dropbox Icon file
+Icon
+
+## Kinesis generated reports
+reports
