@@ -1,0 +1,29 @@
+{
+    "description": "testing filters",
+    "name": "filters",
+    "tasks": [
+        {
+            "name": "login tableau",
+            "password": "nemmondommeg",
+            "type": "login_tableau",
+            "url": "http://home.kollar.me",
+            "user": "admin"
+        },
+        {
+            "name": "open dashboard",
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/Testing/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "description": "testing choosing regions",
+            "name": "region filter",
+            "target": "Region",
+            "type": "set_filter_list",
+            "values": [
+                "Africa",
+                "Europe",
+                "Asia"
+            ]
+        }
+    ]
+}

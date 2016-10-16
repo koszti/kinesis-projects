@@ -5,7 +5,7 @@
         {
             "name": "load csv data",
             "source-csv": {
-                "csv-path": "resources/worldbank_dev_indicators_short.csv",
+                "csv-path": "resources/worldbank_dev_indicators_3500_rows.csv",
                 "delimiter": ",",
                 "encoding": "utf8",
                 "newline-char": "\r\n"
