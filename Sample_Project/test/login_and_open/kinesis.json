@@ -1,0 +1,18 @@
+{
+    "description": "test login and open task",
+    "name": "login_and_open",
+    "tasks": [
+        {
+            "name": "longin to tableau",
+            "password": "nemmondommeg",
+            "type": "login_tableau",
+            "url": "http://home.kollar.me",
+            "user": "admin"
+        },
+        {
+            "name": "Open gdp proba sunday",
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/Testing/views/EducationandInnovation/Dashboard"
+        }
+    ]
+}

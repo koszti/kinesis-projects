@@ -1,0 +1,18 @@
+{
+    "description": "try refresh data",
+    "name": "refresh_data_test",
+    "tasks": [
+        {
+            "description": "refresh data source first",
+            "name": "Refresh Data Source",
+            "project": "Default",
+            "refresh-extracts-type": "datasource",
+            "site-id": "Testing",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "worldbank_development_indicators",
+            "type": "refreshextracts_tableau"
+        }
+    ]
+}

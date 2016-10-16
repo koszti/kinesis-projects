@@ -3,12 +3,12 @@
     "name": "load_data_test",
     "tasks": [
         {
-            "name": "load worldbank data mysql",
+            "name": "load csv data",
             "source-csv": {
+                "csv-path": "resources/worldbank_dev_indicators_short.csv",
                 "delimiter": ",",
                 "encoding": "utf8",
-                "newline-char": "\r\n",
-                "csv-path": "resources/worldbank_dev_indicators.csv"
+                "newline-char": "\r\n"
             },
             "target-db": {
                 "classname": "com.mysql.jdbc.Driver",
