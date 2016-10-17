@@ -3,6 +3,8 @@
     "name": "Publish_Workbook",
     "tasks": [
         {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
             "name": "Publish twb workbook",
             "site-id": "Testing",
             "source-doc-path": "../../src/Education and Innovation.twb",

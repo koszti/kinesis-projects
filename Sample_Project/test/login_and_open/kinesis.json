@@ -10,7 +10,7 @@
             "user": "admin"
         },
         {
-            "name": "Open gdp proba sunday",
+            "name": "Open Education and Innovation Dashboard",
             "type": "viz_open",
             "url": "http://home.kollar.me/t/Testing/views/EducationandInnovation/Dashboard"
         }
