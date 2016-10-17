@@ -13,6 +13,7 @@
             "target-db": {
                 "classname": "com.mysql.jdbc.Driver",
                 "password": "kinesis",
+                "rows-per-insert": 250,
                 "subname": "//ycoders.com:13306/kinesis",
                 "subprotocol": "mysql",
                 "table": "worldbank_development_indicators",
