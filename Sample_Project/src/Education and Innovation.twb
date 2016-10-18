@@ -27,7 +27,7 @@
       </column>
     </datasource>
     <datasource caption='worldbank_development_indicators' inline='true' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' version='9.3'>
-      <repository-location id='worldbank_development_indicators' path='/t/Testing/datasources' revision='1.0' site='Testing' />
+      <repository-location id='worldbank_development_indicators' path='/t/Testing/datasources' revision='2.3' site='Testing' />
       <connection channel='http' class='sqlproxy' dbname='worldbank_development_indicators' directory='/dataserver' port='80' server='home.kollar.me' username=''>
         <relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <calculations>
@@ -751,10 +751,10 @@
               <attribute datatype='integer' name='charset'>0</attribute>
               <attribute datatype='string' name='class'>&quot;dataengine&quot;</attribute>
               <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
-              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;9.3&apos; formatted-name=&apos;repoItem5485904014796556007&apos; inline=&apos;true&apos; version=&apos;9.3&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;repository-location id=&apos;worldbank_development_indicators&apos; path=&apos;/t/Testing/datasources&apos; revision=&apos;1.0&apos; site=&apos;Testing&apos; /&gt;&#10;  &lt;connection channel=&apos;http&apos; class=&apos;sqlproxy&apos; dbname=&apos;worldbank_development_indicators&apos; directory=&apos;/dataserver&apos; port=&apos;80&apos; server=&apos;home.kollar.me&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[adult_literacy_rate_both_sexes]&apos; value=&apos;[sqlproxy].[adult_literacy_rate_both_sexes]&apos; /&gt;&#10;      &lt;map key=&apos;[country]&apos; value=&apos;[sqlproxy].[country]&apos; /&gt;&#10;      &lt;map key=&apos;[country_code]&apos; value=&apos;[sqlproxy].[country_code]&apos; /&gt;&#10;      &lt;map key=&apos;[enrollment_in_primary_education]&apos; value=&apos;[sqlproxy].[enrollment_in_primary_education]&apos; /&gt;&#10;      &lt;map key=&apos;[enrollment_in_secondary_education]&apos; value=&apos;[sqlproxy].[enrollment_in_secondary_education]&apos; /&gt;&#10;      &lt;map key=&apos;[enrollment_in_secondary_general]&apos; value=&apos;[sqlproxy].[enrollment_in_secondary_general]&apos; /&gt;&#10;      &lt;map key=&apos;[enrollment_in_secondary_vocational]&apos; value=&apos;[sqlproxy].[enrollment_in_secondary_vocational]&apos; /&gt;&#10;      &lt;map key=&apos;[fixed_broadband_subscriptions]&apos; value=&apos;[sqlproxy].[fixed_broadband_subscriptions]&apos; /&gt;&#10;      &lt;map key=&apos;[fixed_broadband_subscriptions_per_100ppl]&apos; value=&apos;[sqlproxy].[fixed_broadband_subscriptions_per_100ppl]&apos; /&gt;&#10;      &lt;map key=&apos;[fixed_phone_subscriptions]&apos; value=&apos;[sqlproxy].[fixed_phone_subscriptions]&apos; /&gt;&#10;      &lt;map key=&apos;[fixed_phone_subscriptions_per_100ppl]&apos; value=&apos;[sqlproxy].[fixed_phone_subscriptions_per_100ppl]&apos; /&gt;&#10;      &lt;map key=&apos;[gdp_current_usd]&apos; value=&apos;[sqlproxy].[gdp_current_usd]&apos; /&gt;&#10;      &lt;map key=&apos;[gdp_growth_annualpc]&apos; value=&apos;[sqlproxy].[gdp_growth_annualpc]&apos; /&gt;&#10;      &lt;map key=&apos;[gdp_percapita_current_usd]&apos; value=&apos;[sqlproxy].[gdp_percapita_current_usd]&apos; /&gt;&#10;      &lt;map key=&apos;[gdp_percapita_growth_annualpc]&apos; value=&apos;[sqlproxy].[gdp_percapita_growth_annualpc]&apos; /&gt;&#10;      &lt;map key=&apos;[government_expenditure_on_education_pc_of_GDP]&apos; value=&apos;[sqlproxy].[government_expenditure_on_education_pc_of_GDP]&apos; /&gt;&#10;      &lt;map key=&apos;[gross_enrollment_ratio_primary_both_sexes]&apos; value=&apos;[sqlproxy].[gross_enrollment_ratio_primary_both_sexes]&apos; /&gt;&#10;      &lt;map key=&apos;[gross_enrollment_ratio_secondary_both_sexes]&apos; value=&apos;[sqlproxy].[gross_enrollment_ratio_secondary_both_sexes]&apos; /&gt;&#10;      &lt;map key=&apos;[gross_enrollment_ratio_terciary_both_sexes]&apos; value=&apos;[sqlproxy].[gross_enrollment_ratio_terciary_both_sexes]&apos; /&gt;&#10;      &lt;map key=&apos;[internet_users_per_100ppl]&apos; value=&apos;[sqlproxy].[internet_users_per_100ppl]&apos; /&gt;&#10;      &lt;map key=&apos;[mobile_subscriptions]&apos; value=&apos;[sqlproxy].[mobile_subscriptions]&apos; /&gt;&#10;      &lt;map key=&apos;[mobile_subscriptions_per_100ppl]&apos; value=&apos;[sqlproxy].[mobile_subscriptions_per_100ppl]&apos; /&gt;&#10;      &lt;map key=&apos;[patent_applications_nonresident]&apos; value=&apos;[sqlproxy].[patent_applications_nonresident]&apos; /&gt;&#10;      &lt;map key=&apos;[patent_applications_resident]&apos; value=&apos;[sqlproxy].[patent_applications_resident]&apos; /&gt;&#10;      &lt;map key=&apos;[population_female_pcoftotal]&apos; value=&apos;[sqlproxy].[population_female_pcoftotal]&apos; /&gt;&#10;      &lt;map key=&apos;[population_growth]&apos; value=&apos;[sqlproxy].[population_growth]&apos; /&gt;&#10;      &lt;map key=&apos;[population_total]&apos; value=&apos;[sqlproxy].[population_total]&apos; /&gt;&#10;      &lt;map key=&apos;[region]&apos; value=&apos;[sqlproxy].[region]&apos; /&gt;&#10;      &lt;map key=&apos;[research_development_expenditure_pc_GDP]&apos; value=&apos;[sqlproxy].[research_development_expenditure_pc_GDP]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_primary_female_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_primary_female_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_primary_male_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_primary_male_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_secondary_female_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_secondary_female_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_secondary_male_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_secondary_male_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_terciary_female_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_terciary_female_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_terciary_male_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_terciary_male_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[trademark_applications_nonresident]&apos; value=&apos;[sqlproxy].[trademark_applications_nonresident]&apos; /&gt;&#10;      &lt;map key=&apos;[trademark_applications_resident]&apos; value=&apos;[sqlproxy].[trademark_applications_resident]&apos; /&gt;&#10;      &lt;map key=&apos;[trademark_applications_total]&apos; value=&apos;[sqlproxy].[trademark_applications_total]&apos; /&gt;&#10;      &lt;map key=&apos;[year]&apos; value=&apos;[sqlproxy].[year]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Adult Literacy Rate Both Sexes&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[adult_literacy_rate_both_sexes]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Country&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[country]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[ISO3166_2]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Country Code&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[country_code]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[ISO3166_2]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Enrollment In Primary Education&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[enrollment_in_primary_education]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Enrollment In Secondary Education&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[enrollment_in_secondary_education]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Enrollment In Secondary General&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[enrollment_in_secondary_general]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Enrollment In Secondary Vocational&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[enrollment_in_secondary_vocational]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Fixed Broadband Subscriptions&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[fixed_broadband_subscriptions]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Fixed Broadband Subscriptions Per 100Ppl&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[fixed_broadband_subscriptions_per_100ppl]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Fixed Phone Subscriptions&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[fixed_phone_subscriptions]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Fixed Phone Subscriptions Per 100Ppl&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[fixed_phone_subscriptions_per_100ppl]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gdp Current Usd&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gdp_current_usd]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gdp Growth Annualpc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gdp_growth_annualpc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gdp Percapita Current Usd&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gdp_percapita_current_usd]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gdp Percapita Growth Annualpc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gdp_percapita_growth_annualpc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;government expenditure on education pc of GDP&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[government_expenditure_on_education_pc_of_GDP]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gross Enrollment Ratio Primary Both Sexes&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gross_enrollment_ratio_primary_both_sexes]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gross Enrollment Ratio Secondary Both Sexes&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gross_enrollment_ratio_secondary_both_sexes]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gross Enrollment Ratio Terciary Both Sexes&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gross_enrollment_ratio_terciary_both_sexes]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Internet Users Per 100Ppl&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[internet_users_per_100ppl]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Mobile Subscriptions&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[mobile_subscriptions]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Mobile Subscriptions Per 100Ppl&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[mobile_subscriptions_per_100ppl]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Patent Applications Nonresident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[patent_applications_nonresident]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Patent Applications Resident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[patent_applications_resident]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Population Female Pcoftotal&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[population_female_pcoftotal]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Population Growth&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[population_growth]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Population Total&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[population_total]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Region&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[region]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;research development expenditure pc GDP&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[research_development_expenditure_pc_GDP]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Primary Female Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_primary_female_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Primary Male Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_primary_male_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Secondary Female Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_secondary_female_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Secondary Male Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_secondary_male_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Terciary Female Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_terciary_female_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Terciary Male Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_terciary_male_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Trademark Applications Nonresident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[trademark_applications_nonresident]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Trademark Applications Resident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[trademark_applications_resident]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Trademark Applications Total&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[trademark_applications_total]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Year&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.171756&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.828244&apos; show-structure=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;Reino Unido&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;  &lt;date-options start-of-week=&apos;monday&apos; /&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;9.3&apos; formatted-name=&apos;repoItem3215485231759874116&apos; inline=&apos;true&apos; version=&apos;9.3&apos; xml:base=&apos;http://home.kollar.me&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;repository-location id=&apos;worldbank_development_indicators&apos; path=&apos;/t/Testing/datasources&apos; revision=&apos;2.3&apos; site=&apos;Testing&apos; /&gt;&#10;  &lt;connection channel=&apos;http&apos; class=&apos;sqlproxy&apos; dbname=&apos;worldbank_development_indicators&apos; directory=&apos;/dataserver&apos; port=&apos;80&apos; server=&apos;home.kollar.me&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[adult_literacy_rate_both_sexes]&apos; value=&apos;[sqlproxy].[adult_literacy_rate_both_sexes]&apos; /&gt;&#10;      &lt;map key=&apos;[country]&apos; value=&apos;[sqlproxy].[country]&apos; /&gt;&#10;      &lt;map key=&apos;[country_code]&apos; value=&apos;[sqlproxy].[country_code]&apos; /&gt;&#10;      &lt;map key=&apos;[enrollment_in_primary_education]&apos; value=&apos;[sqlproxy].[enrollment_in_primary_education]&apos; /&gt;&#10;      &lt;map key=&apos;[enrollment_in_secondary_education]&apos; value=&apos;[sqlproxy].[enrollment_in_secondary_education]&apos; /&gt;&#10;      &lt;map key=&apos;[enrollment_in_secondary_general]&apos; value=&apos;[sqlproxy].[enrollment_in_secondary_general]&apos; /&gt;&#10;      &lt;map key=&apos;[enrollment_in_secondary_vocational]&apos; value=&apos;[sqlproxy].[enrollment_in_secondary_vocational]&apos; /&gt;&#10;      &lt;map key=&apos;[fixed_broadband_subscriptions]&apos; value=&apos;[sqlproxy].[fixed_broadband_subscriptions]&apos; /&gt;&#10;      &lt;map key=&apos;[fixed_broadband_subscriptions_per_100ppl]&apos; value=&apos;[sqlproxy].[fixed_broadband_subscriptions_per_100ppl]&apos; /&gt;&#10;      &lt;map key=&apos;[fixed_phone_subscriptions]&apos; value=&apos;[sqlproxy].[fixed_phone_subscriptions]&apos; /&gt;&#10;      &lt;map key=&apos;[fixed_phone_subscriptions_per_100ppl]&apos; value=&apos;[sqlproxy].[fixed_phone_subscriptions_per_100ppl]&apos; /&gt;&#10;      &lt;map key=&apos;[gdp_current_usd]&apos; value=&apos;[sqlproxy].[gdp_current_usd]&apos; /&gt;&#10;      &lt;map key=&apos;[gdp_growth_annualpc]&apos; value=&apos;[sqlproxy].[gdp_growth_annualpc]&apos; /&gt;&#10;      &lt;map key=&apos;[gdp_percapita_current_usd]&apos; value=&apos;[sqlproxy].[gdp_percapita_current_usd]&apos; /&gt;&#10;      &lt;map key=&apos;[gdp_percapita_growth_annualpc]&apos; value=&apos;[sqlproxy].[gdp_percapita_growth_annualpc]&apos; /&gt;&#10;      &lt;map key=&apos;[government_expenditure_on_education_pc_of_GDP]&apos; value=&apos;[sqlproxy].[government_expenditure_on_education_pc_of_GDP]&apos; /&gt;&#10;      &lt;map key=&apos;[gross_enrollment_ratio_primary_both_sexes]&apos; value=&apos;[sqlproxy].[gross_enrollment_ratio_primary_both_sexes]&apos; /&gt;&#10;      &lt;map key=&apos;[gross_enrollment_ratio_secondary_both_sexes]&apos; value=&apos;[sqlproxy].[gross_enrollment_ratio_secondary_both_sexes]&apos; /&gt;&#10;      &lt;map key=&apos;[gross_enrollment_ratio_terciary_both_sexes]&apos; value=&apos;[sqlproxy].[gross_enrollment_ratio_terciary_both_sexes]&apos; /&gt;&#10;      &lt;map key=&apos;[internet_users_per_100ppl]&apos; value=&apos;[sqlproxy].[internet_users_per_100ppl]&apos; /&gt;&#10;      &lt;map key=&apos;[mobile_subscriptions]&apos; value=&apos;[sqlproxy].[mobile_subscriptions]&apos; /&gt;&#10;      &lt;map key=&apos;[mobile_subscriptions_per_100ppl]&apos; value=&apos;[sqlproxy].[mobile_subscriptions_per_100ppl]&apos; /&gt;&#10;      &lt;map key=&apos;[patent_applications_nonresident]&apos; value=&apos;[sqlproxy].[patent_applications_nonresident]&apos; /&gt;&#10;      &lt;map key=&apos;[patent_applications_resident]&apos; value=&apos;[sqlproxy].[patent_applications_resident]&apos; /&gt;&#10;      &lt;map key=&apos;[population_female_pcoftotal]&apos; value=&apos;[sqlproxy].[population_female_pcoftotal]&apos; /&gt;&#10;      &lt;map key=&apos;[population_growth]&apos; value=&apos;[sqlproxy].[population_growth]&apos; /&gt;&#10;      &lt;map key=&apos;[population_total]&apos; value=&apos;[sqlproxy].[population_total]&apos; /&gt;&#10;      &lt;map key=&apos;[region]&apos; value=&apos;[sqlproxy].[region]&apos; /&gt;&#10;      &lt;map key=&apos;[research_development_expenditure_pc_GDP]&apos; value=&apos;[sqlproxy].[research_development_expenditure_pc_GDP]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_primary_female_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_primary_female_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_primary_male_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_primary_male_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_secondary_female_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_secondary_female_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_secondary_male_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_secondary_male_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_terciary_female_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_terciary_female_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[school_enrollment_terciary_male_pc]&apos; value=&apos;[sqlproxy].[school_enrollment_terciary_male_pc]&apos; /&gt;&#10;      &lt;map key=&apos;[trademark_applications_nonresident]&apos; value=&apos;[sqlproxy].[trademark_applications_nonresident]&apos; /&gt;&#10;      &lt;map key=&apos;[trademark_applications_resident]&apos; value=&apos;[sqlproxy].[trademark_applications_resident]&apos; /&gt;&#10;      &lt;map key=&apos;[trademark_applications_total]&apos; value=&apos;[sqlproxy].[trademark_applications_total]&apos; /&gt;&#10;      &lt;map key=&apos;[year]&apos; value=&apos;[sqlproxy].[year]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Adult Literacy Rate Both Sexes&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[adult_literacy_rate_both_sexes]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Country&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[country]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[ISO3166_2]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Country Code&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[country_code]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[ISO3166_2]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Enrollment In Primary Education&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[enrollment_in_primary_education]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Enrollment In Secondary Education&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[enrollment_in_secondary_education]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Enrollment In Secondary General&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[enrollment_in_secondary_general]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Enrollment In Secondary Vocational&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[enrollment_in_secondary_vocational]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Fixed Broadband Subscriptions&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[fixed_broadband_subscriptions]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Fixed Broadband Subscriptions Per 100Ppl&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[fixed_broadband_subscriptions_per_100ppl]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Fixed Phone Subscriptions&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[fixed_phone_subscriptions]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Fixed Phone Subscriptions Per 100Ppl&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[fixed_phone_subscriptions_per_100ppl]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gdp Current Usd&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gdp_current_usd]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gdp Growth Annualpc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gdp_growth_annualpc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gdp Percapita Current Usd&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gdp_percapita_current_usd]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gdp Percapita Growth Annualpc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gdp_percapita_growth_annualpc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;government expenditure on education pc of GDP&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[government_expenditure_on_education_pc_of_GDP]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gross Enrollment Ratio Primary Both Sexes&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gross_enrollment_ratio_primary_both_sexes]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gross Enrollment Ratio Secondary Both Sexes&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gross_enrollment_ratio_secondary_both_sexes]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Gross Enrollment Ratio Terciary Both Sexes&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[gross_enrollment_ratio_terciary_both_sexes]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Internet Users Per 100Ppl&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[internet_users_per_100ppl]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Mobile Subscriptions&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[mobile_subscriptions]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Mobile Subscriptions Per 100Ppl&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[mobile_subscriptions_per_100ppl]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Patent Applications Nonresident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[patent_applications_nonresident]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Patent Applications Resident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[patent_applications_resident]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Population Female Pcoftotal&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[population_female_pcoftotal]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Population Growth&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[population_growth]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Population Total&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[population_total]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Region&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[region]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;research development expenditure pc GDP&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[research_development_expenditure_pc_GDP]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Primary Female Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_primary_female_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Primary Male Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_primary_male_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Secondary Female Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_secondary_female_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Secondary Male Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_secondary_male_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Terciary Female Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_terciary_female_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;School Enrollment Terciary Male Pc&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[school_enrollment_terciary_male_pc]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Trademark Applications Nonresident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[trademark_applications_nonresident]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Trademark Applications Resident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[trademark_applications_resident]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Trademark Applications Total&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[trademark_applications_total]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Year&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.171756&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.828244&apos; show-structure=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;Reino Unido&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;  &lt;date-options start-of-week=&apos;monday&apos; /&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
               <attribute datatype='boolean' name='extract-active'>true</attribute>
               <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
-              <attribute datatype='string' name='update-time'>&quot;16/10/2016 22:44:53&quot;</attribute>
+              <attribute datatype='string' name='update-time'>&quot;16/10/2016 20:48:05&quot;</attribute>
               <attribute datatype='string' name='version'>&quot;0.0.0&quot;</attribute>
             </attributes>
           </metadata-record>
@@ -784,11 +784,7 @@
         <calculation class='tableau' formula='1' />
       </column>
       <column aggregation='Sum' caption='Adult Literacy Rate Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[adult_literacy_rate_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
-      <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
-        <semantic-values semantic-role='[Country].[Name]'>
-          <semantic-value key='&quot;Korea, Dem. People_s Rep.&quot;' value='&quot;South Korea&quot;' />
-        </semantic-values>
-      </column>
+      <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Count' caption='Country Code' datatype='string' default-type='nominal' layered='true' name='[country_code]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Sum' caption='Enrollment In Primary Education' datatype='real' default-type='quantitative' layered='true' name='[enrollment_in_primary_education]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
       <column aggregation='Sum' caption='Enrollment In Secondary Education' datatype='real' default-type='quantitative' layered='true' name='[enrollment_in_secondary_education]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
@@ -814,7 +810,7 @@
       <column aggregation='Sum' caption='Population Female Pcoftotal' datatype='real' default-type='quantitative' layered='true' name='[population_female_pcoftotal]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
       <column aggregation='Sum' caption='Population Growth' datatype='real' default-type='quantitative' layered='true' name='[population_growth]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
       <column aggregation='Sum' caption='Population Total' datatype='integer' default-type='quantitative' layered='true' name='[population_total]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
-      <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Sum' caption='research development expenditure pc GDP' datatype='real' default-type='quantitative' layered='true' name='[research_development_expenditure_pc_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
       <column aggregation='Sum' caption='School Enrollment Primary Female Pc' datatype='real' default-type='quantitative' layered='true' name='[school_enrollment_primary_female_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
       <column aggregation='Sum' caption='School Enrollment Primary Male Pc' datatype='real' default-type='quantitative' layered='true' name='[school_enrollment_primary_male_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
@@ -852,7 +848,7 @@
           <groupfilter function='level-members' level='[country_code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
         </groupfilter>
       </group>
-      <layout dim-ordering='alphabetic' dim-percentage='0.225' group-percentage='0.15' measure-ordering='alphabetic' measure-percentage='0.55' parameter-percentage='0.075' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.226891' group-percentage='0.14916' measure-ordering='alphabetic' measure-percentage='0.548319' parameter-percentage='0.0756303' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
@@ -942,7 +938,7 @@
       <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
         <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
         <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
-        <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
         <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
       </datasource-dependencies>
       <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]'>
@@ -991,7 +987,7 @@
             <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
             <column aggregation='Sum' caption='Patent Applications Nonresident' datatype='integer' default-type='quantitative' layered='true' name='[patent_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column aggregation='Sum' caption='Patent Applications Resident' datatype='integer' default-type='quantitative' layered='true' name='[patent_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
-            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Sum' caption='Trademark Applications Total' datatype='integer' default-type='quantitative' layered='true' name='[trademark_applications_total]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
           </datasource-dependencies>
@@ -1093,11 +1089,7 @@
             <column caption='AVG Government expenditure on education' datatype='real' name='[Calculation_36521426804232197]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='IF AVG([government_expenditure_on_education_pc_of_GDP])&lt;&gt;0&#10;THEN AVG([government_expenditure_on_education_pc_of_GDP])&#10;ELSE AVG({ EXCLUDE [government_expenditure_on_education_pc_of_GDP]: AVG([government_expenditure_on_education_pc_of_GDP])})&#10;END' />
             </column>
-            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
-              <semantic-values semantic-role='[Country].[Name]'>
-                <semantic-value key='&quot;Korea, Dem. People_s Rep.&quot;' value='&quot;South Korea&quot;' />
-              </semantic-values>
-            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Count' caption='Country Code' datatype='string' default-type='nominal' layered='true' name='[country_code]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column aggregation='Sum' caption='Gross Enrollment Ratio Terciary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_terciary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
@@ -1106,7 +1098,7 @@
             <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
             <column aggregation='Sum' caption='Patent Applications Nonresident' datatype='integer' default-type='quantitative' layered='true' name='[patent_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column aggregation='Sum' caption='Patent Applications Resident' datatype='integer' default-type='quantitative' layered='true' name='[patent_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
-            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[Calculation_36521426800525313]' derivation='Sum' name='[sum:Calculation_36521426800525313:qk]' pivot='key' type='quantitative' />
             <column aggregation='Sum' caption='Trademark Applications Total' datatype='integer' default-type='quantitative' layered='true' name='[trademark_applications_total]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
@@ -1180,18 +1172,14 @@
             <column-instance column='[gross_enrollment_ratio_primary_both_sexes]' derivation='Avg' name='[avg:gross_enrollment_ratio_primary_both_sexes:qk]' pivot='key' type='quantitative' />
             <column-instance column='[gross_enrollment_ratio_secondary_both_sexes]' derivation='Avg' name='[avg:gross_enrollment_ratio_secondary_both_sexes:qk]' pivot='key' type='quantitative' />
             <column-instance column='[gross_enrollment_ratio_terciary_both_sexes]' derivation='Avg' name='[avg:gross_enrollment_ratio_terciary_both_sexes:qk]' pivot='key' type='quantitative' />
-            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
-              <semantic-values semantic-role='[Country].[Name]'>
-                <semantic-value key='&quot;Korea, Dem. People_s Rep.&quot;' value='&quot;South Korea&quot;' />
-              </semantic-values>
-            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Sum' caption='Gross Enrollment Ratio Primary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_primary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column aggregation='Sum' caption='Gross Enrollment Ratio Secondary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_secondary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column aggregation='Sum' caption='Gross Enrollment Ratio Terciary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_terciary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
             <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
             <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
-            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
           </datasource-dependencies>
           <sort class='computed' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' direction='DESC' using='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Calculation_124200882721333249:qk]' />
@@ -1392,18 +1380,14 @@
             <column caption='AVG Government expenditure on education' datatype='real' name='[Calculation_36521426804232197]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='IF AVG([government_expenditure_on_education_pc_of_GDP])&lt;&gt;0&#10;THEN AVG([government_expenditure_on_education_pc_of_GDP])&#10;ELSE AVG({ EXCLUDE [government_expenditure_on_education_pc_of_GDP]: AVG([government_expenditure_on_education_pc_of_GDP])})&#10;END' />
             </column>
-            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
-              <semantic-values semantic-role='[Country].[Name]'>
-                <semantic-value key='&quot;Korea, Dem. People_s Rep.&quot;' value='&quot;South Korea&quot;' />
-              </semantic-values>
-            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Count' caption='Country Code' datatype='string' default-type='nominal' layered='true' name='[country_code]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column-instance column='[Calculation_124200882719707136]' derivation='None' name='[none:Calculation_124200882719707136:nk]' pivot='key' type='nominal' />
             <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
             <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
             <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
-            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[Calculation_36521426804232197]' derivation='User' name='[usr:Calculation_36521426804232197:qk]' pivot='key' type='quantitative' />
             <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
           </datasource-dependencies>
@@ -1517,17 +1501,13 @@
             <column caption='AVG Government expenditure on education' datatype='real' name='[Calculation_36521426804232197]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='IF AVG([government_expenditure_on_education_pc_of_GDP])&lt;&gt;0&#10;THEN AVG([government_expenditure_on_education_pc_of_GDP])&#10;ELSE AVG({ EXCLUDE [government_expenditure_on_education_pc_of_GDP]: AVG([government_expenditure_on_education_pc_of_GDP])})&#10;END' />
             </column>
-            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
-              <semantic-values semantic-role='[Country].[Name]'>
-                <semantic-value key='&quot;Korea, Dem. People_s Rep.&quot;' value='&quot;South Korea&quot;' />
-              </semantic-values>
-            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column-instance column='[Calculation_124200882719707136]' derivation='None' name='[none:Calculation_124200882719707136:nk]' pivot='key' type='nominal' />
             <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
             <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
             <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
-            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[Calculation_36521426804232197]' derivation='User' name='[usr:Calculation_36521426804232197:qk]' pivot='key' type='quantitative' />
             <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
           </datasource-dependencies>
@@ -1646,17 +1626,13 @@
             <column caption='Patent and Trade Mark Applications, total' datatype='integer' name='[Calculation_36521426800525313]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='[Calculation_142285667957362688]+[trademark_applications_total]' />
             </column>
-            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
-              <semantic-values semantic-role='[Country].[Name]'>
-                <semantic-value key='&quot;Korea, Dem. People_s Rep.&quot;' value='&quot;South Korea&quot;' />
-              </semantic-values>
-            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
             <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
             <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
             <column aggregation='Sum' caption='Patent Applications Nonresident' datatype='integer' default-type='quantitative' layered='true' name='[patent_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column aggregation='Sum' caption='Patent Applications Resident' datatype='integer' default-type='quantitative' layered='true' name='[patent_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
-            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[Calculation_142285667957362688]' derivation='Sum' name='[sum:Calculation_142285667957362688:qk]' pivot='key' type='quantitative' />
             <column-instance column='[trademark_applications_total]' derivation='Sum' name='[sum:trademark_applications_total:qk]' pivot='key' type='quantitative' />
             <column aggregation='Sum' caption='Trademark Applications Total' datatype='integer' default-type='quantitative' layered='true' name='[trademark_applications_total]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
@@ -1782,17 +1758,13 @@
               <calculation class='tableau' formula='IF AVG([government_expenditure_on_education_pc_of_GDP])&lt;&gt;0&#10;THEN AVG([government_expenditure_on_education_pc_of_GDP])&#10;ELSE AVG({ EXCLUDE [government_expenditure_on_education_pc_of_GDP]: AVG([government_expenditure_on_education_pc_of_GDP])})&#10;END' />
             </column>
             <column-instance column='[gross_enrollment_ratio_terciary_both_sexes]' derivation='Avg' name='[avg:gross_enrollment_ratio_terciary_both_sexes:qk]' pivot='key' type='quantitative' />
-            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
-              <semantic-values semantic-role='[Country].[Name]'>
-                <semantic-value key='&quot;Korea, Dem. People_s Rep.&quot;' value='&quot;South Korea&quot;' />
-              </semantic-values>
-            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column aggregation='Sum' caption='Gross Enrollment Ratio Terciary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_terciary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
             <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
             <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
-            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[Calculation_36521426804232197]' derivation='User' name='[usr:Calculation_36521426804232197:qk]' pivot='key' type='quantitative' />
             <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
           </datasource-dependencies>
@@ -1857,7 +1829,7 @@
       <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
         <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
         <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
-        <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' caption='Regionxxx' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
         <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
       </datasource-dependencies>
       <zones>
@@ -1937,7 +1909,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='28'>
-    <window class='worksheet' name='Gvt Spending on Education BAR'>
+    <window class='worksheet' maximized='true' name='Gvt Spending on Education BAR'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1981,7 +1953,7 @@
         </highlight>
       </viewpoint>
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard'>
+    <window class='dashboard' name='Dashboard'>
       <viewpoints>
         <viewpoint name='AVG Patent and Trademark apps'>
           <zoom type='fit-width' />
@@ -2016,7 +1988,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='39' />
+      <active id='-1' />
     </window>
     <window class='worksheet' name='Gvt Spending on Education MAP'>
       <cards>
@@ -2227,479 +2199,483 @@
   <thumbnails>
     <thumbnail height='384' name='Gvt Spending on Education BAR' width='384'>
       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
-      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
-      AAAASUVORK5CYII=
+      AAAgAElEQVR4nOzdd3xV9f348de5Kzd77wRIIIQRCGHIFMGJuPdstdpv1Urr99daW23r+Nba
+      Wv221fptFatWUdAWV13sJcgOhJEwEiB779zkznN+f8QcEkA4R0vF3vfz8eDx4HxyPp971j3v
+      8xnncxVN0zSEEEIEHcvXvQFCCCG+HhIAhBAiSEkAEEKIICUBQAghgpQEACGECFK2r3sDADwe
+      Dz6f7+veDCGECCpnRABwuVxERER83ZshhBBB5YwIAIqi4HA4vu7NEEKIoCJ9AEIIEaQkAAgh
+      RJCSACCEEEFKAoAQQgQpCQBCCBGkJAAIIUSQkgAghBBBSgKAEEIEKQkAQggRpCQACCFEkDoj
+      poLoo2oq966811Se8wedzzXDrzlNWySEEP+5zqgAALC+er2p9YdGDz1NWyKEEP/ZpAlICCGC
+      lAQAIYQIUhIAhBAiSEkAEEKIICUBQAghgpQEACGECFISAIQQIkhJABBCiCAlAUAIIYKUBAAh
+      hAhSEgCEECJISQAQQoggJQFACCGClAQAIYQIUqYCgOr30dragsfrP+Hf/R43bW3tBFTtaJrX
+      TVvrwDQhhBBfP8O/B+BqqeYPTz5Nm2rH41P43n3/TV5WKgoAGjUHdvD0c3/D6rARmpDFj354
+      F+7aEp569iUsDjshsZn8+L7vExvuOG07I4QQwjjDNYDq/dvpcg7h17/5DRcVpLJ89Q79b5oG
+      n7z3DpMuvonf/PpXxHZX8unOUpa+/w7jzr+O3zzxK5J8tazZvh+pBwghxJnBcACISkymq+UQ
+      H3+8hK3FFWQMSuv31wDllY3kDc/BFhLGxHHDKS+r5Eh5PXm5udjsoUwqGElFWc1p2AUhhBBf
+      huEmoM6ObjQ02tta6PH58fl60DQNRVEADcVmwRHmBBRsNiuKpqLYLISE96ZZbdbeqgLg8/lQ
+      VVUv2+8/cZ+CEEKI08dwANj42Tqmzb2emy+eweFxQ/jDwjVcc/5knHYFsBJis9Dd6YLUcLq7
+      e7CGhOK0WenucEF6JD3dPVhD7AB0dHTgdrv1sgOBwL96v4QQQpyC4Sag+Jh4SveV0NTaxoGS
+      fUTGxEDAy6ZPN9DZ42doViafbthAY20FqzfvJ290FtnZg/h0w3oa66tY+dle8kZnoQDx8fGk
+      p6fr/yIjI0/jLgohhDgRwwHg3MtvJCOkgz8++STbyl3c8a3rsATcbNu0FZfbx9wbbkVpKOH3
+      z80nZ9qFTBqRyZzrbsHRepDfP/sXsiafz5TRQ07jrgghhDBD0TTN8MAcTVPx+/xYbTYsluNj
+      h6oGCAQ0bHbb58ND+9JUbHa7nnas1tZWYmNjUTWV/NfyTe3AbaNu4/5J95vKI4QQwkQfAICi
+      WLA7vngcv8Vi5di40Jtm/VIbJ4QQ4vSRqSCEECJISQAQQoggJQFACCGClAQAIYQIUhIAhBAi
+      SEkAEEKIICUBQAghgpQEACGECFISAIQQIkhJABBCiCAlAUAIIYKUBAAhhAhSEgCEECJISQAQ
+      QoggJQFACCGClKnfA/gm8Bw8SPNfXzKVJ+47t+McMeI0bZEQQpyZ/uMCgL+xkfb33zeVJ2ru
+      XJAAIIQIMtIEJIQQQUoCgBBCBCkJAEIIEaQkAAghRJCSACCEEEFKAoAQQgQpCQBCCBGkJAAI
+      IUSQkgAghBBBSgKAEEIEKQkAQggRpCQACCFEkJIAIIQQQUoCgBBCBCkJAEIIEaQkAAghRJCS
+      ACCEEEFKAoAQQgQpCQBCCBGkJAAIIUSQkgAghBBByvZ1b8CZaHlxPesPNprK88tLR2GzSjwV
+      QnxzSAA4gcKKVl7dWG4qz0OXjJSDKYT4RpFHViGECFISAIQQIkhJABBCiCAlAUAIIYKU9Fue
+      Jr/b+juOtB8xvP7QmKH8eOKPT98GCSHEMSQAnCY7Gnawp2mP4fU7fZ2ncWuEEOJ40gQkhBBB
+      SgKAEEIEKQkAQggRpEwFAE1VcXV14fH6T/j3gM9LV5cLVdOOT1O1E+YRQgjx9TDcCez3uPj7
+      3/7Mln21KLYQvn3XDygYlqb/vaX6AM8891c6PT4yRkzg7ttvwtt8mGf+9CLtPV7Shhdw9x23
+      EBFiPS07IoQQwhzDAaD4s0/YUefkV799kuLV77Bh3WbGDr0KqwKapvHhWwsZctZcbplTwP8+
+      9iifFk2maeObpBVcwEOXT+EPjz3M2sJJzJ06EuV07tF/CFVTTQ0jBYhxxhDnjDs9GySE+I9j
+      OADs3n+AjLQ0/v63v2KLSeH6qy/Eot/JAxw6UstVl43CERrFtAkj2b3/MK2Hq5l7YR72kHCm
+      TxrNtv0VMHXk6dmT/zBuv5sr3r/CVJ67xt7FvIJ5p2mLhBD/aQz3Afh8Hop37WXomHza9m/i
+      5b9/2K9dX0OzWnBGhAEKjhA7SkBFs1gI/TzNHuKAQO/6qqoSCAT0f5om/QNCCPHvZrgGoCgK
+      Ey+8nFnTpjEswc4zi9bi1zSsKIAFh9WC29UDhOPxeLE4HP3SIvF6PFg+b/9vamqip6dHL1vT
+      NOLipOlCCCH+nQzXAHKHDKVs9x463T4OluzF6YwE1U/x7j30eFUy0hLZtrMIt6uN9Vv3kZM7
+      iMz0ZLbt2IGnu4NPNxczfPggFCApKYnBgwfr/6Kjo0/jLgohhDgRwwFg/HmXkxvVwS9++iM+
+      2nyEW26+CjxdvPvm2zR3eLjsxlup2b6MB37+KBE5k5iWl8XcG26hYfdqfvLQw4QMKWB6/tDT
+      uS9CCCFMMNwE5AiN5jv3/gSPx4vN7sD6+c8f/vzXj3y+xjB+/vgTeP0BQkJCUICwlGwe+p9f
+      D0gTQghxZjA3GZxiIcTp/MI/W6w2nFbbKdOEEEJ8/WQqCCGECFISAIQQIkhJABBCiCAlAUAI
+      IYKUBAAhhAhSEgCEECJISQAQQoggJQP0/4P5VB/dvm5TecLt4dgsclkIEQzkm/4fbH3Ven64
+      +oem8rx80ctMSpl0mrZICHEmkSYgIYQIUhIAhBAiSEkTkDipv+//O6srVxte34KF/zv//07j
+      Fgkh/lUkAIiTOtR+iPXV6w2vb1GkUinEN4V8W4UQIkidcTWAnJgcU+snhiUOWFbCwgjJHW6q
+      DEtE+IDlpMgQRqREnjRPp9tPdVvPSdcRvdZUrqHT22l4/cSwRKakTjmNWySEgDMsACgonD/4
+      fECjqagStxpG+rgEAj0eKjfVkjEtE7uz93eFfa4eKotayBo3DL+3h43rVrN7XynudheRuaO4
+      MD2VMOuxFRyN8vYWKn0wIyFeT7XGx7Fvx0Y27dyHPTyWxOETmJOXQvuhzbQ1tevrhUSmkDxi
+      LIoCpQ1dEgAMeqbwGUrbSg2vPzV1qgQAIf4NzsgmINXt5tC6Kiq3HKHH5cfqsOKqaqCx4uhL
+      Ta27a3C1erFYNT5a9CLvfrqH8VNncu7USXS2N/BqaSXqMeV2e7p5c99+ito6BqQ3lRfzh78u
+      IiN3DFFaA/9c9DaaBvbwOMLikgmLi6e5eDPdPd5/w94LIcS/xxkYADTaSxuxZyYSn2ijobQD
+      rFaSRydSX9yABmiaRn1JM0mjkwi4m1i28SB333U3UyaMY1ROLjfk5jI4zE4g4OHZ3btoVjU0
+      TePDskNEhcVgPeYTK2sOk1MwlfOnTeTSa67H1l6KJ6ARlpxD4tCxONRuLLFDGTR2PIr8rqUQ
+      4j/EGRcANFWltqie5LxUUsYmUV9UjQbEjUjCV91ET4+Kt66Jbs1J/KBw3LUHcUQlMTg1Ei3g
+      o3jfbna1dZESGoJfsXFReiYRCuypq6DBGs6s1Pjjfps4OjyO8n37qKxvZO+WLXT0uPF0+wFQ
+      vZ1UFG0lc/IcbLYz7nAJIcSXdkb1AQB4mjtpre6mZ8MBlICKu95Fa52X+NQwEjJDaTzYhqWh
+      kfi8VGwWsIaF4/a30+PTsCsBqmrLKW9vZXNTBz8sGE9uXCw9bhf/PFLFhMHDKOvooLnbS1WP
+      m4zQ3t83zh41ngu6Xbz4f88Rk5CA02bFHtJbT+hpOkTAkUpMYszXeViEEOJf7ox7pG3eW0dU
+      3mDyrh7N6OvGMGRiIlU7atE0hZRxSdRvr6autJu0vDgAQhJySQk0sXLVJvyKnQtmzeXizDRs
+      gKKAxx9Aw8rE1DS8nm4ae9x0+7y0+fwEVBWvqtLe1IwWP4oHH3qQb18yDRxxhDgU0DTaDpcS
+      lTUGi+WMO1RCCPGVnFE1AE3z0bC3hcwr8gmJDAEgbVwqVYsO4OrKJCwtgRDfIbTUZEJDe2/I
+      FpuTO793J8+/vIDtm1YSY1U5dKCUsSkpxFt9PLu7hO+MHcdFQ7IAONhUj7+tm7yoCLbXllPm
+      t3NbuI0d7/6D/Xu30VZTQebUy7EqCpqm4fa2Ex0fI23/Qoj/OGdUAFAUC8Ovz8cZF6an2RNi
+      GHdjHiFOBYvVQu4NBWC1o/S7I2eMnsQv/ieXuoZmPLW1+EIjSHKGgKZya24uMZaj6w6KiePq
+      yFgARiSkkKUp2COT+clDD1LX1EZIWCSHuxS2l7f2lj3pSqzOqH/TERBCiH+fMyoAgJXwxIEv
+      ZaEohCcdTXNGh54wpzM8iiFZUXhtNtqdhZ/ntZAaFjZgvRCbnZDP9zrcHkJfyeHR8QyN7n03
+      4Ehp4+cfrRASGY/4ej2z4iDPrT5oKs+Ohy8kIuQMu7yFOMPIN0Sc8QKahi+gfaUydjTsoN3T
+      fuoVPxfpiGRC8oSv9JlCnOnOiACgaRo+nw8NjcLaQhSLgqYO/MJ/UVq8Ix5fkk9P87e307m9
+      EDi6rgXl85fCTpzmnD4dS3o6VqsVVVWpbOpi66G+WoAFDQ20o3kVxUJTlwct4NfTVFXD7/ej
+      fb6eFtCObm//ze5rjTomTQv0HoM+ATXQm99A3r40NaDi8/n0DutAIIDWd+M8RV59PwIqgUAA
+      Ve09OqpfNbUfKAzYD0VRQOPodvRf99h7ugVQj+6HoihYLBbUgP/osbZYes9Fv/NxojRVVQec
+      j99v+T07GncY3o+8+DwWXLyg30dY9HK/7rS+4xIIBL7RaQBWq/W4NJvNht/vD+q0vnuR1u+a
+      Ph1pZ0QAcLvdrFmzBlVTWbZmGeG54XSXdaP5j25s+PBweg73oPqOfhHChoXh3+fHvs+up41R
+      VdauWEF3vy/MWKeTQ14vXf3S8pxOyr1eOlWVhOyhOA8fZvz48Rw+fJiPV+1h2Z5aABzJQwl0
+      NBLoOfr2sCMpm0BXC4HuNj3tyKERtDQ3UV9fD0D19mq8kV4CrgC+tqM3xJC0ENQeFV9rv7TU
+      EOpa6/jA+4GelpGVQU95D77mfuslh6AFNLxNR99IdiQ5QANvo5fdrbv5oOIDhgwZgtVq5bPN
+      n9Gxu3e7HfEOFLuCp86j57XH2bGEWPDUHk0rTS8lqiOKkpISAIoPFtPT1YM13Iq72q2vZ4u2
+      YYu04a7qlxZlwxHj4IMPju5HQkIC3iYvHUVHj5813IojwUFP+dGpNKxhVhzJDnoO91B+pJwP
+      ej4gKiqK3Nxc9m5cRXdpzRcee0diFoHuNgKuVj3tcFkO3Z3t1Nb2nsfKwko84Z4THnvVo+Jr
+      6ZeWEkJDa8OA/Rg2bBh+v58jR47oadnZ2QAcOnRIT+s79mVlZXraoEGDCAkJ4eDBo81YmZmZ
+      hIWFsX//fj0tPT2dqKijxx4gNTWVuLg49u7dq6clJyeTmJjInj179LTExERSU1PZtWvXgGOf
+      kZHBzp079bS4uDiGDBlCYWGhnhYTE8OwYcPYtm2bnhYVFcWIESPYsmWLnhYREcHo0aPZvHmz
+      nhYeHs7YsWPZuHGjnhYaGsr48ePZsGHD0WMaEsJZZ53Fp59+qqfZ7XamTZvG2rVr9TSr1crZ
+      Z5/NmjVr9DRFUZg9ezarVq2iv/PPP58VK1acsWnnnXceK1euHJA2e/Zs1q5dOyCgz5o1i/Xr
+      1w8IAjNnzmTTpk14vUe/6zNmzGDbtm243Ue/c9OmTWPHjh309Bz9Lk2ZMoXdu3fjcrn0tMmT
+      J1NcXExn59E5uSZNmoSi9Q8JX5PW1lZiY2NRNZX81/JN5b1t1G3cP+l+fdn12WdU3HGnqTIy
+      X3iBiHNm6stPLtnHX9aUnSTH8fY/PocQ29F3jG/66Cb2NO05SY6BxiWNG/DE2e3rZvLCyaa2
+      4a6xdzGvYJ6+vLpi9Vf+Scjfbvktb5S8YTi/RbFQ9O2iAWlXvX+V6bmA5l84X1/+/fIDPLvS
+      XB/AnscuGtAH8O1Pvs2Ohh2G8+fF57Ho0kWmPlOIbxoZ3C6EEEHqjGgCEuJMp6kqro2bTOVx
+      ZKTjGDz4NG2REF+dBAAhDND8firvNNe0GP9f/0XSj3+kL/tb3fQUN5sqI3R0PLYYp6k8Qhgl
+      AUCIfxN/QzftHxw69Yr92JPCBgSAFeUr2Fiz8SQ5jvfzKT8f+FOdn/4vtFcZLyB+KEydd+r1
+      xDeOBAAhvkGKGov4+4G/m8rz0JSHBiYUvw+1RSde+UQGzxgQAFweP3f8baupbbh+YibXTMgw
+      lUecfhIAhBCm+FWNzYdbTOWZPixhwLI34MXlc33B2icW6YjEZpFb1r+SHE0hxL/d2qq1/GjN
+      j069Yj+vXfwaBUkF+vKRZhcNHZ6T5BjIosDEIXGmPvM/nQQAIcQ30kufHmbBpnLD6zusFg78
+      +uLTuEXfPPIegBBCBCmpAQghgtZPF++ipr3n1Ct+Lj8zhvsvzNWX/a2t1Nz/E1OfGXP9dURd
+      dJGpPKeLBAAhRNDaWt7CoUbjndFWy8BfhtK8Xlz95jwyInz6tAHLHcuWUf/Eb0yVMejF+YTk
+      5JjKcyISAIQQ4muk9fTgr6szl6ffjLsAVZ1VtHnavmDt41kVKyPjR0oAEEKIb7rni57n/bL3
+      Da8f5Yhiw00bpBNYCCGClQQAIYQIUhIAhBAiSEkAEEKIICUBQAghgpQEACGECFISAIQQIkhJ
+      ABBCiCAlAUAIIYKU6QDgd3fw6Web6fGrA9JVv5dd2zaxdOkyDpbXoAGq38ee7ZtZunQZB45U
+      o/2rtloIIcRXZioAaFqATxb+lVcX/Z0Oj9ovXWP7yvd46a1PaG2q4dmnnuZQXTs71/yT+Qs/
+      pK2ljj899RQHq1v/5TsghBDiyzExF5DG/q2rWHuggVDgmDnxWLduPVfdfB+zxg3B2vE0n24t
+      oW3beq648R7OmzgMR1cD67buJSd9xjF5hRBCfB0M1wBcLTW8/vZSbvr2LViPa8wJ0NbpJTkh
+      ARQrGelJdLW00dbeQ3JiIigW0tOTcTV3/Ys3XwghxJdlsAag8s7LLxA/YgrJoeDz+2ltaycx
+      LA5F6X2eVywWlM/nytYALJ+nWT+PMZqmh5u2tja8Xq9eutfrJTY29l+0S0IIIYwwWAPQ8Prt
+      tB7exfyXFtLa3sIHS5ZxtB/YRkykncbGJjQtQE1dA1FxccRGOWmob0TTVGrqGoiMiwIgJCSE
+      0NBQ/Z/dbj8tOyeEEOKLGawBWLn9Jw+iaRBwN/LAg09x6w3Xornbee7/XuHq736PsyZN5O03
+      F9BYlsPqHTXcd0kOzUzirb8voK1iJCu2VjDv599BAUJDQweU7vf7//V7JoQQ4qQMdwJbrb2r
+      Wpwx3HTTdcQ4rVg1JxOnTSbSaWf6JTcSHr+B8uZOfvCTBxieHouWci2hsZ9xpKmDe3/yACMz
+      40/bjgghhDDH9C+CWWyhTJk29fMlJ1NmHP19y4Lpsyjot65itTNu2jmM+4obKYQQ4l9P3gQW
+      QoggJQFACCGClAQAIYQIUhIAhBAiSEkAEEKIICUBQAghgpQEACGECFISAIQQIkhJABBCiCAl
+      AUAIIYKUBAAhhAhSEgCEECJISQAQQoggJQFACCGClAQAIYQIUhIAhBAiSEkAEEKIICUBQAgh
+      gpQEACGECFISAIQQIkhJABBCiCAlAUAIIYKUBAAhhAhSEgCEECJISQAQQoggJQFACCGClAQA
+      IYQIUhIAhBAiSEkAEEKIICUBQAghgpQEACGECFISAIQQIkhJABBCiCAlAUAIIYKUBAAhhAhS
+      EgCEECJISQAQQoggJQFACCGClAQAIYQIUhIAhBAiSEkAEEKIICUBQAghgpQEACGECFISAIQQ
+      IkhJABBCiCAlAUAIIYKUBAAhhAhSEgCEECJISQAQQoggJQFACCGClM3oipqmUld1hKraJsJj
+      EsjJHoLddjR+qAE/lYdLaWx1kT4km5TEWDQ1QNXhUupbukgfnEVqUhzKadkNIYQQZhmuAZTv
+      2civn/wj23cV8bfnfs/iZRvRtL6/ahR/tpSn//QyWzav47e/eYrq5i72b1rO7575K9u2rOe3
+      TzxJRWPn6dkLIYQQphkOAEfKSplx6Q3cded3+c7NF7O9cAs+tTcCaBqsXLmSy26+g3u+P4+J
+      g0JZu20fq1auZO4Nt3H3PfcydWg0a7YUo53ic4QQQvx7GG4CmnXlbQCovh7Wr9/CoMzx2Cx9
+      DTp+mppdZKSkoFjsDMvOYHtdE01NHcxMS0Ox2Bg6NJONta2nYx+EEEJ8CYYDAIDf3cXrL/+F
+      /R2h/OS/LsDSv0HfasHqsOqLikUDixWro99HfF7f6OzsxOfz6ckej+dLbbwQQogvz3ATkLuz
+      hT89/QTlXaH88sH7SY4O6/dXGzHhdpobW9A0lcamVkKjYoiJdNDc0IymqTQ1tRAWFQ6AoigD
+      /gkhhPj3MxwAVr73OtsOtTBsSCprln3Eig1bcbs6eP3FV2hs72Hs2Dw+eP9t1q1Zxspth5mU
+      P4z8/LF89P7brFu7gmWbDjJpXA4KEBERQWxsrP7P6XSexl0UQghxIoabgJIG53D5Rcmg+XG7
+      /YT4vChWKwkpydhtVmZdeQuWZUspK6/npu/dy+jBCaipN4JzKWVHarn+u99nTFby6dwXIYQQ
+      JhgOAJNmXsykE6TPuWzu5/8L4bzLrh7wN0tIGLMvuYrZX2EDhRBCnB7yJrAQQgQpCQBCCBGk
+      JAAIIUSQkgAghBBBSgKAEEIEKQkAQggRpCQACCFEkJIAIIQQQUoCgBBCBCkJAEIIEaQkAAgh
+      RJCSACCEEEFKAoAQQgQpCQBCCBGkJAAIIUSQkgAghBBBSgKAEEIEKQkAQggRpCQACCFEkJIA
+      IIQQQUoCgBBCBCkJAEIIEaQkAAghRJCSACCEEEFKAoAQQgQpCQBCCBGkJAAIIUSQkgAghBBB
+      SgKAEEIEKUXTNO3r3ojGxkY6OzsBONR+yFTe6JBo4p3x+rLa04OvpsZUGfbUVCxhYfpyc5eX
+      1m6vqTKGJkagKEeXq7uq8QQ8hvM7rU7SItL0ZVVTOdJxxNQ2xIbEEuuM1Ze7fd3UddeZKiM1
+      PJVQW6i+3NzTTLu33VQZ2dHZA5arOqvwqsaPZ6gtlNTwVH25xeWlxWXufGQnhmPpd0Jqumpw
+      B9yG84dYQ0iPSD+aoGl4Dpm7Nq0xsdji444W4Q3gbzN+TQDYYkJQHFZ9udndTLvnq50PWsvB
+      b/xYYA+DmEx9UdU0DjW6TG1DXLiDuHCHvuzyuajvrjdVRlp4Gk6bU19u7PTQ3uMznF9Rer+n
+      /ZU3d+MLqIbLCHNYSYs5+v3Q/H685eWG8wPY4uOxxsToy2pnJ76GBlNlODIyUEJC9OXG7kY6
+      fZ2G81sUC0OihmAz9amnic1mIzs7G03T2FO2x1Te1JhUMqMz6erqIjY2Fl9DA66DB02VEZ6Y
+      iCc8HIvFQlhYGN3V7VSYOJgAQ7LSaWttITo6GpvNRlVVFd3ubsP5naFOstOzaWhoICkpCb/q
+      p/hQsaltyIjLICMig+7ubmJiYqhz1XGo1txNKzk9mRB/CDabjdDQUFxNLmrbag3nVxSF7Oxs
+      mpqaiI2NxWq1Ul5ZTrfH+LEIDwsnKzWLpqYmEhMTcdd0UO7tMLUfg4ek0dneRlRUFDabjZrq
+      Grp7jG+Dw+kgO+Po+dACAdp37za1DSFp6Vgzjp6PQLsHt6vNVBnOtBh6LD792uxp6jF1PgCy
+      srJoaWkhJiYGq9UKBw5At4ntiHBA9tFj4fWrFLWZe8jKTIgiPS4Et9tNdHQ0NV01HK47bKqM
+      lPQU7H67fm22V7TS6TceiCwWhezsdJqamoiLi8NisVDaU0en22+4jPAoJ1lZ8fq1qfb00FFs
+      7nsampWFlpaG1+slKioKb2Ul3YfNHYvI1FRcFgsOhwOn00l7QzvdHcavb7vVTnZW9plRA2ht
+      bSU2NvbUK34Bt9tNS0sLaWlpp175CzQ3N2O1WonpF5nNqqysJCUlBbvd/qXLOHToENnZ2ade
+      8Qt0d3fT0dFBSkrKly6jqakJh8NBVFTUly6jvLyc9PR0bLYv94yhaRpHjhwhKyvrS29DVVUV
+      SUlJOByOU6/8Bb7q+ejp6aGtrY3U1NRTr/wFmpubsdlsREdHf+kyKioqSE1N/VqvTZfLRWdn
+      51e6NhsbG3E6nURGRn7pMsrLy8nIyOgNhl+CqqqUl5d/pWuzq6uL7u5ukpKSvnQZ9fX1hIeH
+      ExERceqVv4D0AQghRJCSACCEEEHqjOgDCOnXmXEi/VupNE3DYhkYt6xWK+Hh4Yby91H699gC
+      TqfzuHKPLUNVVRRF0f8dKyIi4pRl9P//icr5omp+X96+9Y9d7mOz2Qjr16F9sjK+iNPp/MKm
+      G03T9H99LBbLcWVGRUUddyxUVT3huQBOWB0/WROUkXN6ovNxsm040X6crNnl2HJOdG3abLbj
+      rs2+a+lEFEU5rgwj12bf9dRXxrEiIyO/sAwjxxK++rGw2+1feG32L6P/dXrsdoSGhh53bZo9
+      p5GRkcel9Z2PE5Vz7LWpKMpXvjbtdjuhoaHHrXdsGSc7FmFhYSdt0uu7zvrOw4nO6RnRB/BF
+      VFVl/fr17NnT2zEcCASIiIjgO9/5juEyPB4PH374IfX19fpyfn4+5557ruEyvF4v7733Hp9+
+      +inh4eHccMMNjBs37pQ30j6aplFcXMz69esJBAJomkZ7ezsPPvig4TJaW1upri53nTUAACAA
+      SURBVK5m9OjRqKrKvn372L9/P1dffbXh/SgqKmLTpk1Mnz6doUOHnvQC/CJ79+7l5Zdfpqur
+      C03TsFqt/OxnP2Pw4MGnzDt//ny2b99+XHpERAT/+7//a3gbmpqa+Oijj+jq6kJRFFwuF1de
+      eSU5OTmnzLtgwQLWr19/XLrD4eAPf/iD4T4LVVX59NNP2bt3L9B7bUZFRXHbbbedMm9tbS1P
+      PPEEXu/xI5uuvvpqLrroIkPbAL39X2+99Ra7du3i5ptvpr6+nosuushw+7amaRw4cIB9+/Zx
+      ySWXsGDBAsaNG0dBQYHhbVBVldWrV7N//34A/H4/CQkJ3HzzzYbL6O7uZtWqVUyaNIlnn32W
+      sLAwfvjDHxpq61+1ahVvvfXWcelWq5UHH3yQzMzME+Qa6C9/+QupqakUFRVR028UYVRUFE89
+      9ZTh/VBVleXLl1NWVgaAz+cjNTWV66+/3nAZXV1drFmzhgkTJvDss88SHR3NfffdZ+r76nK5
+      eP3119m/fz/f/va3aWlpYdasWcc/oBgu8WvQ1NTEwoULSUpKwu12Y7fbGTlypKky9uzZw/Ll
+      y3E6nSQmJlJfX88555xjqoy1a9eyYcMGLrroIjo6Opg/fz4PP/yw4Y49TdN4/fXXsdvtNDU1
+      kZGRgd9vfOQB9N5gXnjhBebOncuRI0fYtm0bl19+uakyEhIScLlc/PGPfyQ2NpaJEycydepU
+      MjMzDQeiFStWkJGRQUFBATabDUVRiIuLO3VG4Oyzz2bEiBFs2LCB6OhoRo8eTUlJCS6XuSGF
+      S5cuZffu3XR3d5OdnU1FRYXhDuspU6YwZMgQtmzZgtVqpaCggNLSUurq6k76lH2sxsZGFi5c
+      SHJyMh6PB6vVSkJCgqG80dHR3HjjjXR0dLB8+XLOO+887HY7K1asMD2QYcmSJRw5coTw8HB8
+      Ph8ff/wxubm5DB061FB+VVV54403yM/PByAuLo6XXnqJP/3pT4avibq6Ot566y2SkpL0B5z0
+      9PRTZ+xn165dbN26FbfbjcvlIioqik2bNnHBBRecMu+IESO49dZbKS0tpaKigpkzZ9LS0sLW
+      rVsNdxafc845hIWFkZmZSXf30dE0ZgcQVFVVsXjxYhISErBarXi9XtMd59u3b2fnzp10dXXh
+      9XoJBAJs2bLF1H3rnXfeobW1FZvNhs/n45133mHkyJHH3bPO6D4At9tNVFQU3/nOd0hLS+MH
+      P/gBR44c+cLq84l0dHSQn5/PxRdfTEFBAVdddRXlJsftlpSUMGfOHC699FJuuukmkpKSqKys
+      NJxf0zR8Ph+33347sbGxzJs3j+7ubsP7EQgEiImJ4ZZbbuGtt96ipKSEhx56iEsuucTUfqSn
+      p3Pffffx+OOPM2jQIN555x1+8Ytf8PTTT+vvYZxKZmYmeXl5TJ06lbPOOotJkyadtPmtv5Ej
+      RzJlyhS6urq48sormTlzJtdccw2HDx/G5zM+nrujo4O5c+eSl5fH5ZdfzpgxY2hsbDSUNycn
+      h7PPPpu2tjauuOIKZs6cydVXX01tbS1ut/Gx8T09PcTExHDbbbeRnp7OvHnzOHLkyBc2RfQX
+      FhbG9OnTiYqKIicnh4svvpgLLriASZMm6TUKoyorKzn77LNJT08nISGBtLQ02tuNvyegqio9
+      PT2MGzcOi8XCxIkT8Xq9ph5Quru7SUxM5JZbbmHQoEHcfffdlJeXGzoWfVpbW8nLy2PPnj1M
+      mDCB0aNH09ZmbKhqWloaZ599Nl1dXcyZM4dZs2Zx+eWX43A49Jr/qeTk5BAXF8fGjRsZMmQI
+      EydOZOjQoSxfvtzUsXC5XKSnp3PTTTeRlZXFd7/73S91LMaMGcOuXbuYPHkyI0aMMHVOoTcQ
+      nXfeeSQlJZGenk5sbCxdXV3HrXdG1wBiY2Px+/3U1dXR0tLCs88+S0hIiKmDmZmZyeLFi5k5
+      cyZ/+ctfsFqtzJgxw9R2ZGZmsm7dOuLi4ujo6KC2ttbU8C1FUUhOTmbbtm2kp6fz29/+lsbG
+      RlRVNVRVf+655+js7ETTNEJDQ2lsbGTBggWMGDGCG2+80fB21NXV8e6771JUVITD4WDu3Lnk
+      5uayaNEidu/ezbRp005Zht1u57XXXmPJkiU4HA4sFgv33HMPGRkZhrahbzz7888/z7Bhwygr
+      K9PH6huVlZXFqlWruPDCC3nxxRdpb29n8uTJhvND71P4iy++SG5uLhUVFTgcjlP2RfUXFxeH
+      x+OhsbGRxsZGnnvuOcLCwga0xZ9KQkIC27dv54UXXsBms7F161ZDTUj9TZw4kVdffRXoHabp
+      crkMNXn0sVqtjBo1imeeeYb09HRqamrIyckxNVw0ISGBzs5OOjs7qaio4IUXXiA2NtbUscjK
+      yuKZZ56hu7ubiy66iDfffJM777zT8DYApKSk8MYbb1BSUkJbWxsNDQ2Gh3UfOHCA+fPn09jY
+      yN69e/Un52P7u04lKSmJpqYmvF4v+/fv5+DBg6SkpJg6FtnZ2Tz//PP09PRw2WWX8cYbb/CD
+      H/zA8DYATJo0iZdffhmfz8czzzyD3+8nOTn5uPXO6D4ATdOoqanB6XTS1NTEli1bOPvssxky
+      ZIjhMlRVpaysjMzMTLZs2UJtbS1z5swxNaba5XLx0ksvsXHjRsLCwrjmmmuYM2eO4SYDTdNo
+      a2ujs7OT0NBQli5dysiRIxk/fryhi+L9998fUC3tk5aWZqpauG3bNlatWsU555zDqFGj9PHD
+      S5YsYdiwYYba0Hft2jWgBmWxWJg+fbqp9yfq6+v5+OOPqa2tJSUlhblz55oaG+71ejl06BBD
+      hgxh6dKlOBwOzj//fFM3rebmZj766COqqqpITEzk4osvJj093VS/TnV1tR6Qt27dysyZMw31
+      hfQJBAJs2rSJTZs2oaoq48eP55xzzjEVDAOBALt372bPnj04HA6mT59OWlqa4f2A3trMZ599
+      Rnl5OampqcyYMcPUOHtN06iqqiIiIoKamhoKCwuZPXu24YeCvv0oKSlBVVWGDh3KgQMHGDt2
+      rKmx+j09PXz00UccPHiQ8PBwLrjgAkaMGGHoWPj9fjZt2sS7777LOeecQ0xMDBaLhfT0dFPj
+      /TVNo6KigpiYGMrLy9m1axfnnnuuqaa9QCDA3r17sVqtDB48mIMHD5rqc+wro7CwkH379hER
+      EcG0adNISko6ftCI4RL/zVauXMmQIUM4ePCg3lkWHR1NdXW1qQAAvVWqjz/+mEAgwPjx4w03
+      WfQJCwvjzjvv5NZbb9V74/v3rp+Kpmm89tprDB48mKlTp3LzzTebam++4oorqKysZP78+fzi
+      F78w9aTaX0FBAWFhYbS2trJ7927cbjepqanMmTPHcBl5eXkoikJJSQnTpk1DVVXTLyhFRkYy
+      c+ZMPJ7eaRHMvrjm8XjYunUrw4YN06u2Zo4n9J7TGTNm6M0+J6oen0p1dTUA+fn5rFy50vR5
+      sVgsDBs2jPj4eL05sK2tzXBfAvTe9BoaGnA6e6dI2LRpE7NmzSI+Pv4UOaG4uBiHw0FraysW
+      i0W/0e3YsYOZM2ca+vylS5cyfPhwSkpK9KaS6OhoampqTAWA8vJytm7dCqAPFAgJCWHUqFGG
+      y7Db7UyaNGlAHo/Hox+bk7HZbEybNo2EhIQBnfM9PT2GPlvTNJYsWcLIkSPZu3cvgUAA6O1E
+      rq2tNd2309zczIcffoiiKMydO9dUXui95+3bt4+bb76Zjz76iOLiYhITE785AWD37t04nU52
+      7NgxoJMwKyuL6dOnGy7n8OHDvPDCC4wdO5bQ0FAWLlyI1Wrl7LPPNlxGcXExr7zyCi6XSx/e
+      9v/+3/8z9MQMvU1AeXl5rF69mg8//JC8vDxmzpxJQUGB4ageGRlJT08PGzduJDk5GYfDQXh4
+      uKkbZ0lJiT6iITw8nI6ODubNm2fqyWLLli28+uqrqKpKYmIi7777Lg8//LDhm1ZfZ/amTZtw
+      Op0oikJERATPPfec4W1Yvnw5paWl+Hw+YmNjWbhwITk5OYbPB8Df/vY31qxZQ0hICJbPX6n/
+      85//bPjpu7W1lddee43bb79d7+NZtGgR//3f/234eB45coTHHnsMr9erdzZed911pvp2Pvjg
+      A1auXElKSgo2mw2LxcJZZ51lKABs376d6OhoDh48qAcz6L3xGg0AO3bsIDo6msLCwgF9KCNH
+      juSss84yvB99zWmapuF2u6msrGTcuHGG80NvMFqwYAF2ux2r1YrVauWRRx5h0KBBhvL7fD4W
+      LlxITU0Nfr+fnp4eMjMzefrpp0+ZV9M0CgsLiY+PZ9u2bQP6tMaOHcuECRMM70dJSQlvvfWW
+      PlLxzTffJC0tjREjRhgu4+2339Y7kBMSEliwYAGjRo06rhnojA0A9957r94p5ff79XY4s69v
+      NzY2UlBQwPe//30UReGdd96hoqLCVBkbNmwgKyuLyZMnY7VaURTF1Kv9iqJw7rnnMmXKFD77
+      7DMWLlxIUVERL7/8suEyvF4vPT09/PWvf9W/6Pn5+dx3332Gy6isrGTGjBn6aIeGhgZTHeoA
+      n332GTfddBN79uwhOzub5ORkqqurDQcAv99PVVUVv/zlL/W2ajMBCHqfjiZPnozT6WTUqFGk
+      pKQY7jDsU1ZWxgMPPMDQoUP1Wp2Za8vlcuFwOCgoKMBqtTJr1iwWL15suF8HegNAXl4ed9xx
+      h57HyNNqf+3t7dx6661Mnz5dP45GP//aa68F4NxzzzXVzt3fj3/8YywWi/4w09eBbLaWPWLE
+      CP0GFwgEWLx4semOz5KSEm6//XamTJmiHwsz0yQ4HA4eeOAB/b2CyspKPv74Y0Pt94qi8MAD
+      D9DT00N8fDxpaWn6eTBbOz1w4AATJkzguuuuA3rPcUlJiakA0NrayqxZs7DZbOTn5/P222+f
+      sBn5jA0Adrsdv9/PokWLKCws1KtUw4cPN3TT6+npYffu3bhcLg4fPszKlSuxWq1s377d8Phk
+      v9+P3+8nMzMTt9tNbm6uPvTRzPAwTdNYsWIFK1asoLm5mYKCAmbNmmU4P/R2Oj7yyCMDbthm
+      g2F8fDxr1qzh2muv5aOPPiI0NFQ/rkZlZGSwZs0avF4va9eupaqqytQ8TjabjZEjR1JZWUlY
+      WBgWiwWr1Wpq3qGxY8fy8ssvU1JSQnd3Nw0NDaba3gHGjRtHZWUlsbGxWCwWLBaLqXbvxMRE
+      IiIieOyxx4iNjeXAgQOcd955ps7J8OHD2bhxI3V1dfoLUrGxsaaakgoKCvR3IkJCQlAUhYkT
+      Jxrqk3nvvffYuXPncelOp5PHHnvM0Ofb7XYCgQALFy5k+vTpvP7665SXl3PvvfeaqgFUVVWx
+      ZcsWoLc2UFhYaKqmDzBhwgTKyspoamrSv6ehoaGm3olobW3F5/Ohqirt7e2Ulpbi9XpPeU4U
+      RdGHeT/55JOkpKRwzjnnMH78eNPzi6WlpbF69Wo2btyIpmkUFRWZHhwwYcIEXnnlFdatW0dr
+      aytWq5XExMTj1jtjAwD0dhZu2rSJSy+9lKioKBRFMXwwOzo6ePXVV/X2vL///e/638rLy8nL
+      yztlGYWFhSxatAi/309rayurVq3CarVisVi49957DY+11jSNffv2MW3aNCZPnkxycrLpp16L
+      xcLmzZspLi5G0zT8fj+pqammRkqMHTuW+vp6cnJySEhIoL6+3vSXbO7cubS1tbF371727NnD
+      tddea2rMt6qqHDlyhGXLlunHMiIighdeeMFwGRMnTkRRFHbu3El8fDy33nqr6Um1ysrK2Lt3
+      L2+++SZWqxWHw8GLL75ouAnI6XRy3333sWLFCtra2rj22mtNNSsCNDQ0sGfPHnbu3KnfsG68
+      8UYuu+wyw2VUV1fT0dHBihUrgKP9Cka+JyNGjDhh4DU7gV9tbS179+4lJyeHiooKbr75Zv2l
+      LjMvOhYVFenLGRkZhpuh+pSXl7Ns2TJWrFihNwH96le/Mvxw4PP5ePbZZ6msrNRrRDNmzDD1
+      sJecnMwvf/lLtmzZwieffMLbb7/NpZdeaqodv6CggIMHD/L8889jsVj05mIzZs+eTWhoKPv3
+      7ycrK4uZM2eesDZ0Ro8C6ujo4I9//CM//OEPCQ0N1avqRkZ79LXL9t0s+7Pb7YZOal1dHfv2
+      7dOfuvuqcn2dyUaffPvaNTdt2sS+ffsYPHgws2bNOulr8ceqqqrSL2aPx6M/SfdV440oLi5m
+      +/btTJo0iYyMDJxOp96kdSodHR00Nzfr+9NXc7DZbKSlpRl+au0bEdX/nKiqesIhasdqbGyk
+      urqa2NjYAW3WiqIwatQoU53Rra2tx23DiUZJnEhhYSEpKSlUV1cPaOuNiYkx1Wnp8Xjo6Bg4
+      zbXRmS4DgYD+0tWx71CYeeqF3trytm3bqK6uJjU1lYkTJ5pqwjl06BBvvPEG6enpVFdXc8UV
+      V/D+++/z85//3HDzx549e6ipqWH27Nn69A1fNOXKF+ns7BzQD6GqKrGxsYZv4Jqm4XK58Hq9
+      uN1uwsLCiIyMNHUsVVWlra2NwsJC1q5dS3V1NZdccgnXXHPNKfP6/X69v7P/ee2bQsNMIHK7
+      3frLkoBeMzz2nnNG1wA0TaO7u5sHH3yQ6OhoLBYL2dnZfPe73z1l3r5mmv3797NgwYIBfzv/
+      /PMNNcEkJyeTkJDAihUriIiIYMqUKQC8/PLLZGZmmmr6+OCDD1i9ejVZWVksXbqUsrIyUx2w
+      Xq+X2NhYbrjhBj7++GOuuuoqXn/9dVOjkSIjI2loaOCZZ57B6XSSl5fHnDlzDD3Bb926lb/9
+      7W9omobX69Wb6EJDQ3nsscdMNcGUl5ezYcMGAoEAqqri8Xj46U9/aijf8uXLGT16NMuXL9fT
+      +2pkZgJATU0Na9eu1fuXurq6+NnPfmboy/7BBx8wc+ZMli1bNmD00IgRI0wFAE3TWLlyJQ2f
+      /xiIx+Nh0qRJhq7N7du3s2XLFjIzM9mwYYOe3vdehtHzoaoqCxYsYPv27aSkpPDpp5+yadMm
+      Q+ejT2pqKh6Ph7Vr13LHHXfw7rvvMnnyZFNt3y6Xi88++4yJEycSERFh+MGkv87OTj744AN9
+      dJnL5eK2224zPAJHURQ6Ojp4/fXXqaioICMjg29961umariNjY08+uijhIWFMXXqVO69915D
+      DzfQ2yf09NNPn/DFs9tuu81UDfMf//gHy5cv138Dwmq1MmLEiG9WALDb7cyePVs/oYCpIXLQ
+      +1Q2adIkoPeCKCwsNNyM5Ha7eeyxx6itrcVisbBo0SKg92nYzItHqqqyceNGvv/975OXl0d1
+      dTWPPfaY4SFq0Nvm7PF4aGhooKamhqeeesr00LKMjAzuvPNOtm7dypIlS1i2bBmpqamGLvBp
+      06aRn5/P+vXraW1tZe7cuXR2dvLKK6+Yelr0+Xy88cYbRERE0NTURFpamuEbRX5+PqNGjWL/
+      /v1873vfGzA+2+y8Rm+88YbeZjt48GD8fr/hG87999+vDznsP4mY2c6+oqIi1q1bR0hICCkp
+      KVRVVRkekpuWlqa39fe/hhRFMRUIA4EApaWl/OhHP2Lo0KHU1dXxq1/9asDIpJNRVRWn08kD
+      DzxAe3s7KSkpZGVlmf79A7vdTllZGT/96U+x2+1YLBauvfZaU31l77//PhUVFbS3t5OTk0NT
+      U5OpWrbf7+fVV1/Fbrdz3XXXsWPHDubPn8+jjz56ymuj74WxkJAQ7rrrLoYNG6Z/ttGXwFJT
+      U7n33nupr69n1apVXH755aiqynvvvWfq5T7obRq86667yM/P16/LE91rzugAEBoaSn5+vj7t
+      gt/vNz1qJTk5mSuuuALoPRFRUVHs27fP0BAzp9PJ7bffzpIlS3A6neTm5ur9EKNHjza8DYqi
+      EBISor9oU15ejqIoptpaIyMj+eUvf6k3uezYsYPp06ebuukUFhby1FNPERkZyaxZs7j77rsN
+      z1MSGhpKaGgoFRUVehuz0+nE5/NRX19vODD3jbC44447eP7555k3bx6PP/44gUDglE/fdrsd
+      u93O7t278fl8jBo16oSzPRrh9Xq58847efnll7nnnnt44okn8Pl8hpqywsPD8fv9vPfee+za
+      tQvovTbT0tK4//77DW9DZ2cn48aNY9CgQWiaxsSJEykrK2PMmDGnzJuRkUFGRgZut5vu7m69
+      6aOzs9PwtBrNzc24XC4yMjI4ePAgoaGhFBcXk5OTY7i54amnnuKcc85hxYoVxw0DveWWWwyV
+      Ab3TlBw7yeOwYcMM54feB7OrrrqKdevWcd1117F48WL9l9CM8Hq91NTU8OCDD+rDLh955BFD
+      D2qapvGb3/yGCy+8kE8++WTAuwT5+fn6iJ6TCQ8PZ8yYMVRUVJCbm8vkyZP1iSR3795t6v2n
+      qVOnsmXLFmw2mz44IDc397j9OKMDQGdnJ08++SStra0oioLf72fq1KmmOi5LS0v1mQL7TvDF
+      F19sKK+iKIwYMYIhQ4ZQWlrKzp07CQsLY/z48aZu3oqicOWVVzJ//nzef/99PB4P1113nam2
+      RU3T2L9/P/v27dM7qHbu3Glosqw+aWlpnHfeeZSWlrJlyxbq6uq47LLLGD58uOEyxo8fz1//
+      +lfWrFlDT08PoaGhpl74sdlsxMfHs337dhISEvj1r39NW1ubqWGIqampLFy4kLKyMkJDQ7Hb
+      7dx0002mmqHS0tLYvHkzmZmZPP744/oYdKPq6+vZsGEDY8eOpbW1lejo6BOOsjiZwYMH8+67
+      7zJ9+nSee+45bDYbs2fPNlXGJ598wnvvvYeqqvqEcEYGOAAsWrSIzz77TJ9112q1EggETDVt
+      5uXlkZiYyNixYwcEHrO108TERBISEtiyZQuqqjJhwgTTE8oNHTqUVatWMWbMGJ555hlaWlpM
+      dajb7XYSEhJYvHgxEyZMoKioyPCoLEVRGDt2LPHx8eTn5w9oxjH79J6RkcE777xDU1MTgUCA
+      4uJiU01yAPv27aOoqEjvWLfZbDz++OPHvTd0RncCV1RU8Oyzz/Ktb32LDRs2cP7557N8+XJ9
+      TL8RVVVVrF69Wl+Oi4tj9uzZpqqGxcXF/P73vyc5OZnu7m5CQ0P5+c9/bqjpo++JV9M0mpub
+      qa6uJjk5maSkJH3khxHV1dU88sgjDBkyRH86Gzp0qKHOpT5+v5/a2lq2b9/OunXraGpq4vbb
+      bzc1NXbf1Br79+8nIiKCCRMmEBERYWoKhY6ODlwulz4D5pgxYwzdtLxeL5qmsWvXLvbs2TNg
+      nvMLLrjAVLNDV1cXbW1tREREsGTJEnJzc029bt93bc6bN49//OMfXH/99bzyyis8/PDDhmtl
+      fT8tmJaWxrZt26irq2POnDmmmtT+8Ic/MG7cOLZu3coNN9zAe++9xzXXXGMoKHd0dJxwAjyL
+      xWK6qbWjo4P6+np9cEBERISpB4N9+/bxu9/9juHDh2O1WikpKeG+++7TZyk1wufz6T/3uGTJ
+      EmJjY5kxY4apYaCVlZW89NJLVFVVkZKSwp133mmolqxpGqWlpSdsoYiMjDQVEFVVZceOHfob
+      0ZMnT2bs2LGmaroej0f/vkBvU19kZORxD65ndA0gLCwMt9uNpmn6jauqqsrwyzZ943m/9a1v
+      Ab030ZiYGFM3f+idDvqCCy7g+uuvx+/389BDD7F//37Gjx9/yrwffvih3kzQn81mMxXVrVYr
+      ycnJehvpl7Fz506ef/55hgwZwoUXXsiYMWNMP6n5/X527dpFcXExV199NUVFRUybNs3Qxbl5
+      8+YBo3eg963TvheiTmX9+vXU19cTHx/P0KFDB0zqZ/TLUVhYyJEjRwakORwOKioqyM/PN1xO
+      33sANTU1uN1ufvWrXxluFuzo6GD16tX6zXLHjh36PlRVVZGbm2uoHOh9oCkuLiY7O5tPPvmE
+      iooKmpubDd18o6KiCA8P5+2336apqUlPdzgchgZa9Ons7OSRRx6hsbFRf1ouKChg3rx5hsuo
+      qKhg4sSJ3HPPPUDv7zYcPnzYUAAoKysbMIS07/vW0tJCZ2en4SYgRVH0frKGhgaSk5MN10I0
+      TePZZ5894ctWkydP5nvf+56hcqD3Zm2z2fQm57q6Or0J2qjDhw+zePFivSbS3d3Nj370o+Nq
+      AGd0AIiLi+Paa68lLCyMKVOmsHTpUq688kpDT1iqqrJo0SK2bt2q/9DHn//8ZywWCz/5yU9M
+      vXhkt9tpbW0lEAjo7a1Gb8KJiYlkZ2dTWlqKx+Nh5MiRHDp06IQ/BnIySUlJxMfH89BDD+kv
+      Lw0bNszUMFCPx8O0adP41re+9aWDyNKlS9m2bRuBQIC2tjYWLlzI4MGDDVVz+8beHyssLIxL
+      L730lPmtVitLly7VX9x69913gd4n1rvvvtvQVBDl5eUn/FEam81maBv6hIaGcv/992O1WsnJ
+      yeHAgQPk5eUZujbdbjeFhYUnHO0RHx9v6ot+ySWXsHHjRiZPnsyf//xn0tLSTM8/HwgE8Pv9
+      +Hw+6urqTP/IeENDAxaLhd/97nd67dTsPPq5ubn6CCToHRZ64YUXUlRUxNChQ0+6TQ0NDSc8
+      pxaLhSlTphgOAJqm8c9//pN3331Xb9684oorDP3okqIoPProoydsRjQ7R9SOHTt47rnnUFWV
+      sLAwurq6ePDBB02V8eGHH+qDHMaPH8+BAwdOOLz4jA4AmqYxcuRIfabEgoICvUPjVOrq6li1
+      ahX33XefXluYN28eTz/9NOvWrTP1Zb/ooot48sknuf3221FVlYKCAsPt5lOnTmXy5Mn8z//8
+      D/fccw/p6em0tbXxyCOP4Pf7Dd+IKysrKS4uZsKECfocOmbfMHQ6nRw+fJjm5mZCQ0OxWCyE
+      hISY+rIePHiQyy67jKKiIjIzM8nIyKClpcVQALjpppsA9F9Ec7lcxMfHGz4GM2bMICQkhLVr
+      12K32/Uhl2Z+lObKK6/kyiuv1N/N6P8mtJkO9UAgwPr169m1a5f+pa+qoqj9bgAAIABJREFU
+      quKGG244Zd7ExEQeffRRoDcYeDweFEXRn/zMWLZsGWlpaSQmJvLII48A5qbWsFgsA6YU7+jo
+      4IknnjDUKd8nNTWVuLg4GhoaSEhI0AO0GfX19dTX1/PKK6/oaX0vb95///0n/b5NmDBBH+1y
+      bAe4mdq+2+1m3bp1zJs3j4KCAoqKipg/fz6XXXbZKa9RRVH0+ZcKCwt57bXXaGlpYfr06aY6
+      w6H3u37xxRfj8/kYM2YMJSUlph8YPR4PF154oT77b01NDc3Nzcc1L57RAaClpYWHH354wJwg
+      +fn5hqJhT08PISEhejUKei/UkSNHGv7xkD6ZmZk89thj+kiJ3Nxc01Fd0zQWL17M2LFjOXjw
+      IH6/39SXJDIykoyMDO64444vPRuozWbj8OHD/OxnP9NfFrr66qtN9QGMHTuWhQsXomka9fX1
+      NDY2Gm57VxQFTdPYvHkzr776KhaLhQsuuABVVQ31ZVitVqZMmaJP8RsVFUVLSwubNm2iu7vb
+      0ARofdfCsmXLWLZsmf7Fstvt/O53vzN8A66rq+Ptt99mwoQJ+vkw2nnatw2NjY38/ve/p62t
+      DUVR8Pl8XH755aY6LqOioti2bRtpaWn6OU1ISDD18tOSJUv0Gm5LSwsNDQ2mAkBHRwdHjhzh
+      iSee0Pdv0qRJpkZEDRs2jEcfffSEw3lPVSPZuHEju3btIiEhgY0bN+rpVquVH//4x4b7Iux2
+      O4MHDyY8PFyfIDA7O9vUYI2WlhZeeuklZs6cSWpqKkuXLuXDDz/khhtuMByY4+PjWbZsGZdc
+      cgkfffTR/2/vzuOiqtc/gH9mhgEGZBn2TUIwdkEREBAyRLRypcKw65Wb1L2VCvR62eLa61aS
+      2b1W2r2iuaeSqaGmV4FQAkVFA1EEAdl3ZN8ZZvn9wWvOT5LyHBcW53n/59GB45yZ83zP9/t8
+      n4eZv+dSUM7NzQ0pKSlwd3fHpk2bmM2jvzeiA4CBgQGTIiiRSJCZmYnu7m5WebXKaZIzZ85g
+      5syZEAgEKC4uRmZmJqdpEwBM6QNra2vs2rULzs7OCA0NZX2z4PF4CA8Px6FDh3DkyBGYmJgw
+      xe64aG9vZ/qk8ng8ODk5YenSpaxfb2VlheXLlw9oNM21ho6/vz+EQiFycnKgqamJJUuWcMp+
+      6evrw4kTJ/DGG2/g1KlTTDOSuXPnsrppKRQKaGtr486dO9i3bx8z38ulUBbQHwDc3d2ZLzjX
+      UatIJIKJiQmWLFnCjA65pqMq30M7OzvY2tqipKSE8/RNe3s7srKymEVx5doSlzIlVVVVqK2t
+      BdA/SAgPD+f0VGhkZISYmJgBC6BcBykFBQU4cOAAvLy88Nxzz8HKyop1koS9vT0MDQ2hqakJ
+      a2tr5jXKTnpsbNu2DdnZ2eju7sZvv/0GkUiErq4uTvtUADB1nUJDQ8Hn8yEUCnHu3DlORQK9
+      vb3R2dmJCRMm4LfffkNTUxN8fX1ZnwMAuLi4wN3dHebm5tDS0oKRkdGglYNHdAAA+r9Uymhs
+      ZmaG48ePs7r5isVivP7669i/fz+OHDkCgUAAuVzOOY0U6E+1a2pqws2bN8Hj8ZCZmYnJkyez
+      mgZqaWlh5hPvrdvD9WahoaGBGTNmDHgU5FIKGugPqHp6ekhISIBcLkdgYCDrXYpKP/30E2pr
+      a+Hl5QUHB4dBa4yzoSwnodxJy+ZnKJtlp6amMnPVhoaGWLNmDac1HaB/xOnm5gYnJyfmi8nl
+      /6GjowMDAwNERUUxg41nn32WU20mPp8PbW1teHt7o6ioCLa2tsjOzua0x2TGjBnMDnUAf9j5
+      6Y8IBAJEREQwXff09PQ4JwZ0dnYiISFhwGfT2toaM2bMYP0zJkyYgNDQUFy9ehUbN26EWCzG
+      1KlTMWXKlAd+xszNzWFubo7ExET09vbihRdegEKhwFdffYXx48ezWtMICAgYtN8417UMU1NT
+      dHR04PDhw7CwsMDZs2dZrw0piUQiuLm54fLly3B2doazszOrp9t7/fjjj3BxcYG1tfWf1lQa
+      0QGgpaUFGzZsQHt7O1MyIDAwkFUk5fF48Pf3h729PYqLi9HT0wMLCwuMGzeO80VtbGzE5MmT
+      ceDAAYSFheHGjRuse+gePXoU6enp9x0XCoWIjY1lfQ7a2tqYOHEiSkpKmMVDrot11dXV+Oab
+      b2Bvbw81NTX85z//wYcffsipjr6fnx/S0tLw888/4/vvv4ednR0iIiJYpw0KhUKmlWNXVxe2
+      bt2K2bNns1oHuHHjBvbv3w9HR0esX78e5eXluHDhAuf3Aeif792yZQvT+UkoFOKzzz5jPUqr
+      qalBQUEBZs6cyUxbcN0H4OzsjKSkJFhbWyMuLg7t7e34xz/+welnZGVlwdXVFRYWFigtLcWx
+      Y8cQGhrK+j1RKBRISEjA4cOH0dvbC6FQiNmzZ7Nay1BSTh0pUw+VlV650NbWho+PD7S1tdHZ
+      2Ync3FzU1tbizJkzWLt2LaugVFxcjJSUFNTW1iIsLAwlJSUDqgj8GblcjrFjx6KhoWFAeQ+u
+      1XINDAywdOlS/PDDD2hvb4e7uzvmzJnDaXBRUlKCjRs3Mu1vDx8+jI8//phTWq2joyMSEhJQ
+      WVkJbW1t5rr+fqA0ogOArq4uli9fzlwEDQ0NTm37lL14uY5yf8/GxgYHDx5EX18f1NXVkZOT
+      gwULFrB67fz58wfMsUulUqY2BxfKYCiRSJjXTpgwgdNoMScnBw4ODoiKigKPx8P+/ftx7do1
+      TgFAT08PNjY2aGtrQ3t7O6qqqlh/yYD+azJt2jQ4ODigtbUV6urqrHc42traws/PD7du3cJX
+      X30FY2NjyOVy1jt47zVlypQB2TZca8/o6+vD3Nwczz//PLMoz/WaGhkZYd26deju7sa6devQ
+      29vLeUpOIpHg888/h4ODA7KysuDt7c2pMqpUKkVSUhIiIiLg7e2N/Px8bN26Fa+88grrKU6x
+      WDwg5TM3NxcpKSmc+uDm5ORgy5YtTG+B1157DWPHjsWXX36JkpIS1k8l06ZNQ05ODr766itO
+      N+9Lly7BzMwMN2/eRE1NDXNcR0eHdQ0eZZ0sDw8PpuSLvr4+56fT3NxceHh4YOnSpeDxeNi+
+      fTuysrI4BQCFQgFTU1M0NDSgoaEBAoFg0B3iIzoAqKmpQSKR4NatW8zJm5iYICgoaEjPIzg4
+      GNra2kxxuDfffJP1B9LY2BjGxsZob29HfHw8CgsLYWlpiVdeeYXTDae1tRUikQgxMTEDKqNy
+      IRaLUV5ejtu3b0MoFKKwsHBALj0bR48eRVJSEuzs7BAWFgZvb29OdXiUI87S0lK8+eab2Lhx
+      I1xcXFgtApuZmSEqKgoNDQ24evUqLly4gPLycsTExODvf/87q5ztsrIy8Pl8GBgY3FdDhwup
+      VIrW1lasXLmS2Qjn6OjIKfddKpXi4MGDuHz5MoKDg1FfX4+wsDBWj/vKipVTp07F3bt3kZCQ
+      gNdeew1BQUGcrgefz4eNjQ2zgKzsQwv0j37ZlNro6OjAuXPn0NfXB6lUipKSEsjlck7z3pqa
+      mnj99dcxadIkppaRQqHAokWLOAU0a2trLFiwAN9++y2nNp/KJy9l2RiuFAoFrl27hmPHjmHs
+      2LFQV1fHL7/8Al1dXURHR7MaqEkkEjQ1NUEsFjNPQMp0a7Y1ohoaGtDT04OQkBCEhIQ88N+P
+      6ADQ0tKCb7/9FlpaWswjLdd0qMdBIBCgra0NqampCAkJGdCikg2FQoG4uDgUFRVh0qRJyM/P
+      x7Zt27Bu3TrWNx5TU1MYGBjgypUrMDY2Bp/Ph66uLqf6IG5ubrh06RK++OILAP3tNbkGgLlz
+      58Lc3Bw3b97EoUOHcObMGURHR7Nej+jr68P58+exaNEiqKmpYf78+YiNjcWCBQtYT+0pm7gH
+      BQWhrKwMv/76K+verYmJidDQ0EBhYSGKioqY4+rq6ti5cyfruVotLS28/vrrA0ZVXHsj37hx
+      A3fu3GEaychkMqSkpLAKhhkZGUyVW+Xi6/Hjx5GYmIj333+f02JyR0cHtmzZAh0dHXR0dIDH
+      4yEqKgr29vZYvnz5A69Lb28v02Ma6H9vQkJCWF1PhUKBsrIyZGdn4+WXX4ZCoUB8fDzGjx8P
+      V1dXTnsiXnrpJWhoaMDIyAgrV65EWloa60Xgffv2wcTEBLm5uairqxvwd2PGjEFgYCD8/f3/
+      8PuqnKqxs7NDY2MjKisrsXbtWpw+fRqXL19mFQDKy8vx5ZdfMu0o8/LymLLQdXV1rGojXbx4
+      EWVlZVi+fDliY2MREBDwp7WlRnQA6Ovrg76+Pj755BPOj9ePU1JSEi5dugQej4fW1lbExcXB
+      0tKSdaaFXC5HTk4OoqKiYGdnh4aGBqxatQo9PT2sR2ttbW2or6/H0aNHmWMTJkzgNOLU1NRE
+      ZGQk84hrZmbGORNJmcqpLHEhFAo5j54FAgEkEgmam5vR09PzUIvIygJ79vb2nGoZLV68mNn/
+      8Cg0NDQgFApRXFzMLGiLRCJOU3Ld3d0Qi8UwMDBAa2sr9PX1WU+nOTo64u233x7077hMeSrL
+      aAyWZaKvr//Aa5OWlgZXV1esXbuW9e+8V3t7O77++mtYWVkNaMUYHx+PTz75hNMAp7u7G7t3
+      7x5QDtrd3Z1VEHBycoKOjg40NTXvW9+7ffs2Tp8+DV9f3z+dFuvo6MCsWbNQW1uLU6dOwcnJ
+      CYWFhaiurmZ1/paWlvjggw/Q1NQEqVQKIyMj5v1n+xSkLDsD9Fc+eNBgdcQGgF9//RUdHR2Q
+      yWTYs2cPc7MyNDTkVIr5cSguLsasWbNQXFzMLCQ3NjayDgA8Hg9isZipP3/r1i3WTWmUDA0N
+      sW7dOqbBjZqaGuvX19fXY//+/YPOiU6fPp0pl83G2bNnUV5eDg8PDyxevBiWlpacNi8JhUIE
+      BQVh+/btEAqF6O3tZT1afBzi4+Ohq6uL4OBgJCcnw8/Pj/OGOqA/MSA2NpapDKpQKDi9j0B/
+      IbWTJ08yZcbV1NTw0UcfsXptX1/fgD7IyqYhDg4OnGoJ8fl8uLi4ICUlBXfv3sXUqVOho6PD
+      OogcOnQIkZGRnArI3auiogIdHR149913mc/AO++8gy+//BJZWVmcAsDZs2ehra2NtrY2eHl5
+      IScnh/W1VaZetra2Mll7rq6uMDIygq+vLwoLCx84WJLL5eju7mZmKbq6uiCVSlmvRYhEItjZ
+      2SE3NxdFRUWIjIzkPEAD+mdJWltbIZVK0dXVxewzUfZZuNeIDQDp6enMhq3c3Fzk5uYC6E/f
+      G+oA4Orqih9//BECgQDl5eWoq6vD4sWLWb+ex+Nh8eLF2LZtGy5cuACRSITw8HBOF5fP5yM/
+      Px9xcXGwt7eHgYEBfH19WXWPEgqFsLS0ZD6ITU1NuHTpEvh8PuspIIVCge7ubsyePRs6OjrI
+      z89HSUkJ9PT0WH/JlFMVgYGBcHV1RV1dHYyNjTkv0isX25QdsZRPA2yCSFtbG/h8PiQSCc6c
+      OQNnZ+eHCgAdHR3Q09NDREQEkpKSMH/+fPzwww+sFj5lMhm6u7uhq6uL9evX4/bt25BIJEyR
+      QDbu3LmDgwcPMn9WPoVYWFhg9erVrLOA5HI5Dhw4gJKSEnR1dUEsFuPSpUuIiYlh9WQml8uR
+      np6OO3fuDDhuZmbGKiAqBw+/L4tx70iWLYlEAj8/P2RkZGDy5Mmorq5GfX09q6m56upqbNq0
+      CS0tLVBTU2M2wr377rvw8PBgleHV19eHjRs3MoO0FStWQCqVcr5f2dra4n//+x927NgBXV1d
+      CIVCeHp6Duh/8Ud4PB6ysrIQHR0NiUSC3bt3Y9++fUw10N9v2hyxAWDVqlXo7e1laqwop19K
+      S0s5ZRc8DsqKgtnZ2RAKhfjLX/7Cever8rHW1tYWn332GRobGyEWizk3MGlsbERcXByzrVso
+      FOLIkSNYuXLlAwOJWCzGokWL0Nvbi9TUVFy8eBG2trYICwtjXTq4tbUV//znP+Hr6wtjY2Ps
+      3LkTIpEIZ8+exdq1a1ndcE6cOIHbt2/fd1wkEiE6OprVeQD9N7/du3ejra2NacSyYsUKTvPF
+      j0pPTw9dXV1obW1FdXU1Dhw4gJ6eHlYLn3V1dfj000/x/PPPY8GCBfD09AQAfPPNN3jmmWdY
+      ZZj5+fkNaLquTMVcv349SkpKWPUUUL6uoKAA0dHR+O677/Dcc88hISGB9fSkQqFAZmbmfVNq
+      rq6urALA2LFjYWZmhpiYGHh5eUEoFOL27dsoLi7m3Ah90qRJSElJgb+/PzZv3gyJRMKqDj8A
+      /PLLL9DS0sKHH34IIyMjtLW14eTJkzhx4gSroo88Hm9AxuK9uObw9/T0wNjYGNXV1cz0ka2t
+      LasAMGXKlEGTIZSzEL83YgPAzZs3kZeXhzNnzjAZMzU1NSgsLISLiwvnmimPQiAQwN/fnxkt
+      f/311wgJCWGVsqcsSPd7ytIDbHV2dkJdXR3e3t44efIkHB0dB9SheZCysjLs3bsXpaWlmDdv
+      HmbNmsUpV/vq1avQ0NDA9OnTsXXrVvj4+ODVV1/FunXrUFFRMegmmt/T1tYedLTNtiuaUlpa
+      GoyMjDB79mzmc8BlU1xqaipyc3PR1NSE7du3Q1NTk5l+YTsVpa+vj2XLlkFfXx8hISG4cOEC
+      5s2bx+r1crkcHR0dOHnyJKqrq/HWW29x3sswWCqxpqYm0xOAy88xNjZGXFwcGhoamI5YbNdI
+      BAIB3nrrrfvWYdi+j1paWoiKikJcXBwSEhLQ29sLGxsbREdHc+4H4O7uDjc3N4jFYmhqakJX
+      V5d16mRDQwM8PT2ZgZ2hoSG8vb0HLTI3GB6Px6lUw5/x8PAY0FNAWRGZDTMzM07fhREbAMaM
+      GYOLFy+ip6cHycnJTJ41l/reT0pBQcGgZV8H09raipqaGlhbW8PBwQGmpqaDzsU9yL0Fv+Ry
+      Oa5du8ZsN3+QqqoqrF+/Ht3d3bC2tkZBQQEKCgoAsF8DaGlpYbbZFxUV4cUXX4SRkRG0tLQG
+      rWo5mODgYE4NbH5PWbXSwsICYrEYkyZNYgIA24Jy9w4erK2tmeNcrsedO3eYm2xzczPGjBmD
+      sLAwTumKIpEIy5Ytw65du7B+/Xq89957rF8L9GeM3FtmXCaToaqqCu3t7Zw2pPF4PLz55ps4
+      duwYdHV1IZfLER0dzXp60szMDLq6upw3ft3L2NgYK1asGPTcuFBm3EyePBleXl6c9gzJZDI0
+      NzcPqFZbXl7OeSPY41BSUoKYmBi0t7czSRcrVqzgnLHHxogNAOPGjcPGjRuRkZGB5557bkin
+      fB6n+fPnw8bGBjk5OcjMzGTyrLlkiwD9N7gVK1YgMzMTzc3NGDduHJycnFi9L1paWpg1a9ag
+      H2a2I08bGxskJSWhoaGBST+Ni4tDd3c36zn8R72GN2/eRFxcHKRSKerr65Gamgp1dXXmJsYm
+      TS4gIIBTc+3BfP3110wjdyWRSISlS5di2rRprH+Ovb09Vq9ejR07dmDDhg3Q0NBgvRGsuroa
+      ycnJzJ95PB60tLSwdOlSTjXsy8rK0N7ejvDwcGhoaKCtrQ0JCQmsF1/Xr1/P6t89yOP4foeE
+      hMDZ2RmZmZn45ptvoKOjg1WrVrGaruXxeEhKSkJSUtKA41xTex+HGzduwMXFBVKpFG5ubsjO
+      zuZcnoOtERsANm3ahClTpiAlJQU///wzc3z8+PF/mP72uNXW1iIzM/O+44N1UfojFhYWMDU1
+      hY+PD7Kzs5GQkICrV68iNzeX9eYOqVSKK1eu4MqVK2htbYVYLIaNjQ3rL42yLtKjmDRpEmbP
+      no2SkhKEhoZCU1MTpaWliIiI4FwC4WGZmJggMDBwQDE7oP9G9jALuQ9rw4YNAwqfKRQKJCcn
+      Izk5GQEBAQ8cPaupqcHc3Bw8Hg9mZmb44IMPsHfvXqSmprIeeXt6eg5olqJ8QubS5yEjIwPb
+      tm2DXC6Ht7c3ZsyYgR07dqC7u5v13PlIGphVV1fj+vXrKCoqYorssZ1efOeddwbdY/QwWTiP
+      Stn72tnZGc3NzTA1NcWtW7c4FwpkY8S2hDx//jysra1RVFQ04MIYGhpyroz3sG7cuIHdu3ff
+      d5zP52PZsmWs0kBTU1ORnJyM6upqiMVi2Nvbw8nJCePHj4eJiQmrL1B8fDzi4+Ph5OSEMWPG
+      oKGhAaWlpVixYgWzgDjUfn8THqrfKZVKkZaWBnV1dSa74uDBg/D19R3SReB71dfXM7VfVq1a
+      9VA3DZlMhpKSEujr63Nux/iwtm/fju7ubsyaNQtbt25FX18f7OzsEB4ezqm95kjx/fff4/Tp
+      07CxscFLL70EBwcHGBkZDfuUMVc1NTXYs2cPlixZgo0bN6KjowPvv/8+51kDNkZsABhMfn4+
+      8vPzMW/evCH5fVKp9A93HrNNO/z222+RmpoKY2NjGBoaMrn7yrK9bG6gH374Ifz8/DB37lzw
+      +XzIZDLs3bsXfX19Q/Y0NBL09vYiJiYGlZWVzE5ooL+ufmRk5LAFwwsXLuD48eN44403nsiX
+      9EnZsmULrKys8OKLL2L16tXw8PDAwoULH3mT3HDp7OxEZWUlrl+/jsTERPD5fM5F1EYKZWG+
+      mpoa8Pl8mJmZPZHB1oidAhpMTU0NsrKyhiwAqKmpPXK2kaen56BpYFx+bmdnJ2xtbZmRpUAg
+      gKWl5YA+qKpAQ0MDoaGhOHv2LNTU1JjGMHp6epyahz9ufn5+8PHx4TzSVO5lUBaTG2oKhQKN
+      jY0oKiqCVCqFpaUlSktLmdLWo01BQQESExNRVFQEXV3dAXWFRgOFQoH09HRcvHgRAQEBSE9P
+      R2ZmJpydnbFy5conEphHVQAYjXx8fAbUa38YcrkciYmJuHbtGnOsvLx81I7UHoWrqyvTCUz5
+      /+fxeJBIJA/d5/hRPUwLRKC/AmZcXBwmTJgAT09P2Nrack6JfRR8Pp9ZuwCAHTt2AOhf0L63
+      NeNoUVlZiXHjxmHBggUPVfZ9uN29exd79+6Fi4sL9u/fDy0tLYSHh+PIkSPIycl5bGmm9xqx
+      ASAvL+++VMuysrJhOpvhZWtri5aWlgFb/wGwLkXxtLl8+TJOnToF4P/XIlatWsX0CB4tHB0d
+      MXfuXGRmZmLz5s0QiUT461//OmCD15MUHh4+oB+w0kha2GVDmc3k7OwMc3NznD59GufPn0dQ
+      UBDGjx8/av4/ra2tUFNTQ2RkJGJjY6GlpYXg4GCkp6dzqmzKxYgNAMeOHUNpael9x7m2/nsa
+      cOmtqgrmzZuHF154gdlQdejQoSFbOH2c5HI5ZDIZ1NXVoaOjwxTZGypc69SPVGVlZfj444+x
+      cOFCZGRkICkpCRYWFvj3v/+NDRs2cN6JO1yU5beVtb6EQiH6+vqYdb8nYcQGgGXLlg26wWi4
+      HvPJyNHb24v29namJlBbWxuKi4s5bcQaCfLy8rBt2zbo6+tjzpw58PPzGzU3q5EkOzsbzs7O
+      mD59Oj766CPMmDEDCxYswMqVK1FXVzeq3tO2tjasWbMGTU1N4PP5uH79Ourq6p7IJjBgBAeA
+      h60uSJ5+SUlJOHPmDID+UbSOjg7nTlojgbu7O9asWYPs7GwkJSUhPj4eS5YsQWBg4JCdg1wu
+      x82bN2FpaQlDQ0O0tLQgPT0ds2fPHrJzeFS9vb3Q0tJCVVUVGhoa4ObmxjSkGcqSMY/K2NgY
+      L7/88qBPgU9iDwAwggMAIX8kKCgIXl5eTHtNIyOjh+oLPNy6urpQWlqKiooKSCQSWFlZDflo
+      VS6X4+DBg5BIJIiKioJcLsfx48dHVQBwc3PDpk2bmM1SJiYm+Ne//gVtbe1RtZ/B0NCQVRev
+      x4kCABl1dHV1cf78eaSmpkJTUxNhYWFwd3cfNYt9SsXFxcjKyoKXlxf+9re/wdjYeNimOLW0
+      tPDFF1/gpZdeGpbf/yjs7e3x3nvvobq6Gl5eXlBXV4eDgwMCAgJG5cBgKI2qjWCEAEBycjKO
+      Hz+O4OBgtLe3IzU1FevXr+dcPXK4KRQKlJaW4sqVK7C3t4eGhgYcHR2HdOeqVCrF6tWrERER
+      gczMTJw6dQpqamrYt2/fkJ0DGT70BEBGnfz8fMycORNz584F0D+SLi8vH3UBoLa2Fps3b4am
+      piZTVz80NHTI0kCB/pRPT09P6OvrY+HChTA0NBy0fDl5OlEAIKOOpaUl0tLSYGpqio6ODlRU
+      VAxZQbrHKS8vD46Ojpg4cSKampowbdo05OXlDWkAAPo7xP3222/w8fFBUFDQkC5Ck+FFAYCM
+      OsHBwaisrMSuXbugrq6OOXPmjMpNcZaWlvjpp5/Q09MDiUSChoaGIZ+D5/F4sLKyQmpqKo4d
+      OwYnJydMnToVLi4u0NHRGXXrKoQbWgMgo5JMJkNtbS26urpgZ2c3LGV7H5VMJsOvv/6KlJQU
+      9Pb2wsPDA/Pnzx/SchBKvb29yMjIwKFDh9DY2AhTU1MsXLgQ/v7+FASeYhQAyKghk8mwa9cu
+      6Ovrw9PTE59//jm6urowceJEREZGjpraSFKpFM3NzQD+v/m5srfxmDFjHqm7FldyuRzJyck4
+      d+4c6urqMG7cOAQEBKC6uhrZ2dn49NNPR11NHcIeTQGRUSMnJwdXr17Fu+++i4SEBBgZGeHl
+      l19GbGwsCgsLWTe4H261tbVYs2bNoKXGFy1aNGTVboH+AJSXl4eJEyfC19cXVlZW4PP5aGho
+      gEAgGJVPVoQ9CgBk1KiqqoKjoyOcnJywY8cOvPDCC/D09ISJiQna29uH+/RYMzMzw6ZNmwY0
+      uPn5558xduxYuLm5Dem58Hg8+Pj4oK+vDxUVFaioqADQvynp1VdfHXXNVAg3FADIqCEWi1FW
+      VoYTJ06gq6uL6Zc62uq9qKmpwcTEBIWFhTh48CCqqqqwaNEizJw5c8insRQKBRITE1FQUAB9
+      fX00NzdDJBJBLpdj+vTpWLRoEa0BPMUoAJBRw8PDAxcvXkRKSgpyP4DGAAAESklEQVTmzJkD
+      AwMDbN68GX5+fk+sVsqT0NPTg2PHjiExMRFmZmZ4++23YWVlhebmZujo6EBbW3tIz0dfXx+R
+      kZFwcnLC9evXkZGRgeDgYBw+fBh9fX20BvAUowBARg0NDQ289957kEqlEAqFUCgU+PTTT6Gj
+      ozOqpioaGxtx7tw5yOVy1NfXY9u2bczfvfrqq3jxxReH7FzkcjlKSkrg5eUFmUwGuVyOgoIC
+      TJ06FcDo6w1AuKEsIEKGmEQiQU1NDQb76onF4iFtY6hQKHDq1CkcPXoUampq6OvrQ0hICCor
+      K2FpaYmQkBAKAk8xCgCEqDC5XI5bt25BU1MTHR0dMDQ0hKWlJVpbW6Gjo0P9N55ylONFiAqT
+      yWTYuXMns5/C2toaAoEABgYGdPNXAbQGQIgK4/P5sLW1xZ49e2BtbQ0tLS1oaGjgjTfeGO5T
+      I0OAAgAhKs7Q0JDpOdvV1TVoK1bydKI1AEJUmFwux+XLl2FtbQ0LCwva+ati6AmAEBWmUCiQ
+      lpaG27dv49lnn4W/vz88PT2HtB4RGT70BECIClMoFJDL5aiurkZqairOnz8PqVQKHx8fzJs3
+      D+bm5pQG+hSj5z1CVFx1dTUyMzORl5cHHo8HZ2dnVFRUYNeuXczaAHk60RQQISpMJpPhu+++
+      Q2dnJ55//nlMmTIFhoaGqKysxM6dOyGXy4f7FMkTRFNAhKiou3fvwsDAAHV1dTA1NYVAIIBU
+      KkVOTg7c3NygUChGVYkNwh1NARGion766SekpaXBwsICAoEAjY2NiI2NxdatW8Hn8+nmrwJo
+      CogQFfXMM89gz549kEgkEIlEOHDgAAQCAcLCwob71MgQoQBAiIqaOXMmeDwevv/+e8hkMgQH
+      B2P+/PkwMDAY7lMjQ4SmgAhRYTNmzEBERASEQiHMzc2hr69PC78qhBaBCVFR//3vf3Hp0iUA
+      /SWqFQoFNDQ0IBKJsGPHjmE+OzIUaAqIEBUVGBgIFxeX+46rqdFtQVXQEwAhhKgoWgMghBAV
+      RQGAEEJUFAUAQghRURQACCFERVEAIIQQFUUBgBBCVBQFAEIIUVEUAAghREVRACCEEBVFAYAQ
+      QlQUBQBCCFFRFAAIIURFUQAghBAVRQGAEEJUFAUAQghRURQACCFERVEAIIQQFUUBgBBCVBQF
+      AEIIUVEUAAghREVRACCEEBVFAYAQQlQUBQBCCFFRFAAIIURFUQAghBAVRQGAEEJUFAUAQghR
+      URQACCFERVEAIIQQFUUBgBBCVBQFAEIIUVEUAAghREVRACCEEBVFAYAQQlQUBQBCCFFRFAAI
+      IURFUQAghBAVRQGAEEJUFAUAQghRURQACCFERVEAIIQQFUUBgBBCVBQFAEIIUVEUAAghREVR
+      ACCEEBVFAYAQQlQUBQBCCFFRFAAIIURFUQAghBAVRQGAEEJUFAUAQghRURQACCFERVEAIIQQ
+      FUUBgBBCVNT/AXKPitt+a9Q8AAAAAElFTkSuQmCC
     </thumbnail>
     <thumbnail height='384' name='Dashboard' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAAsTAAALEwEAmpwY
