@@ -1,28 +1,29 @@
 {
-    "description": "testing filters",
-    "name": "filters",
+    "description": "trial assert data equals",
+    "name": "assert_data_equals",
     "tasks": [
         {
-            "name": "login tableau",
+            "name": "login to Tableau",
             "password": "nemmondommeg",
             "type": "login_tableau",
             "url": "http://home.kollar.me",
             "user": "admin"
         },
         {
-            "name": "open dashboard",
+            "name": "Open dashboard",
             "type": "viz_open",
             "url": "http://home.kollar.me/t/Testing/views/EducationandInnovation/Dashboard"
         },
         {
-            "description": "testing choosing regions",
-            "name": "region filter",
+            "name": "Set Region Filter",
             "target": "Region",
             "type": "set_filter_list",
             "values": [
                 "Africa",
                 "Europe",
-                "Middle East"
+                "Latin America & the Caribbean",
+                "Middle East",
+                "Oceania"
             ]
         }
     ]
