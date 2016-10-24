@@ -1,0 +1,18 @@
+{
+    "description": "Publish Fashion Order Datasource",
+    "name": "publish_data_source",
+    "tasks": [
+        {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "publish data source",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/fashion_orders_datasource.tdsx",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "fashion_orders_datasource",
+            "type": "publish_tableau"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "description": "load data to Oracle",
+    "name": "load_data_test",
+    "tasks": [
+        {
+            "description": "load fashion order data into Oracle",
+            "name": "load fashion order data - dim_item",
+            "source-csv": {
+                "csv-path": "resources/dim_item.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "kinesis",
+                "rows-per-insert": 100,
+                "subname": "thin:@ycoders.com:49161/xe",
+                "subprotocol": "oracle",
+                "table": "dim_item",
+                "user": "kinesis"
+            },
+            "type": "load_data"
+        },
+        {
+            "description": "load fashion order data into Oracle",
+            "name": "load fashion order data - dim_store",
+            "source-csv": {
+                "csv-path": "resources/dim_store.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "kinesis",
+                "rows-per-insert": 100,
+                "subname": "thin:@ycoders.com:49161/xe",
+                "subprotocol": "oracle",
+                "table": "dim_store",
+                "user": "kinesis"
+            },
+            "type": "load_data"
+        },
+        {
+            "description": "load fashion order data into Oracle",
+            "name": "load fashion order data - fact orders",
+            "source-csv": {
+                "csv-path": "resources/fact_orders.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "kinesis",
+                "rows-per-insert": 100,
+                "subname": "thin:@ycoders.com:49161/xe",
+                "subprotocol": "oracle",
+                "table": "fact_orders",
+                "user": "kinesis"
+            },
+            "type": "load_data"
+        },
+        {
+            "description": "load fashion order data into Oracle",
+            "name": "load fashion order data - dim_user",
+            "source-csv": {
+                "csv-path": "resources/dim_user.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\r\n"
+            },
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "kinesis",
+                "rows-per-insert": 100,
+                "subname": "thin:@ycoders.com:49161/xe",
+                "subprotocol": "oracle",
+                "table": "dim_user",
+                "user": "kinesis"
+            },
+            "type": "load_data"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "description": "testing filters",
+    "name": "filters",
+    "tasks": [
+        {
+            "name": "login to tableau",
+            "password": "nemmondommeg",
+            "type": "login_tableau",
+            "url": "http://home.kollar.me",
+            "user": "admin"
+        },
+        {
+            "name": "opend dashboard",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/Testing/views/fashion_orders/Dashboard1"
+        },
+        {
+            "max": 6,
+            "min": 3,
+            "name": "set filter - AVG(Quantity)",
+            "target": "AVG(Quantity)",
+            "type": "set_filter_range"
+        },
+        {
+            "end-datetime": "2015-06-15T00:00:00.000Z",
+            "name": "set Order Datetime filter",
+            "start-datetime": "2014-12-12T00:00:00.000Z",
+            "target": "Order Datetime",
+            "type": "set_filter_daterange"
+        },
+        {
+            "name": "set filter list - Gender",
+            "target": "Gender",
+            "type": "set_filter_list",
+            "values": [
+                "Female"
+            ]
+        }
+    ]
+}

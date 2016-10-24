@@ -1,0 +1,20 @@
+{
+    "description": "Login to Tableau and Open Workbook",
+    "name": "login_and_open",
+    "tasks": [
+        {
+            "name": "Login to tableau server",
+            "password": "nemmondommeg",
+            "type": "login_tableau",
+            "url": "http://home.kollar.me",
+            "user": "admin"
+        },
+        {
+            "description": "open dashboard",
+            "name": "open fashion_orders dashboard",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/Testing/views/fashion_orders/Dashboard1"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "description": "Refersh fashion_orders data from Oracle",
+    "name": "refresh_data",
+    "tasks": [
+        {
+            "name": "Refresh fashion_orders data",
+            "project": "Default",
+            "refresh-extracts-type": "datasource",
+            "site-id": "Testing",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "fashion_orders_datasource",
+            "type": "refreshextracts_tableau"
+        }
+    ]
+}

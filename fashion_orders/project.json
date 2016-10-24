@@ -1,0 +1,7 @@
+{
+    "kinesisVersion": "1.0",
+    "name": "fashion_orders",
+    "description": "Fashion Orders Globally - Fictive data",
+    "srcDir": "src",
+    "jobDir": "test"
+}

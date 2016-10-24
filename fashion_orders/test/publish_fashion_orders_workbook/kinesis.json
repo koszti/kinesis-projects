@@ -1,0 +1,18 @@
+{
+    "description": "publish fashion_orders twb file",
+    "name": "publish_fashion_orders_workbook",
+    "tasks": [
+        {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "publish fashion_orders twb",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/fashion_orders.twb",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "fashion_orders",
+            "type": "publish_tableau"
+        }
+    ]
+}

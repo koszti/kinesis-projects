@@ -1,0 +1,51 @@
+item_id,model,model_id,color,brand,category
+1,Supreme Tote,406403,Brown,Gucci,Bags
+2,Supreme Tote,406404,Black,Gucci,Bags
+3,Supreme Tote,406405,Gold,Gucci,Bags
+4,Vintage Web Canvas,506406,Grey,Gucci,Bags
+5,Multi Web-Panel,506409,Coffee,Gucci,Bags
+6,Speedy Monogram Canvas,100356,Brown,Louis Vuitton,Bags
+7,Alma,200765,Red,Louis Vuitton,Bags
+8,Neverfull,200790,Brown,Louis Vuitton,Bags
+9,Neverfull,200791,White,Louis Vuitton,Bags
+10,Montaigne,201452,Red,Louis Vuitton,Bags
+11,Bayswater,306789,Tan,Mulberry,Bags
+12,Bayswater,306790,Black,Mulberry,Bags
+13,Daria,987650,Indigo,Mulberry,Bags
+14,Clifton,987385,Pink,Mulberry,Bags
+15,Clifton,987384,Blue,Mulberry,Bags
+16,Birkin,456798,Brown,Hermes,Bags
+17,Birkin,456799,Tan,Hermes,Bags
+18,Birkin,456800,Red,Hermes,Bags
+19,Kelly,556801,Navy,Hermes,Bags
+20,Kelly,556801,Ivory,Hermes,Bags
+21,Loafer,335689,Tan,Gucci,Shoes
+22,Loafer,335690,Black,Gucci,Shoes
+23,Stiletto Sandal,254678,Chrome,Prada,Shoes
+24,Stiletto Sandal,254679,Gold,Prada,Shoes
+25,Wedges,254684,Black,Prada,Shoes
+26,Slipper,254706,Tan,Prada,Shoes
+27,Slipper,254707,Grey,Prada,Shoes
+28,Pump,254819,Red,Prada,Shoes
+29,Pump,254820,Black,Prada,Shoes
+30,Espardille,254876,Black,Prada,Shoes
+31,Pigalle Follies,125698,Black,Christian Louboutin,Shoes
+32,Pigalle Follies,125699,Malachite,Christian Louboutin,Shoes
+33,Follies Spikes,125724,Black,Christian Louboutin,Shoes
+34,Goldoflat Nappa,125758,Black,Christian Louboutin,Shoes
+35,Galupump Specchio,125765,Gold,Christian Louboutin,Shoes
+36,Suzanna Spikes,125789,Silver,Christian Louboutin,Shoes
+37,So Tango,125803,Black,Christian Louboutin,Shoes
+38,Decolette,125805,Watersnake,Christian Louboutin,Shoes
+39,Miss Mars,125828,Black,Christian Louboutin,Shoes
+40,Barbara,125840,Black,Christian Louboutin,Shoes
+41,Mid-Heel Pump,769836,Black,Ferragamo,Shoes
+42,Mid-Heel Pump,769837,Red,Ferragamo,Shoes
+43,Mid-Heel Pump,769838,Orange,Ferragamo,Shoes
+44,Mid-Heel Pump,769839,Canari,Ferragamo,Shoes
+45,Lace-up Sandal,769843,Black,Ferragamo,Shoes
+46,Lace-up Sandal,769844,Brown,Ferragamo,Shoes
+47,Ankle-strap Sandal,769856,Midnight Blue,Ferragamo,Shoes
+48,Varina Ballett Flat,769868,Black,Ferragamo,Shoes
+49,Carla Pump,769881,Black,Ferragamo,Shoes
+50,Carla Pump,769882,Red,Ferragamo,Shoes

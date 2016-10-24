@@ -1,0 +1,26 @@
+{
+    "description": "testing parameteres",
+    "name": "parameters",
+    "tasks": [
+        {
+            "name": "login to tableau",
+            "password": "nemmondommeg",
+            "type": "login_tableau",
+            "url": "http://home.kollar.me",
+            "user": "admin"
+        },
+        {
+            "name": "open dashboard",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/Testing/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "name": "set Chart Type",
+            "parameter-type": "string",
+            "target": "Chart Type",
+            "type": "set_parameter",
+            "value-string": "Map"
+        }
+    ]
+}
