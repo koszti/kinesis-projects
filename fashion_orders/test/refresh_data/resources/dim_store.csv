@@ -1,0 +1,42 @@
+store_id,city,state,country,region
+0,Unknown,Unknown,Unknown,Unknown
+1,London,Greater London,United Kingdom,EMEA
+2,Liverpool,Merseyside,United Kingdom,EMEA
+3,St Helens,Merseyside,United Kingdom,EMEA
+4,Manchester,Greater Manchester,United Kingdom,EMEA
+5,Birmingham,East Midlands,United Kingdom,EMEA
+6,Bristol,Sommerset,United Kingdom,EMEA
+7,Dusseldorf,North Rhein Westphalia,Germany,EMEA
+8,Hamburg,Hamburg,Germany,EMEA
+9,Berlin,Brandenburg,Germany,EMEA
+10,Cologne,North Rhein Westphalia,Germany,EMEA
+11,Munich,Bavaria,Germany,EMEA
+12,Frankfurt,Hessen,Germany,EMEA
+13,Erfurt,Thuringia,Germany,EMEA
+14,Rome,Rome,Italy,EMEA
+15,Milan,Lombardy,Italy,EMEA
+16,Florence,Tuscany,Italy,EMEA
+17,Turin,Piedmont,Italy,EMEA
+18,Paris,Ile de France,France,EMEA
+19,Lyon,Rhone Alps,France,EMEA
+20,Marseille,Provance,France,EMEA
+21,Geneva,Geneva,Switzerland,EMEA
+22,Zurich,Zurich,Switzerland,EMEA
+23,Madrid,Madrid,Spain,EMEA
+24,Barcelona,Catalunya,Spain,EMEA
+25,Amsterdam,North Holland,The Netherlands,EMEA
+26,New York,New York City,United States,Americas
+27,Dallas,Texas,United States,Americas
+28,Houston,Texas,United States,Americas
+29,San Francisco,California,United States,Americas
+30,Los Angeles,California,United States,Americas
+31,Las Vegas,Arizona,United States,Americas
+32,Chicago,Illinois,United States,Americas
+33,Toronto,Ontario,Canada,Americas
+34,Montreal,Quebec,Canada,Americas
+35,Shanghai,Shanghai,China,Asia Pacific
+36,Hong Kong,Hong Kong,China,Asia Pacific
+37,Singapore,Singapore,Singapore,Asia Pacific
+38,Sydney,New South Wales,Australia,Asia Pacific
+39,Melbourne,Victoria,Australia,Asia Pacific
+40,Brisbane,Queensland,Australia,Asia Pacific

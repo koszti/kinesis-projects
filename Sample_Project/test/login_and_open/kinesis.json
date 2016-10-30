@@ -3,7 +3,31 @@
     "name": "login_and_open",
     "tasks": [
         {
-            "name": "longin to tableau",
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "publish data source",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/worldbank_development_indicators.tdsx",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "worldbank_development_indicators",
+            "type": "publish_tableau"
+        },
+        {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "Publish twb workbook",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/Education and Innovation.twb",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "Education and Innovation",
+            "type": "publish_tableau"
+        },
+        {
+            "name": "login to tableau",
             "password": "nemmondommeg",
             "type": "login_tableau",
             "url": "http://home.kollar.me",

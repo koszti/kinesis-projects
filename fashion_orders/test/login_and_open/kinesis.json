@@ -3,6 +3,30 @@
     "name": "login_and_open",
     "tasks": [
         {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "publish data source",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/fashion_orders_datasource.tdsx",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "fashion_orders_datasource",
+            "type": "publish_tableau"
+        },
+        {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "publish fashion_orders twb",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/fashion_orders.twb",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "fashion_orders",
+            "type": "publish_tableau"
+        },
+        {
             "name": "Login to tableau server",
             "password": "nemmondommeg",
             "type": "login_tableau",

@@ -3,6 +3,37 @@
     "name": "refresh_data_test",
     "tasks": [
         {
+            "name": "load csv data into sql",
+            "source-csv": {
+                "csv-path": "resources/worldbank_dev_indicators_3500_rows.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\r\n"
+            },
+            "target-db": {
+                "classname": "com.mysql.jdbc.Driver",
+                "password": "kinesis",
+                "rows-per-insert": 100,
+                "subname": "//ycoders.com:13306/kinesis",
+                "subprotocol": "mysql",
+                "table": "worldbank_development_indicators",
+                "user": "kinesis"
+            },
+            "type": "load_data"
+        },
+        {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "Publish datasource",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/worldbank_development_indicators.tdsx",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "worldbank_development_indicators",
+            "type": "publish_tableau"
+        },
+        {
             "description": "refresh data source first",
             "name": "Refresh Data Source",
             "project": "Default",
