@@ -1,0 +1,25 @@
+{
+    "description": "load data into SQL",
+    "name": "load_data",
+    "tasks": [
+        {
+            "name": "load data",
+            "source-csv": {
+                "csv-path": "resources/summer_olympic_medallists_1896_2008_tableu.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\r\n"
+            },
+            "target-db": {
+                "classname": "com.mysql.jdbc.Driver",
+                "password": "kinesis",
+                "rows-per-insert": 250,
+                "subname": "//ycoders.com:13306/kinesis",
+                "subprotocol": "mysql",
+                "table": "summer_olympic_medallist",
+                "user": "kinesis"
+            },
+            "type": "load_data"
+        }
+    ]
+}

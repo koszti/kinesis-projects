@@ -95,6 +95,17 @@
             "type": "publish_tableau"
         },
         {
+            "db-password": "kinesis",
+            "name": "publish workbook",
+            "site-id": "Testing",
+            "source-doc-path": "../../src/fashion_orders.twb",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "admin",
+            "target-doc-name": "fashion_orders",
+            "type": "publish_tableau"
+        },
+        {
             "name": "Refresh fashion_orders data",
             "project": "Default",
             "refresh-extracts-type": "datasource",
@@ -119,18 +130,18 @@
             "url": "http://home.kollar.me/t/Testing/views/fashion_orders/Dashboard1"
         },
         {
-            "max": 48,
-            "min": 3,
-            "name": "set filter - item id",
-            "target": "Item Id",
-            "type": "set_filter_range"
-        },
-        {
             "end-datetime": "2015-06-15T00:00:00.000Z",
             "name": "set Order Datetime filter",
             "start-datetime": "2014-12-12T00:00:00.000Z",
             "target": "Order Datetime",
             "type": "set_filter_daterange"
+        },
+        {
+            "max": 30,
+            "min": 10,
+            "name": "set filter - item id",
+            "target": "Item Id",
+            "type": "set_filter_range"
         },
         {
             "name": "set filter list - Gender",

@@ -1,6 +1,6 @@
 {
-    "description": "testing parameters",
-    "name": "parameters",
+    "description": "testing assert data equals feature",
+    "name": "assert_data_equals",
     "tasks": [
         {
             "description": "load fashion order data into Oracle",
@@ -85,7 +85,7 @@
         {
             "db-password": "kinesis",
             "db-username": "kinesis",
-            "name": " publish data source Description",
+            "name": "publish data source",
             "site-id": "Testing",
             "source-doc-path": "../../src/fashion_orders_datasource.tdsx",
             "tableau-server-password": "nemmondommeg",
@@ -125,38 +125,17 @@
             "user": "admin"
         },
         {
-            "name": "open viz",
+            "name": "open dashboard",
             "refresh-data": true,
             "type": "viz_open",
             "url": "http://home.kollar.me/t/Testing/views/fashion_orders/Dashboard1"
         },
         {
-            "name": "Set Chart Type Parameter",
-            "parameter-type": "string",
-            "target": "Chart Type",
-            "type": "set_parameter",
-            "value-string": "Bar"
-        },
-        {
-            "name": "Set parameter Top x Cities",
-            "parameter-type": "number",
-            "target": "Top x cities",
-            "type": "set_parameter",
-            "value-number": 5
-        },
-        {
-            "name": "Set Registered - Start Date",
-            "parameter-type": "datetime",
-            "target": "Registered - Start Date",
-            "type": "set_parameter",
-            "value-datetime": "2014-10-28T08:06:00.000Z"
-        },
-        {
-            "name": "Set Registered - End Date",
-            "parameter-type": "datetime",
-            "target": "Registered - End Date",
-            "type": "set_parameter",
-            "value-datetime": "2015-09-01T17:00:00.000Z"
+            "expected-csv-path": "resources/Total_Orders_BAR_crosstab.csv",
+            "export-type": "CROSSTAB",
+            "name": "check total orders by country bar",
+            "target": "Total Orders BAR",
+            "type": "assert_data_equals"
         }
     ]
 }
