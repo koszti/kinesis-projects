@@ -3,41 +3,41 @@
     "name": "login_and_open",
     "tasks": [
         {
-            "db-password": "kinesis",
-            "db-username": "kinesis",
+            "db-password": "{{MSQL_PWD}}",
+            "db-username": "{{MSQL_USER}}",
             "name": "publish data source",
-            "site-id": "Testing",
+            "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/worldbank_development_indicators.tdsx",
-            "tableau-server-password": "nemmondommeg",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
             "tableau-server-url": "http://home.kollar.me",
-            "tableau-server-user": "admin",
+            "tableau-server-user": "{{TABLEAU_USER}}",
             "target-doc-name": "worldbank_development_indicators",
             "type": "publish_tableau"
         },
         {
-            "db-password": "kinesis",
-            "db-username": "kinesis",
+            "db-password": "{{MSQL_PWD}}",
+            "db-username": "{{MSQL_USER}}",
             "name": "Publish twb workbook",
-            "site-id": "Testing",
-            "source-doc-path": "../../src/Education and Innovation.twb",
-            "tableau-server-password": "nemmondommeg",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/Education and Innovation dev1.twb",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
             "tableau-server-url": "http://home.kollar.me",
-            "tableau-server-user": "admin",
+            "tableau-server-user": "{{TABLEAU_USER}}",
             "target-doc-name": "Education and Innovation",
             "type": "publish_tableau"
         },
         {
             "name": "login to tableau",
-            "password": "nemmondommeg",
+            "password": "{{TABLEAU_PWD}}",
             "type": "login_tableau",
-            "url": "http://home.kollar.me",
-            "user": "admin"
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
         },
         {
             "name": "Open Education and Innovation Dashboard",
             "refresh-data": true,
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/Testing/views/EducationandInnovation/Dashboard"
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
         }
     ]
 }

@@ -3,5 +3,6 @@
     "name": "Test_1.1",
     "description": "First test",
     "srcDir": "src",
-    "jobDir": "test"
+    "jobDir": "test",
+    "contextDir": "context"
 }

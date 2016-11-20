@@ -12,36 +12,36 @@
             },
             "target-db": {
                 "classname": "com.mysql.jdbc.Driver",
-                "password": "kinesis",
+                "password": "{{MSQL_PWD}}",
                 "rows-per-insert": 250,
-                "subname": "//ycoders.com:13306/kinesis",
+                "subname": "{{MSQL_JDBC_SU}}",
                 "subprotocol": "mysql",
                 "table": "worldbank_development_indicators",
-                "user": "kinesis"
+                "user": "{{MSQL_USER}}"
             },
             "type": "load_data"
         },
         {
-            "db-password": "kinesis",
-            "db-username": "kinesis",
+            "db-password": "{{MSQL_PWD}}",
+            "db-username": "{{MSQL_USER}}",
             "name": "publish data source",
-            "site-id": "Testing",
+            "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/worldbank_development_indicators.tdsx",
-            "tableau-server-password": "nemmondommeg",
-            "tableau-server-url": "http://home.kollar.me",
-            "tableau-server-user": "admin",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
             "target-doc-name": "worldbank_development_indicators",
             "type": "publish_tableau"
         },
         {
-            "db-password": "kinesis",
-            "db-username": "kinesis",
+            "db-password": "{{MSQL_PWD}}",
+            "db-username": "{{MSQL_USER}}",
             "name": "Publish twb workbook",
-            "site-id": "Testing",
-            "source-doc-path": "../../src/Education and Innovation.twb",
-            "tableau-server-password": "nemmondommeg",
-            "tableau-server-url": "http://home.kollar.me",
-            "tableau-server-user": "admin",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/Education and Innovation dev1.twb",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
             "target-doc-name": "Education and Innovation",
             "type": "publish_tableau"
         },
@@ -49,25 +49,25 @@
             "name": "Refresh Data Source",
             "project": "Default",
             "refresh-extracts-type": "datasource",
-            "site-id": "Testing",
-            "tableau-server-password": "nemmondommeg",
-            "tableau-server-url": "http://home.kollar.me",
-            "tableau-server-user": "admin",
+            "site-id": "{{TABLEAU_SITE}}",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
             "target-doc-name": "worldbank_development_indicators",
             "type": "refreshextracts_tableau"
         },
         {
             "name": "login tableau",
-            "password": "nemmondommeg",
+            "password": "{{TABLEAU_PWD}}",
             "type": "login_tableau",
-            "url": "http://home.kollar.me",
-            "user": "admin"
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
         },
         {
             "name": "open dashboard",
-            "refresh-data": true,
+            "refresh-data": false,
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/Testing/views/EducationandInnovation/Dashboard"
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
         },
         {
             "description": "testing choosing regions",

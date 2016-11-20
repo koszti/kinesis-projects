@@ -12,12 +12,12 @@
             },
             "target-db": {
                 "classname": "com.mysql.jdbc.Driver",
-                "password": "kinesis",
+                "password": "{{MSQL_PWD}}",
                 "rows-per-insert": 250,
-                "subname": "//ycoders.com:13306/kinesis",
+                "subname": "{{MSQL_JDBC_SU}}",
                 "subprotocol": "mysql",
                 "table": "worldbank_development_indicators",
-                "user": "kinesis"
+                "user": "{{MSQL_USER}}"
             },
             "type": "load_data"
         }
