@@ -3,5 +3,6 @@
     "name": "Olympics",
     "description": "Summer Olympics History 1986-2008",
     "srcDir": "src",
-    "jobDir": "test"
+    "jobDir": "test",
+    "contextDir": "context"
 }

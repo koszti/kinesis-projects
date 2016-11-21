@@ -1,0 +1,11 @@
+{
+    "context-variables": {
+        "MSQL_JDBC_SU": "//ycoders.com:13306/kinesis",
+        "MSQL_PWD": "kinesis",
+        "MSQL_USER": "kinesis",
+        "TABLEAU_PWD": "nemmondommeg",
+        "TABLEAU_SITE": "dev1",
+        "TABLEAU_URL": "http://home.kollar.me",
+        "TABLEAU_USER": "dev1"
+    }
+}

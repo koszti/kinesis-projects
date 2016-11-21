@@ -1,0 +1,35 @@
+{
+    "description": "medal and disclipine filters",
+    "name": "filters2",
+    "tasks": [
+        {
+            "name": "login to tableau",
+            "password": "{{TABLEAU_PWD}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "open viz",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/dev1/views/SummerOlympicsHistory/Dashboard"
+        },
+        {
+            "name": "Medal Filter",
+            "target": "Medal",
+            "type": "set_filter_list",
+            "values": [
+                "Gold"
+            ]
+        },
+        {
+            "name": "Set Discipline Filter",
+            "target": "Discipline",
+            "type": "set_filter_list",
+            "values": [
+                "Swimming"
+            ]
+        }
+    ]
+}
