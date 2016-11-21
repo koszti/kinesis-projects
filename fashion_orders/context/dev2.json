@@ -1,0 +1,11 @@
+{
+    "context-variables": {
+        "ORA_JDBC_SUB": "thin:@ycoders.com:49161/xe",
+        "ORA_PWD": "kinesis",
+        "ORA_USER": "dev2",
+        "TABLEAU_PWD": "nemmondommeg",
+        "TABLEAU_SITE": "dev2",
+        "TABLEAU_URL": "http://home.kollar.me",
+        "TABLEAU_USER": "dev2"
+    }
+}

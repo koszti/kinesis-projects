@@ -13,12 +13,12 @@
             },
             "target-db": {
                 "classname": "oracle.jdbc.driver.OracleDriver",
-                "password": "kinesis",
+                "password": "{{ORA_PWD}}",
                 "rows-per-insert": 100,
-                "subname": "thin:@ycoders.com:49161/xe",
+                "subname": "{{ORA_JDBC_SUB}}",
                 "subprotocol": "oracle",
                 "table": "dim_item",
-                "user": "kinesis"
+                "user": "{{ORA_USER}}"
             },
             "type": "load_data"
         },
@@ -33,12 +33,12 @@
             },
             "target-db": {
                 "classname": "oracle.jdbc.driver.OracleDriver",
-                "password": "kinesis",
+                "password": "{{ORA_PWD}}",
                 "rows-per-insert": 100,
-                "subname": "thin:@ycoders.com:49161/xe",
+                "subname": "{{ORA_JDBC_SUB}}",
                 "subprotocol": "oracle",
                 "table": "dim_store",
-                "user": "kinesis"
+                "user": "{{ORA_USER}}"
             },
             "type": "load_data"
         },
@@ -53,12 +53,12 @@
             },
             "target-db": {
                 "classname": "oracle.jdbc.driver.OracleDriver",
-                "password": "kinesis",
+                "password": "{{ORA_PWD}}",
                 "rows-per-insert": 100,
-                "subname": "thin:@ycoders.com:49161/xe",
+                "subname": "{{ORA_JDBC_SUB}}",
                 "subprotocol": "oracle",
                 "table": "fact_orders",
-                "user": "kinesis"
+                "user": "{{ORA_USER}}"
             },
             "type": "load_data"
         },
@@ -73,36 +73,36 @@
             },
             "target-db": {
                 "classname": "oracle.jdbc.driver.OracleDriver",
-                "password": "kinesis",
+                "password": "{{ORA_PWD}}",
                 "rows-per-insert": 100,
-                "subname": "thin:@ycoders.com:49161/xe",
+                "subname": "{{ORA_JDBC_SUB}}",
                 "subprotocol": "oracle",
                 "table": "dim_user",
-                "user": "kinesis"
+                "user": "{{ORA_USER}}"
             },
             "type": "load_data"
         },
         {
-            "db-password": "kinesis",
-            "db-username": "kinesis",
-            "name": " publish data source Description",
-            "site-id": "Testing",
+            "db-password": "{{ORA_PWD}}",
+            "db-username": "{{ORA_USER}}",
+            "name": " publish data source",
+            "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/fashion_orders_datasource.tdsx",
-            "tableau-server-password": "nemmondommeg",
-            "tableau-server-url": "http://home.kollar.me",
-            "tableau-server-user": "admin",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
             "target-doc-name": "fashion_orders_datasource",
             "type": "publish_tableau"
         },
         {
-            "db-password": "kinesis",
-            "db-username": "kinesis",
+            "db-password": "{{ORA_PWD}}",
+            "db-username": "{{ORA_USER}}",
             "name": "publish workbook",
-            "site-id": "Testing",
-            "source-doc-path": "../../src/fashion_orders.twb",
-            "tableau-server-password": "nemmondommeg",
-            "tableau-server-url": "http://home.kollar.me",
-            "tableau-server-user": "admin",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/fashion_orders_dev1.twb",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
             "target-doc-name": "fashion_orders",
             "type": "publish_tableau"
         },
@@ -110,25 +110,25 @@
             "name": "Refresh fashion_orders data",
             "project": "Default",
             "refresh-extracts-type": "datasource",
-            "site-id": "Testing",
-            "tableau-server-password": "nemmondommeg",
-            "tableau-server-url": "http://home.kollar.me",
-            "tableau-server-user": "admin",
+            "site-id": "{{TABLEAU_SITE}}",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
             "target-doc-name": "fashion_orders_datasource",
             "type": "refreshextracts_tableau"
         },
         {
             "name": "login to tableau",
-            "password": "nemmondommeg",
+            "password": "{{TABLEAU_PWD}}",
             "type": "login_tableau",
-            "url": "http://home.kollar.me",
-            "user": "admin"
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
         },
         {
             "name": "open viz",
             "refresh-data": true,
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/Testing/views/fashion_orders/Dashboard1"
+            "url": "http://home.kollar.me/t/dev1/views/fashion_orders/Dashboard1"
         },
         {
             "name": "Set Chart Type Parameter",
