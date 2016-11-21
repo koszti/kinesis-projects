@@ -1,0 +1,8 @@
+{
+    "context-variables": {
+        "TABLEAU_PWD": "nemmondommeg",
+        "TABLEAU_SITE": "dev1",
+        "TABLEAU_URL": "http://home.kollar.me",
+        "TABLEAU_USER": "dev1"
+    }
+}
