@@ -86,6 +86,7 @@
             "db-password": "{{ORA_PWD}}",
             "db-username": " {{ORA_USER}}",
             "name": "publish data source",
+            "project": "Fashion",
             "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/fashion_orders_datasource.tdsx",
             "tableau-server-password": "{{TABLEAU_PWD}}",
@@ -96,7 +97,7 @@
         },
         {
             "name": "Refresh fashion_orders data",
-            "project": "Default",
+            "project": "Fashion",
             "refresh-extracts-type": "datasource",
             "site-id": "{{TABLEAU_SITE}}",
             "tableau-server-password": "{{TABLEAU_PWD}}",

@@ -86,6 +86,7 @@
             "db-password": "{{ORA_PWD}}",
             "db-username": "{{ORA_USER}}",
             "name": " publish data source",
+            "project": "Fashion",
             "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/fashion_orders_datasource.tdsx",
             "tableau-server-password": "{{TABLEAU_PWD}}",
@@ -98,6 +99,7 @@
             "db-password": "{{ORA_PWD}}",
             "db-username": "{{ORA_USER}}",
             "name": "publish workbook",
+            "project": "Fashion",
             "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/fashion_orders_dev1.twb",
             "tableau-server-password": "{{TABLEAU_PWD}}",
@@ -108,7 +110,7 @@
         },
         {
             "name": "Refresh fashion_orders data",
-            "project": "Default",
+            "project": "Fashion",
             "refresh-extracts-type": "datasource",
             "site-id": "{{TABLEAU_SITE}}",
             "tableau-server-password": "{{TABLEAU_PWD}}",
@@ -120,6 +122,7 @@
         {
             "name": "login to tableau",
             "password": "{{TABLEAU_PWD}}",
+            "site-id": "",
             "type": "login_tableau",
             "url": "{{TABLEAU_URL}}",
             "user": "{{TABLEAU_USER}}"
@@ -128,7 +131,7 @@
             "name": "open viz",
             "refresh-data": true,
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/dev1/views/fashion_orders/Dashboard1"
+            "url": "http://home.kollar.me/t/dev1/views/fashion_orders_0/Dashboard1"
         },
         {
             "name": "Set Chart Type Parameter",

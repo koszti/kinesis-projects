@@ -6,6 +6,7 @@
             "db-password": "{{ORA_PWD}}",
             "db-username": "{{ORA_USER}}",
             "name": "publish fashion_orders twb",
+            "project": "Fashion",
             "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/fashion_orders_dev1.twb",
             "tableau-server-password": "{{TABLEAU_PWD}}",
