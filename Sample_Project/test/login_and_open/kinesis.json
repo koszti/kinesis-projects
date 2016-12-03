@@ -40,7 +40,7 @@
             "name": "Open Education and Innovation Dashboard",
             "refresh-data": true,
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation_0/Dashboard"
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
         }
     ]
 }
