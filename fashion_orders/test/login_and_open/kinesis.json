@@ -41,7 +41,7 @@
             "name": "open fashion_orders dashboard",
             "refresh-data": true,
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/dev1/views/fashion_orders_0/Dashboard1"
+            "url": "http://home.kollar.me/t/dev1/views/fashion_orders/Dashboard1"
         }
     ]
 }

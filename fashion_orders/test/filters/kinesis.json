@@ -131,7 +131,7 @@
             "name": "opend dashboard",
             "refresh-data": true,
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/dev1/views/fashion_orders_0/Dashboard1"
+            "url": "http://home.kollar.me/t/dev1/views/fashion_orders/Dashboard1"
         },
         {
             "end-datetime": "2015-06-15T00:00:00.000Z",
