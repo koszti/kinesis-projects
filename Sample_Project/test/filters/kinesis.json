@@ -61,6 +61,7 @@
         {
             "name": "login tableau",
             "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
             "type": "login_tableau",
             "url": "{{TABLEAU_URL}}",
             "user": "{{TABLEAU_USER}}"
@@ -78,7 +79,9 @@
             "target": "Region",
             "type": "set_filter_list",
             "values": [
-                "Female"
+                "Europe",
+                "Asia",
+                "Africa"
             ]
         },
         {

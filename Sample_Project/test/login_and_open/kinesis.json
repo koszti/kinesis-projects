@@ -31,7 +31,7 @@
         {
             "name": "login to tableau",
             "password": "{{TABLEAU_PWD}}",
-            "site-id": "",
+            "site-id": "{{TABLEAU_SITE}}",
             "type": "login_tableau",
             "url": "{{TABLEAU_URL}}",
             "user": "{{TABLEAU_USER}}"

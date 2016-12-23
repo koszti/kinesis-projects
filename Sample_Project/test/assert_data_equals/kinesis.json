@@ -1,0 +1,27 @@
+{
+    "description": "assert data equals",
+    "name": "assert_data_equals",
+    "tasks": [
+        {
+            "name": "login to tableau",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "open viz",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "expected-csv-path": "resources/Gvt_Spending_on_Education_BAR_crosstab.csv",
+            "export-type": "CROSSTAB",
+            "name": "assert data equals",
+            "target": "Gvt Spending on Education BAR",
+            "type": "assert_data_equals"
+        }
+    ]
+}

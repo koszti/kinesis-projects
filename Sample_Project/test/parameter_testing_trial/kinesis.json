@@ -1,0 +1,34 @@
+{
+    "description": "testing parameters",
+    "name": "parameter_testing_trial",
+    "tasks": [
+        {
+            "name": "login to tableau",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "Open Education and Innovation Dashboard",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "name": "set Sort By Education Type",
+            "parameter-type": "string",
+            "target": "Sorty By",
+            "type": "set_parameter",
+            "value-string": "Secondary"
+        },
+        {
+            "expected-csv-path": "resources/Enrolment_in_Education_crosstab_sort_by_sec.csv",
+            "export-type": "CROSSTAB",
+            "name": "Assert data equals - Crosstab after Sort by Test",
+            "target": "Enrolment in Education",
+            "type": "assert_data_equals"
+        }
+    ]
+}

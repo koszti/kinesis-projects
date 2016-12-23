@@ -122,7 +122,7 @@
         {
             "name": "Login to tableau server",
             "password": "{{TABLEAU_PWD}}",
-            "site-id": "",
+            "site-id": "{{TABLEAU_SITE}}",
             "type": "login_tableau",
             "url": "{{TABLEAU_URL}}",
             "user": "{{TABLEAU_USER}}"
@@ -132,6 +132,22 @@
             "refresh-data": true,
             "type": "viz_open",
             "url": "http://home.kollar.me/t/dev1/views/fashion_orders/Dashboard1"
+        },
+        {
+            "name": "set filter list - Gender",
+            "select-all": false,
+            "target": "Gender",
+            "type": "set_filter_list",
+            "values": [
+                "Male"
+            ]
+        },
+        {
+            "expected-csv-path": "resources/Total_Orders_BAR_crosstab_male.csv",
+            "export-type": "CROSSTAB",
+            "name": "Assert data equals - after choosing Male",
+            "target": "Total Orders BAR",
+            "type": "assert_data_equals"
         }
     ]
 }

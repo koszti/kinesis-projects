@@ -6,7 +6,7 @@
             "db-password": "{{MSQL_PWD}}",
             "db-username": "{{MSQL_USER}}",
             "name": "publish data source as tdsx",
-            "project": "",
+            "project": "Olympics",
             "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/summer_olympic_medallist.tdsx",
             "tableau-server-password": "{{TABLEAU_PWD}}",
@@ -19,6 +19,7 @@
             "db-password": "{{MSQL_PWD}}",
             "db-username": "{{MSQL_USER}}",
             "name": "publish workbook",
+            "project": "Olympics",
             "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/Summer Olympics History dev1.twb",
             "tableau-server-password": "{{TABLEAU_PWD}}",
@@ -29,7 +30,7 @@
         },
         {
             "name": "refresh extracts",
-            "project": "Default",
+            "project": "Olympics",
             "refresh-extracts-type": "datasource",
             "site-id": "{{TABLEAU_SITE}}",
             "tableau-server-password": "{{TABLEAU_PWD}}",
@@ -41,6 +42,7 @@
         {
             "name": "login to tableau",
             "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABEAU_SITE}}",
             "type": "login_tableau",
             "url": "{{TABLEAU_URL}}",
             "user": "{{TABLEAU_USER}}"

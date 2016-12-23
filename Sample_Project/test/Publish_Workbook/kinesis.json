@@ -5,7 +5,7 @@
         {
             "db-password": "{{MSQL_PWD}}",
             "db-username": "{{MSQL_USER}}",
-            "name": "Publish twb workbook",
+            "name": "publish",
             "project": "Education",
             "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/Education and Innovation dev1.twb",

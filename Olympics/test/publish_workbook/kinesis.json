@@ -6,6 +6,7 @@
             "db-password": "{{MSQL_PWD}}",
             "db-username": "{{MSQL_USER}}",
             "name": "publish workbook",
+            "project": "Olympics",
             "site-id": "{{TABLEAU_SITE}}",
             "source-doc-path": "../../src/Summer Olympics History dev1.twb",
             "tableau-server-password": "{{TABLEAU_PWD}}",

@@ -1,8 +1,0 @@
-{
-    "kinesisVersion": "1.0",
-    "name": "accenture_tests",
-    "description": "Testing Accenture Demo files",
-    "srcDir": "src",
-    "jobDir": "test",
-    "contextDir": "context"
-}

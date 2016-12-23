@@ -1,0 +1,36 @@
+{
+    "description": "testing assert data with filters and parameters",
+    "name": "assert_data_-_various_tests",
+    "tasks": [
+        {
+            "name": "login to tableau",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "Open Education and Innovation Dashboard",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "name": "region filter",
+            "target": "Region",
+            "type": "set_filter_list",
+            "values": [
+                "Asia",
+                "Europe"
+            ]
+        },
+        {
+            "expected-csv-path": "resources/Gvt_Spending_on_Education_BAR_crosstab_Region.csv",
+            "export-type": "CROSSTAB",
+            "name": "assert data equals after region test CROSSTAB",
+            "target": "Gvt Spending on Education BAR",
+            "type": "assert_data_equals"
+        }
+    ]
+}
