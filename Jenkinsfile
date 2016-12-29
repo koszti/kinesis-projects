@@ -2,7 +2,9 @@ node {
     jobStarted()
     checkout scm
     try {
-        sh('java -jar ~/bin/kinesis-2.0.0-SNAPSHOT-standalone.jar')
+        stage('Test') {
+            sh('./test.sh')
+        }
         jobSuccessful()
     } catch (e) {
         currentBuild.result = "FAILED"
