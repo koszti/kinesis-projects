@@ -2,7 +2,7 @@ node {
     jobStarted()
     checkout scm
     try {
-        stage('Test') {
+        stage('Kinesis Test') {
             sh('./test.sh')
         }
         jobSuccessful()
