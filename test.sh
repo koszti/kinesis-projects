@@ -11,6 +11,7 @@ CONTEXT=$project/context/dev1.json
     if [ $? != 0 ]
     then
         RET=1
+	exit $RET
     fi
 done
 
