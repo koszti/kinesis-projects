@@ -48,7 +48,6 @@
             "user": "{{TABLEAU_USER}}"
         },
         {
-            "description": "",
             "name": "open viz",
             "refresh-data": true,
             "type": "viz_open",
