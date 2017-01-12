@@ -10,6 +10,14 @@ node {
         currentBuild.result = "FAILED"
         jobFailed()
         throw e;
+    } finally {
+        archiveReports()    
+    }
+}
+
+def archiveReports() {
+    stage('Archive Test Reports') {
+        archiveArtifacts artifacts: '**/report-*/'
     }
 }
 
