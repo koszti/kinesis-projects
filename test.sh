@@ -1,5 +1,5 @@
 
-KINESIS_PATH=~/bin/
+KINESIS=~/bin/kinesis-cli/kinesis
 CANVAS_TIMEOUT=30
 
 RET=0
@@ -9,7 +9,7 @@ do
 CONTEXT=$project/context/dev1.json
 
     echo "Running tests from $project project"
-    java -jar $KINESIS_PATH/kinesis-2.0.0-SNAPSHOT-standalone.jar -p $project -c $CONTEXT -t $CANVAS_TIMEOUT -r -v
+    $KINESIS -p $project -c $CONTEXT -t $CANVAS_TIMEOUT -r -v
     if [ $? != 0 ]
     then
         RET=1
