@@ -2,6 +2,10 @@ node {
     jobStarted()
     checkout scm
     try {
+        stage('Cleanup') {
+            sh('rm -f kinesis.log')
+            sh('rm -rf report-*')
+        }
         stage('Kinesis Test') {
             sh('./test.sh')
         }
