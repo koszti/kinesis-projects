@@ -4,7 +4,7 @@ CONTEXT=dev1.json
 
 RET=0
 
-echo "Kinesis CLI executable: $KINESIS"
+echo "Kinesis CLI executable: [$KINESIS]"
 
 # Avoid issues with directories having spaces
 SAVEIFS=$IFS
@@ -13,6 +13,7 @@ IFS=$(echo -en "\n")
 # Find every Kinesis project and run in a loop
 for project in `find "$(pwd)" -name project.json`
 do
+echo "Kinesis CLI executable: [$KINESIS]"
 
     # Make absolute paths that is required for Kinesis CLI
     PROJECT_DIR=$(dirname $project)
