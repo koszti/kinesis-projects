@@ -1,10 +1,11 @@
-KINESIS=~/bin/kinesis-cli/kinesis
+KINESIS=/home/jenkins_home/bin/kinesis-cli/kinesis
 CANVAS_TIMEOUT=45
 CONTEXT=dev1.json
 
 RET=0
 
 echo "Kinesis CLI executable: $KINESIS"
+$KINESIS
 
 # Avoid issues with directories having spaces
 SAVEIFS=$IFS
