@@ -9,7 +9,7 @@ $KINESIS
 
 # Avoid issues with directories having spaces
 SAVEIFS=$IFS
-IFS=$(echo -en "\n\b")
+IFS=$(echo -en "\n")
 
 # Find every Kinesis project and run in a loop
 for project in `find "$(pwd)" -name project.json`
