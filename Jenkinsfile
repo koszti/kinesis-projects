@@ -6,13 +6,19 @@ node {
             sh('rm -f kinesis.log')
             sh('rm -rf report-*')
         }
-        stage('Kinesis Test') {
-            sh('./test.sh')
+        stage('Olympics') {
+            sh('./test.sh Olympics')
         }
-        jobSuccessful()
+        stage('Sample_Project') {
+            sh('./test.sh Sample_Project')
+        }
+        stage('fashion_orders') {
+            sh('./test.sh fashion_orders')
+        }
+        # jobSuccessful()
     } catch (e) {
         currentBuild.result = "FAILED"
-        jobFailed()
+        # jobFailed()
         throw e;
     } finally {
         archiveReports()    
