@@ -4,6 +4,7 @@ CONTEXT=dev1.json
 
 RET=0
 
+echo "Kinesis CLI executable: $KINESIS"
 
 # Avoid issues with directories having spaces
 SAVEIFS=$IFS
