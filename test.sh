@@ -1,20 +1,31 @@
-
 KINESIS=~/bin/kinesis-cli/kinesis
-CANVAS_TIMEOUT=30
+CANVAS_TIMEOUT=45
+CONTEXT=dev1.json
 
 RET=0
 
-for project in `find . -name project.json -exec dirname {} \;`
-do
-CONTEXT=$project/context/dev1.json
 
-    echo "Running tests from $project project"
-    $KINESIS -p $project -c $CONTEXT -t $CANVAS_TIMEOUT -r -v
+# Avoid issues with directories having spaces
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
+# Find every Kinesis project and run in a loop
+for project in `find "$(pwd)" -name project.json`
+do
+
+    # Make absolute paths that is required for Kinesis CLI
+    PROJECT_DIR=$(dirname $project)
+    CONTEXT_PATH=$PROJECT_DIR/context/$CONTEXT
+
+    echo "Running tests from $PROJECT_DIR project"
+    $KINESIS -p $PROJECT_DIR -c $CONTEXT_PATH -t $CANVAS_TIMEOUT -r
     if [ $? != 0 ]
     then
         RET=1
         exit $RET
     fi
 done
+
+IFS=$SAVEIFS
 
 exit $RET
