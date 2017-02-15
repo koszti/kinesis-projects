@@ -4,7 +4,7 @@ node {
     try {
         stage('Cleanup') {
             sh('rm -f kinesis.log')
-//            sh('find . -type d -name "report-*" -exec rm -r "{}" \\;')
+            sh('find . -type d -name "report-*" -exec rm -r "{}" \\;')
         }
 /*
         stage('Olympics') {
