@@ -14,7 +14,7 @@ do
     echo "Kinesis CLI executable: [$KINESIS]"
 
     # Make absolute paths that is required for Kinesis CLI
-    PROJECT_DIR="$(dirname $project)"
+    PROJECT_DIR=$(dirname "$project")
     CONTEXT_PATH="$PROJECT_DIR/context/$CONTEXT"
     
     echo "Kinesis: [$KINESIS]"
