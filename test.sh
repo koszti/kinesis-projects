@@ -1,3 +1,4 @@
+#!/bin/sh
 CANVAS_TIMEOUT=45
 CONTEXT=dev1.json
 
