@@ -1,4 +1,5 @@
 #!/bin/bash
+KINESIS=~/bin/kinesis-cli/kinesis
 CANVAS_TIMEOUT=45
 CONTEXT=dev1.json
 
