@@ -15,10 +15,10 @@ node {
         stage('fashion_orders') {
             sh('./test.sh fashion_orders')
         }
-        # jobSuccessful()
+        // jobSuccessful()
     } catch (e) {
         currentBuild.result = "FAILED"
-        # jobFailed()
+        // jobFailed()
         throw e;
     } finally {
         archiveReports()    
