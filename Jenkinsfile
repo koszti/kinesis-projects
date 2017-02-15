@@ -2,7 +2,7 @@ node {
     jobStarted()
     checkout scm
     try {
-        stage('Cleanup') {
+        stage('Checkout and Cleanup') {
             sh('rm -f kinesis.log')
             sh('find . -depth -type d -name "report-*" -exec rm -r "{}" \\;')
         }
