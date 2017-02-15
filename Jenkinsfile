@@ -4,9 +4,8 @@ node {
     try {
         stage('Cleanup') {
             sh('rm -f kinesis.log')
-            sh('find . -type d -name "report-*" -exec rm -r "{}" \\;')
+            sh('find . -depth -type d -name "report-*" -exec rm -r "{}" \\;')
         }
-/*
         stage('Olympics') {
             sh('./test.sh Olympics')
         }
@@ -16,7 +15,6 @@ node {
         stage('fashion_orders') {
             sh('./test.sh fashion_orders')
         }
-*/
         jobSuccessful()
     } catch (e) {
         currentBuild.result = "FAILED"
