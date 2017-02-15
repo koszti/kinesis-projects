@@ -1,4 +1,4 @@
-KINESIS=/home/jenkins_home/bin/kinesis-cli/kinesis
+KINESIS=/var/jenkins_home/bin/kinesis-cli/kinesis
 CANVAS_TIMEOUT=45
 CONTEXT=dev1.json
 
