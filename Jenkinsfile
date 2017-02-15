@@ -23,7 +23,7 @@ node {
         // jobFailed()
         throw e;
     } finally {
-    //    archiveReports()    
+        archiveReports()    
     }
 }
 
