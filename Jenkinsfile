@@ -1,12 +1,13 @@
 node {
     jobStarted()
     checkout scm
+        archiveArtifacts artifacts: '**/report-*/'
+/*
     try {
         stage('Cleanup') {
             sh('rm -f kinesis.log')
             sh('rm -rf report-*')
         }
-/*
         stage('Olympics') {
             sh('./test.sh Olympics')
         }
@@ -16,7 +17,6 @@ node {
         stage('fashion_orders') {
             sh('./test.sh fashion_orders')
         }
-*/
         // jobSuccessful()
     } catch (e) {
         //currentBuild.result = "FAILED"
@@ -25,6 +25,7 @@ node {
     } finally {
         archiveReports()    
     }
+*/
 }
 
 def archiveReports() {
