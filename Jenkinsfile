@@ -23,7 +23,6 @@ node {
     } finally {
         archiveReports()    
     }
-*/
 }
 
 def archiveReports() {
