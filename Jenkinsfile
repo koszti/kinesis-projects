@@ -1,7 +1,7 @@
 node {
     jobStarted()
     checkout scm
-//        archiveArtifacts artifacts: '**/report-*/'
+        archiveArtifacts artifacts: '**/report-*/'
 /*
     try {
         stage('Cleanup') {
