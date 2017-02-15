@@ -19,7 +19,7 @@ node {
 */
         // jobSuccessful()
     } catch (e) {
-        currentBuild.result = "FAILED"
+        //currentBuild.result = "FAILED"
         // jobFailed()
         throw e;
     } finally {
