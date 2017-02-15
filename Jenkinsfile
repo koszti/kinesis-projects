@@ -1,8 +1,6 @@
 node {
     jobStarted()
     checkout scm
-        archiveArtifacts artifacts: 'test.sh'
-/*
     try {
         stage('Cleanup') {
             sh('rm -f kinesis.log')
@@ -17,10 +15,10 @@ node {
         stage('fashion_orders') {
             sh('./test.sh fashion_orders')
         }
-        // jobSuccessful()
+        jobSuccessful()
     } catch (e) {
-        //currentBuild.result = "FAILED"
-        // jobFailed()
+        currentBuild.result = "FAILED"
+        jobFailed()
         throw e;
     } finally {
         archiveReports()    

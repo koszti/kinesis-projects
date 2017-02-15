@@ -10,7 +10,7 @@ RET=0
 echo "Kinesis CLI executable: $KINESIS"
 
 echo "Running tests in $PROJECT_DIR project using $CONTEXT context"
-"$KINESIS" -p "$PROJECT_DIR" -c "$CONTEXT_PATH" -t "$CANVAS_TIMEOUT" -r
+"$KINESIS" -p "$PROJECT_DIR" -c "$CONTEXT_PATH" -t "$CANVAS_TIMEOUT" -o "$PROJECT_DIR" -r
 if [ $? != 0 ]
 then
     RET=1
