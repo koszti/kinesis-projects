@@ -5,7 +5,6 @@ CONTEXT=dev1.json
 RET=0
 
 echo "Kinesis CLI executable: $KINESIS"
-$KINESIS
 
 # Avoid issues with directories having spaces
 SAVEIFS=$IFS
@@ -20,6 +19,7 @@ do
     CONTEXT_PATH=$PROJECT_DIR/context/$CONTEXT
 
     echo "Running tests from $PROJECT_DIR project"
+    $KINESIS
     $KINESIS -p $PROJECT_DIR -c $CONTEXT_PATH -t $CANVAS_TIMEOUT -r
     if [ $? != 0 ]
     then
