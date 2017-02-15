@@ -6,6 +6,7 @@ node {
             sh('rm -f kinesis.log')
             sh('rm -rf report-*')
         }
+/*
         stage('Olympics') {
             sh('./test.sh Olympics')
         }
@@ -15,6 +16,7 @@ node {
         stage('fashion_orders') {
             sh('./test.sh fashion_orders')
         }
+*/
         // jobSuccessful()
     } catch (e) {
         currentBuild.result = "FAILED"
