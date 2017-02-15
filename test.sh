@@ -16,11 +16,10 @@ do
 echo "Kinesis CLI executable: [$KINESIS]"
 
     # Make absolute paths that is required for Kinesis CLI
-    PROJECT_DIR=$(dirname $project)
-    CONTEXT_PATH=$PROJECT_DIR/context/$CONTEXT
+    PROJECT_DIR="$(dirname $project)"
+    CONTEXT_PATH="$PROJECT_DIR/context/$CONTEXT"
 
     echo "Running tests from $PROJECT_DIR project"
-    $KINESIS
     $KINESIS -p $PROJECT_DIR -c $CONTEXT_PATH -t $CANVAS_TIMEOUT -r
     if [ $? != 0 ]
     then
