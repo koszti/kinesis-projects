@@ -21,7 +21,7 @@ node {
         jobFailed()
         throw e;
     } finally {
-        archiveReports()    
+        archiveReports()
     }
 }
 
@@ -35,16 +35,25 @@ def jobStarted() {
     hipchatSend (color: 'YELLOW', notify: true,
         message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
     )
+    bitbucketStatusNotify (buildState: 'INPROGRESS',
+        buildKey: "${env.BUILD_NUMBER}", buildName: "${env.JOB_NAME}"
+    )
 }
 
 def jobSuccessful() {
     hipchatSend (color: 'GREEN', notify: true,
         message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
     )
+    bitbucketStatusNotify (buildState: 'SUCCESSFUL',
+        buildKey: "${env.BUILD_NUMBER}", buildName: "${env.JOB_NAME}"
+    )
 }
 
 def jobFailed() {
     hipchatSend (color: 'RED', notify: true,
         message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
+    )
+    bitbucketStatusNotify (buildState: 'FAILED',
+        buildKey: "${env.BUILD_NUMBER}", buildName: "${env.JOB_NAME}"
     )
 }
