@@ -1,0 +1,143 @@
+{
+    "description": "assert image equals",
+    "name": "assert_image_equals",
+    "tasks": [
+        {
+            "description": "load fashion order data into Oracle",
+            "name": "load fashion order data - dim_item",
+            "source-csv": {
+                "csv-path": "resources/dim_item.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "{{ORA_PWD}}",
+                "rows-per-insert": 100,
+                "subname": "{{ORA_JDBC_SUB}}",
+                "subprotocol": "oracle",
+                "table": "dim_item",
+                "user": "{{ORA_USER}}"
+            },
+            "type": "load_data"
+        },
+        {
+            "description": "load fashion order data into Oracle",
+            "name": "load fashion order data - dim_store",
+            "source-csv": {
+                "csv-path": "resources/dim_store.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "{{ORA_PWD}}",
+                "rows-per-insert": 100,
+                "subname": "{{ORA_JDBC_SUB}}",
+                "subprotocol": "oracle",
+                "table": "dim_store",
+                "user": "{{ORA_USER}}"
+            },
+            "type": "load_data"
+        },
+        {
+            "description": "load fashion order data into Oracle",
+            "name": "load fashion order data - fact orders",
+            "source-csv": {
+                "csv-path": "resources/fact_orders.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "{{ORA_PWD}}",
+                "rows-per-insert": 100,
+                "subname": "{{ORA_JDBC_SUB}}",
+                "subprotocol": "oracle",
+                "table": "fact_orders",
+                "user": "{{ORA_USER}}"
+            },
+            "type": "load_data"
+        },
+        {
+            "description": "load fashion order data into Oracle",
+            "name": "load fashion order data - fact orders",
+            "source-csv": {
+                "csv-path": "resources/dim_user.csv",
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "{{ORA_PWD}}",
+                "rows-per-insert": 100,
+                "subname": "{{ORA_JDBC_SUB}}",
+                "subprotocol": "oracle",
+                "table": "dim_user",
+                "user": "{{ORA_USER}}"
+            },
+            "type": "load_data"
+        },
+        {
+            "db-password": "{{ORA_PWD}}",
+            "db-username": " {{ORA_USER}}",
+            "name": "publish data source",
+            "project": "Fashion",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/fashion_orders_datasource.tdsx",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "fashion_orders_datasource",
+            "type": "publish_tableau"
+        },
+        {
+            "db-password": "{{ORA_PWD}}",
+            "db-username": " {{ORA_USER}}",
+            "name": "publish workbook",
+            "project": "Fashion",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/fashion_orders_dev1.twb",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "fashion_orders",
+            "type": "publish_tableau"
+        },
+        {
+            "name": "Refresh fashion_orders data",
+            "project": "Fashion",
+            "refresh-extracts-type": "datasource",
+            "site-id": "{{TABLEAU_SITE}}",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "fashion_orders_datasource",
+            "type": "refreshextracts_tableau"
+        },
+        {
+            "name": "Login to tableau server",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "open dashboard",
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/dev1/views/fashion_orders/Dashboard1"
+        },
+        {
+            "max": 30,
+            "min": 10,
+            "name": "set filter - item id",
+            "target": "Item Id",
+            "type": "set_filter_range"
+        }
+    ]
+}
