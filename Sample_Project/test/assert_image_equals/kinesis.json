@@ -1,0 +1,33 @@
+{
+    "description": "assert image equals test",
+    "name": "assert_image_equals",
+    "tasks": [
+        {
+            "name": "login tableau",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "Open Education and Innovation Dashboard",
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "name": "set Chart Type",
+            "parameter-type": "string",
+            "target": "Chart Type",
+            "type": "set_parameter",
+            "value-string": "Map"
+        },
+        {
+            "expected-image-path": "resources/Dashboard_para_map.png",
+            "name": "assert image equals map",
+            "sampling-size": 40,
+            "threshold-percentage": 10,
+            "type": "assert_image_equals"
+        }
+    ]
+}

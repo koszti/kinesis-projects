@@ -1,0 +1,36 @@
+{
+    "description": "assert image equals region filter",
+    "name": "assert_image_equals_2",
+    "tasks": [
+        {
+            "name": "login tableau",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard",
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "name": "region filter",
+            "target": "Region",
+            "type": "set_filter_list",
+            "values": [
+                "Europe",
+                "Asia",
+                "Africa"
+            ]
+        },
+        {
+            "expected-image-path": "resources/Dashboard_region.png",
+            "name": "assert image equals region",
+            "sampling-size": 50,
+            "threshold-percentage": 10,
+            "type": "assert_image_equals"
+        }
+    ]
+}
