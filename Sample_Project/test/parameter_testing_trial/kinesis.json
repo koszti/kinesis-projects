@@ -22,13 +22,6 @@
             "target": "Sorty By",
             "type": "set_parameter",
             "value-string": "Secondary"
-        },
-        {
-            "expected-csv-path": "resources/Enrolment_in_Education_crosstab.csv",
-            "export-type": "CROSSTAB",
-            "name": "Assert data equals - Crosstab after Sort by Test",
-            "target": "Enrolment in Education",
-            "type": "assert_data_equals"
         }
     ]
 }
