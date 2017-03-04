@@ -30,10 +30,10 @@
             "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
         },
         {
-            "expected-csv-path": "resources/Gvt_Spending_on_Education_BAR_crosstab.csv",
+            "expected-csv-path": "resources/Educated_Countries_crosstab.csv",
             "export-type": "CROSSTAB",
             "name": "assert data equals",
-            "target": "Gvt Spending on Education BAR",
+            "target": "Educated Countries",
             "type": "assert_data_equals"
         }
     ]
