@@ -1,0 +1,39 @@
+{
+    "description": "Testing parameter",
+    "name": "4.Parameter",
+    "tasks": [
+        {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "Publish Workbook",
+            "project": "Education",
+            "site-id": "dev1",
+            "source-doc-path": "../../src/Education and Innovation.twb",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "dev1",
+            "target-doc-name": "Education and Innovation",
+            "type": "publish_tableau"
+        },
+        {
+            "name": "Login to Tableau",
+            "password": "nemmondommeg",
+            "site-id": "dev1",
+            "type": "login_tableau",
+            "url": "http://home.kollar.me",
+            "user": "dev1"
+        },
+        {
+            "name": "Open Viz",
+            "type": "viz_open",
+            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "name": "Set Parameter Map",
+            "parameter-type": "string",
+            "target": "Chart Type",
+            "type": "set_parameter",
+            "value-string": "Map"
+        }
+    ]
+}

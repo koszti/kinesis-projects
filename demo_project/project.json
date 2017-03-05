@@ -1,0 +1,8 @@
+{
+    "kinesisVersion": "1.0",
+    "name": "demo_project",
+    "description": "Project for Demo - filters, assert image, data",
+    "srcDir": "src",
+    "jobDir": "test",
+    "contextDir": "context"
+}

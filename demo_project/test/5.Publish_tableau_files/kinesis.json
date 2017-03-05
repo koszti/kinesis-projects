@@ -1,0 +1,32 @@
+{
+    "description": "publish workbook and datasource",
+    "name": "5.Publish",
+    "tasks": [
+        {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "Publish datasource",
+            "project": "Education",
+            "site-id": "dev1",
+            "source-doc-path": "../../src/worldbank_development_indicators.tdsx",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "dev1",
+            "target-doc-name": "worldbank_development_indicators",
+            "type": "publish_tableau"
+        },
+        {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "Publish workbook",
+            "project": "Education",
+            "site-id": "dev1",
+            "source-doc-path": "../../src/Education and Innovation.twb",
+            "tableau-server-password": "nemmondommeg",
+            "tableau-server-url": "http://home.kollar.me",
+            "tableau-server-user": "dev1",
+            "target-doc-name": "Education and Innovation",
+            "type": "publish_tableau"
+        }
+    ]
+}
