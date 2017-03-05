@@ -15,6 +15,9 @@ node {
         stage('fashion_orders') {
             sh('./test.sh fashion_orders')
         }
+        stage('Demo_Project') {
+            sh('./test.sh demo_project')
+        }
         jobSuccessful()
     } catch (e) {
         currentBuild.result = "FAILED"
