@@ -9,8 +9,8 @@ node {
         stage('Olympics') {
             sh('./test.sh Olympics')
         }
-        stage('Sample_Project') {
-            sh('./test.sh Sample_Project')
+        stage('Education') {
+            sh('./test.sh Education')
         }
         stage('fashion_orders') {
             sh('./test.sh fashion_orders')
