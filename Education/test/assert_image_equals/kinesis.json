@@ -23,7 +23,7 @@
             "value-string": "Map"
         },
         {
-            "expected-image-path": "resources/Dashboard_para_map.png",
+            "expected-image-path": "resources/Dashboard_map.png",
             "name": "assert image equals map",
             "sampling-size": 40,
             "threshold-percentage": 10,
