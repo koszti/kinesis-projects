@@ -3,6 +3,19 @@
     "name": "assert_image_equals",
     "tasks": [
         {
+            "db-password": "{{MSQL_PWD}}",
+            "db-username": "{{MSQL_USER}}",
+            "name": "publish workbook",
+            "project": "Education",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/Education and Innovation dev1.twb",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "Education and Innovation",
+            "type": "publish_tableau"
+        },
+        {
             "name": "login tableau",
             "password": "{{TABLEAU_PWD}}",
             "site-id": "{{TABLEAU_SITE}}",
