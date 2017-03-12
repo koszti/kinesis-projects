@@ -6,6 +6,8 @@
         "TABLEAU_PWD": "nemmondommeg",
         "TABLEAU_SITE": "jenkins",
         "TABLEAU_URL": "http://home.kollar.me",
-        "TABLEAU_USER": "jenkins"
+        "TABLEAU_USER": "jenkins",
+        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.2/",
+        "TABLEAU_PROJECT": "Olympics"
     }
 }

@@ -4,11 +4,11 @@
     "tasks": [
         {
             "name": "Login to Tableau",
-            "password": "nemmondommeg",
-            "site-id": "dev1",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
             "type": "login_tableau",
-            "url": "http://home.kollar.me",
-            "user": "dev1"
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
         },
         {
             "name": "Open Viz",
