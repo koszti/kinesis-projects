@@ -29,7 +29,7 @@
             "type": "publish_tableau"
         },
         {
-            "name": "login to tableau",
+            "name": "login to Tableau",
             "password": "{{TABLEAU_PWD}}",
             "site-id": "{{TABLEAU_SITE}}",
             "type": "login_tableau",
@@ -40,7 +40,7 @@
             "name": "Open Education and Innovation Dashboard",
             "refresh-data": true,
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/EducationandInnovation/Dashboard"
         }
     ]
 }

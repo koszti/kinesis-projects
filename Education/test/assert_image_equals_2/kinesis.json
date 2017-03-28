@@ -26,7 +26,7 @@
         {
             "name": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard",
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/EducationandInnovation/Dashboard"
         },
         {
             "expected-image-path": "resources/Dashboard_education_0103.png",
