@@ -31,13 +31,6 @@
             "name": "assert data equals after region test CROSSTAB",
             "target": "Gvt Spending on Education BAR",
             "type": "assert_data_equals"
-        },
-        {
-            "expected-csv-path": "resources/Gvt_Spending_on_Education_BAR_full.csv",
-            "export-type": "FULL",
-            "name": "assert data equals after region test FULL",
-            "target": "Gvt Spending on Education BAR",
-            "type": "assert_data_equals"
         }
     ]
 }
