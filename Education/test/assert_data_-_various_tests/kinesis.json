@@ -26,7 +26,7 @@
             ]
         },
         {
-            "expected-csv-path": "resources/Gvt_Spending_on_Education_BAR_crosstab_Region.csv",
+            "expected-csv-path": "resources/Gvt_Spending_on_Education_BAR_crosstab_filter_f.csv",
             "export-type": "CROSSTAB",
             "name": "assert data equals after region test CROSSTAB",
             "target": "Gvt Spending on Education BAR",

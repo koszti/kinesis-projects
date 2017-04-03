@@ -133,11 +133,11 @@
             "url": "http://home.kollar.me/t/dev1/views/fashion_orders/Dashboard1"
         },
         {
-            "max": 30,
-            "min": 10,
-            "name": "set filter - item id",
-            "target": "Item Id",
-            "type": "set_filter_range"
+            "expected-image-path": "resources/Dashboard1.png",
+            "name": "assert image",
+            "sampling-size": 50,
+            "threshold-percentage": 10,
+            "type": "assert_image_equals"
         }
     ]
 }

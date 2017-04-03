@@ -3,8 +3,8 @@
     "name": "2.Assert-image_formatting",
     "tasks": [
         {
-            "db-password": "kinesis",
-            "db-username": "kinesis",
+            "db-password": "{{MSQL_PWD}}",
+            "db-username": "{{MSQL_USER}}",
             "name": "Publish Workbook",
             "project": "{{TABLEAU_PROJECT}}",
             "site-id": "{{TABLEAU_SITE}}",

@@ -27,6 +27,13 @@
             "name": "Open Viz",
             "type": "viz_open",
             "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "expected-csv-path": "resources/Educated_Countries_crosstab_2.csv",
+            "export-type": "CROSSTAB",
+            "name": "Assert Data Equals",
+            "target": "Educated Countries",
+            "type": "assert_data_equals"
         }
     ]
 }
