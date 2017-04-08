@@ -1,0 +1,37 @@
+{
+    "description": "assert_sql",
+    "name": "assert_sql_equals",
+    "tasks": [
+        {
+            "name": "login to tableau",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "open viz",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/fashion_orders/BreakdownbyBrand"
+        },
+        {
+            "name": "assert sql",
+            "sql": "SELECT i.brand\n      ,i.category\n      ,TO_CHAR(SUM(o.amount))\n  FROM fact_orders o\n      ,dim_item i\n WHERE i.item_id = o.item_id\n GROUP BY i.brand, i.category",
+            "tableau-export-csv": {
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\r\n"
+            },
+            "target": "Breakdown by Brand",
+            "target-db": {
+                "classname": "oracle.jdbc.driver.OracleDriver",
+                "password": "{{ORA_PWD}}",
+                "subname": "{{ORA_JDBC_SUB}}",
+                "subprotocol": "oracle",
+                "user": "{{ORA_USER}}"
+            },
+            "type": "assert_sql_equals"
+        }
+    ]
+}

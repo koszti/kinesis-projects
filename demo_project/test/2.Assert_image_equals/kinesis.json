@@ -29,7 +29,7 @@
             "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
         },
         {
-            "expected-image-path": "resources/Dashboard_base.png",
+            "expected-image-path": "resources/Dashboard.png",
             "name": "Assert Image - formatting",
             "sampling-size": 25,
             "threshold-percentage": 10,

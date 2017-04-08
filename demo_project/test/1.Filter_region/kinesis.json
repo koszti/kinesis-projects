@@ -3,7 +3,7 @@
     "name": "1.Filter_region",
     "tasks": [
         {
-            "name": "Login to Tableau",
+            "name": "Login to Tableau Server",
             "password": "{{TABLEAU_PWD}}",
             "site-id": "{{TABLEAU_SITE}}",
             "type": "login_tableau",
@@ -13,7 +13,7 @@
         {
             "name": "Open Viz",
             "type": "viz_open",
-            "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/EducationandInnovation/Dashboard"
         },
         {
             "name": "Set filter - Region",

@@ -1,0 +1,37 @@
+{
+    "description": "assert sql equals",
+    "name": "6.Assert_SQL_Equals",
+    "tasks": [
+        {
+            "name": "Login to Tableau",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "name": "Open Viz",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/EducationandInnovation/EducatedCountries"
+        },
+        {
+            "name": "Assert SQL Equals",
+            "sql": "SELECT country \"Country\"\n      ,region \"Region\"\n      ,CAST(SUM(\n         patent_applications_resident +\n         patent_applications_nonresident +\n         trademark_applications_total\n      ) AS CHAR) \"Patent and Trade Mark Applications, total\"\n  FROM worldbank_development_indicators\n GROUP BY country\n         ,region\nHAVING AVG(government_expenditure_on_education_pc_of_GDP) > 4\n   AND AVG(gross_enrollment_ratio_terciary_both_sexes) > 50\n\n\n                    ",
+            "tableau-export-csv": {
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\r\n"
+            },
+            "target": "Educated Countries",
+            "target-db": {
+                "classname": "com.mysql.jdbc.Driver",
+                "password": "{{MSQL_PWD}}",
+                "subname": "//ycoders.com:13306/kinesis",
+                "subprotocol": "mysql",
+                "user": "{{MSQL_USER}}"
+            },
+            "type": "assert_sql_equals"
+        }
+    ]
+}
