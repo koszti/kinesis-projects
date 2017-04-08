@@ -3,6 +3,30 @@
     "name": "6.Assert_SQL_Equals",
     "tasks": [
         {
+            "db-password": "kinesis",
+            "db-username": "kinesis",
+            "name": "Publish workbook",
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/Education and Innovation.twb",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "Education and Innovation",
+            "type": "publish_tableau"
+        },
+        {
+            "name": "Refresh Extracts",
+            "project": "{{TABLEAU_PROJECT}}",
+            "refresh-extracts-type": "datasource",
+            "site-id": "{{TABLEAU_SITE}}",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "worldbank_development_indicators",
+            "type": "refreshextracts_tableau"
+        },
+        {
             "name": "Login to Tableau",
             "password": "{{TABLEAU_PWD}}",
             "site-id": "{{TABLEAU_SITE}}",
