@@ -17,6 +17,7 @@
         },
         {
             "name": "Set filter - Region",
+            "select-all": false,
             "target": "Region",
             "type": "set_filter_list",
             "values": [

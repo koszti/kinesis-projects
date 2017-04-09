@@ -3,11 +3,11 @@
         "MSQL_JDBC_SU": "//ycoders.com:13306/kinesis",
         "MSQL_PWD": "kinesis",
         "MSQL_USER": "kinesis",
+        "TABLEAU_PROJECT": "Olympics",
         "TABLEAU_PWD": "nemmondommeg",
+        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.2/",
         "TABLEAU_SITE": "dev1",
         "TABLEAU_URL": "http://home.kollar.me",
-        "TABLEAU_USER": "dev1",
-        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.2/",
-        "TABLEAU_PROJECT": "Olympics"
+        "TABLEAU_USER": "admin"
     }
 }
