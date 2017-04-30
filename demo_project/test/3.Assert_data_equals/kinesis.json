@@ -32,7 +32,7 @@
             "expected-csv-path": "resources/EducatedCountries-CROSSTAB.csv",
             "export-type": "CROSSTAB",
             "name": "Assert Data Equals Crosstab",
-            "target": "Educated Countries",
+            "target": "Breakdown by City",
             "type": "assert_data_equals"
         }
     ]
