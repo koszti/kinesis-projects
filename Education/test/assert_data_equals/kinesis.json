@@ -73,7 +73,7 @@
             "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
         },
         {
-            "expected-csv-path": "resources/Educated_Countries_data_summary.csv",
+            "expected-csv-path": "resources/EducatedCountries-SUMMARY.csv",
             "export-type": "SUMMARY",
             "name": "assert data equals CROSSTAB",
             "target": "Educated Countries",

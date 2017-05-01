@@ -29,10 +29,10 @@
             "url": "http://home.kollar.me/t/dev1/views/EducationandInnovation/Dashboard"
         },
         {
-            "expected-csv-path": "resources/EducatedCountries-CROSSTAB.csv",
-            "export-type": "CROSSTAB",
-            "name": "Assert Data Equals Crosstab",
-            "target": "Breakdown by City",
+            "expected-csv-path": "resources/EducatedCountries-SUMMARY.csv",
+            "export-type": "SUMMARY",
+            "name": "Assert Data Equals",
+            "target": "Educated Countries",
             "type": "assert_data_equals"
         }
     ]

@@ -29,7 +29,7 @@
             "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/SummerOlympicsHistory/Dashboard"
         },
         {
-            "expected-csv-path": "resources/map_crosstab.csv",
+            "expected-csv-path": "resources/map-CROSSTAB.csv",
             "export-type": "CROSSTAB",
             "name": "assert data equals",
             "target": "map",
