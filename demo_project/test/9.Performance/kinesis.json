@@ -1,0 +1,34 @@
+{
+    "description": "performance test",
+    "name": "9.Performance",
+    "tasks": [
+        {
+            "SLA": {
+                "apdex-goal": 0.85,
+                "availability-goal": 40,
+                "response-time-goal": 5000
+            },
+            "advanced": {
+                "compatibility-mode": false,
+                "force-login": true,
+                "think-time-before-interaction": 0,
+                "think-time-between-test": 0,
+                "tolerated-apdex-multiplier": 4
+            },
+            "clients": 3,
+            "disabled": false,
+            "duration": 60,
+            "load-mix": "InteractVizLoadTest",
+            "name": "Performance Test",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "type": "performance_test",
+            "user-pool": [],
+            "view-pool": [
+                "/site/{{TABLEAU_SITE}}/views/EducationandInnovation/Dashboard",
+                "/site/{{TABLEAU_SITE}}/views/fashion_orders/Dashboard1"
+            ]
+        }
+    ]
+}

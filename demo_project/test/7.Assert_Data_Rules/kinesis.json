@@ -8,7 +8,7 @@
             "name": "Publish workbook",
             "project": "{{TABLEAU_PROJECT}}",
             "site-id": "{{TABLEAU_SITE}}",
-            "source-doc-path": "../../src/Education and Innovation.twb",
+            "source-doc-path": "../../src/Education and Innovation dev1.twb",
             "tableau-server-password": "{{TABLEAU_PWD}}",
             "tableau-server-url": "{{TABLEAU_URL}}",
             "tableau-server-user": "{{TABLEAU_USER}}",
@@ -48,14 +48,14 @@
                     "operator": "not-equals"
                 },
                 {
-                    "column": "Region",
-                    "expression-value": "Asia|Africa|Europe",
-                    "operator": "regex"
-                },
-                {
                     "column": "Patent and Trade Mark Applications, total",
                     "expression-value": "0",
                     "operator": "greater-than-or-equals"
+                },
+                {
+                    "column": "Region",
+                    "expression-value": "Africa|Asia|Europe",
+                    "operator": "regex"
                 }
             ],
             "tableau-export-csv": {

@@ -1,10 +1,12 @@
 {
     "context-variables": {
+        "MSQL_PWD": "kinesis",
+        "MSQL_USER": "kinesis",
         "TABLEAU_PROJECT": "Education",
-        "TABLEAU_PWD": "nemmondommeg",
-        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.2/",
-        "TABLEAU_SITE": "dev2",
-        "TABLEAU_URL": "http://dev.kinesis-ci.com",
-        "TABLEAU_USER": "dev2"
+        "TABLEAU_PWD": "N3mmondommeg",
+        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.6/",
+        "TABLEAU_SITE": "dev1",
+        "TABLEAU_URL": "http://dev2.kinesis-ci.com",
+        "TABLEAU_USER": "kgiday"
     }
 }

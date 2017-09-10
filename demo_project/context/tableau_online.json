@@ -1,0 +1,12 @@
+{
+    "context-variables": {
+        "MSQL_PWD": "kinesis",
+        "MSQL_USER": "kinesis",
+        "TABLEAU_PROJECT": "Dev",
+        "TABLEAU_PWD": "tab-p1n4p1n4",
+        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.6/",
+        "TABLEAU_SITE": "devexa",
+        "TABLEAU_URL": "https://dub01.online.tableau.com",
+        "TABLEAU_USER": "peter.kosztolanyi@quidco.com"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "description": "assert filter equals",
+    "name": "8.Assert_Filter_Equals",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Viz",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/EducationandInnovation/Dashboard"
+        },
+        {
+            "disabled": false,
+            "name": "Set Filter",
+            "select-all": false,
+            "target": "Region",
+            "target-worksheet": "Gvt Spending on Education BAR",
+            "type": "set_filter_list",
+            "values": [
+                "Africa",
+                "Asia"
+            ]
+        },
+        {
+            "check-values": true,
+            "disabled": false,
+            "filter-type": "CATEGORICAL",
+            "formatted-values": true,
+            "name": "Assert Filter",
+            "target": "Region",
+            "target-worksheet": "Gvt Spending on Education BAR",
+            "type": "assert_filter_equals",
+            "value-list": [
+                "Africa",
+                "Asia"
+            ]
+        }
+    ]
+}
