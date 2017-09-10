@@ -1,0 +1,82 @@
+{
+    "description": "filters tests with 1.4 composition",
+    "name": "filters2_list",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Dashboard",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/fashion_orders/Dashboard1"
+        },
+        {
+            "name": "Set Gender Filter",
+            "select-all": false,
+            "target": "Gender",
+            "target-worksheet": "Breakdown by User",
+            "type": "set_filter_list",
+            "values": [
+                "Female"
+            ]
+        },
+        {
+            "check-values": true,
+            "filter-type": "CATEGORICAL",
+            "formatted-values": true,
+            "name": "assert Gender Filter",
+            "target": "Gender",
+            "target-worksheet": "Breakdown by User",
+            "type": "assert_filter_equals",
+            "value-list": [
+                "Female"
+            ]
+        },
+        {
+            "name": "Set Region Filter",
+            "select-all": false,
+            "target": "Region",
+            "target-worksheet": "Breakdown by City",
+            "type": "set_filter_list",
+            "values": [
+                "Americas"
+            ]
+        },
+        {
+            "check-values": true,
+            "filter-type": "CATEGORICAL",
+            "formatted-values": false,
+            "name": "assert filter - Region",
+            "target": "Region",
+            "target-worksheet": "Breakdown by City",
+            "type": "assert_filter_equals",
+            "value-list": [
+                "Americas"
+            ]
+        },
+        {
+            "name": "assert data rules ",
+            "rules": [
+                {
+                    "column": "Region",
+                    "expression-value": "Americas",
+                    "operator": "equals"
+                }
+            ],
+            "tableau-export-csv": {
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target": "Breakdown by City",
+            "type": "assert_data_rule_meets"
+        }
+    ]
+}

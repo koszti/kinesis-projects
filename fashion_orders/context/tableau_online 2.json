@@ -1,0 +1,13 @@
+{
+    "context-variables": {
+        "ORA_JDBC_SUB": "thin:@ycoders.com:49161/xe",
+        "ORA_PWD": "kinesis",
+        "ORA_USER": "dev1",
+        "TABLEAU_PROJECT": "Dev",
+        "TABLEAU_PWD": "tab-p1n4p1n4",
+        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.6/",
+        "TABLEAU_SITE": "devexa",
+        "TABLEAU_URL": "https://dub01.online.tableau.com",
+        "TABLEAU_USER": "peter.kosztolanyi@quidco.com"
+    }
+}

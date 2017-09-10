@@ -1,0 +1,106 @@
+{
+    "description": "assert data rules",
+    "name": "assert_data_rules2",
+    "tasks": [
+        {
+            "db-password": "{{ORA_PWD}}",
+            "db-username": "{{ORA_USER}}",
+            "disabled": false,
+            "name": "Publish Workbook",
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/fashion_orders_dev1.twb",
+            "tabbed": true,
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "fashion_orders",
+            "type": "publish_tableau"
+        },
+        {
+            "disabled": false,
+            "name": "login",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/fashion_orders/Dashboard1"
+        },
+        {
+            "disabled": false,
+            "name": "set filter list - Gender",
+            "select-all": false,
+            "target": "Gender",
+            "type": "set_filter_list",
+            "values": [
+                "Female"
+            ]
+        },
+        {
+            "disabled": false,
+            "name": "assert_data_rules",
+            "rules": [
+                {
+                    "column": "Gender",
+                    "expression-value": "Female",
+                    "operator": "equals"
+                }
+            ],
+            "tableau-export-csv": {
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target": "Breakdown by User",
+            "type": "assert_data_rule_meets"
+        },
+        {
+            "disabled": false,
+            "name": "switch tab",
+            "type": "switch_view",
+            "view-name": "Breakdown by City"
+        },
+        {
+            "disabled": false,
+            "name": "Set Parameter",
+            "parameter-type": "number",
+            "target": "Top x cities",
+            "type": "set_parameter",
+            "value-number": 5
+        },
+        {
+            "disabled": false,
+            "name": "assert_rules_after_param",
+            "rules": [
+                {
+                    "column": "City",
+                    "expression-value": "Manchester",
+                    "operator": "not-equals"
+                },
+                {
+                    "column": "City",
+                    "expression-value": "Zurich",
+                    "operator": "not-equals"
+                },
+                {
+                    "column": "Amount",
+                    "expression-value": "200",
+                    "operator": "greater-than-or-equals"
+                }
+            ],
+            "tableau-export-csv": {
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target": "Breakdown by City",
+            "type": "assert_data_rule_meets"
+        }
+    ]
+}

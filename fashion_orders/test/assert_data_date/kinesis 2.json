@@ -1,0 +1,29 @@
+{
+    "description": "assert data equals date",
+    "name": "assert_data_date",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "login",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open viz",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/fashion_orders/TotalOrdersBAR"
+        },
+        {
+            "disabled": false,
+            "expected-csv-path": "resources/Total Orders BAR-FULL.csv",
+            "export-type": "FULL",
+            "name": "assert data - date",
+            "target": "Total Orders BAR",
+            "type": "assert_data_equals"
+        }
+    ]
+}

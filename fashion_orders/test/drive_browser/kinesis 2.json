@@ -1,0 +1,23 @@
+{
+    "description": "drive browser login",
+    "name": "drive_browser",
+    "tasks": [
+        {
+            "commands": [
+                {
+                    "param-1": "https://tristansoft.tristancap.com/tasklist.zul",
+                    "type": "navigate-to"
+                },
+                {
+                    "param-1": "Tristan Invoice Management - Login",
+                    "type": "wait-until-title"
+                }
+            ],
+            "disabled": false,
+            "name": "login",
+            "query-selector": "css",
+            "timeout": 5000,
+            "type": "drive_browser"
+        }
+    ]
+}

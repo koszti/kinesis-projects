@@ -1,0 +1,13 @@
+{
+    "context-variables": {
+        "ORA_JDBC_SUB": "thin:@ycoders.com:49161/xe",
+        "ORA_PWD": "kinesis",
+        "ORA_USER": "dev1",
+        "TABLEAU_PROJECT": "Fashion",
+        "TABLEAU_PWD": "N3mmondommeg",
+        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.6/",
+        "TABLEAU_SITE": "dev1",
+        "TABLEAU_URL": "http://dev2.kinesis-ci.com",
+        "TABLEAU_USER": "kgiday"
+    }
+}

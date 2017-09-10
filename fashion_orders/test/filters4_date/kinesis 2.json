@@ -1,0 +1,40 @@
+{
+    "description": "setting date filters",
+    "name": "filters4_date",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "login",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Dashboad",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/fashion_orders/Dashboard1"
+        },
+        {
+            "end-datetime": "2015-08-07T00:00:00.000Z",
+            "name": "set date filter",
+            "start-datetime": "2015-03-08T00:00:00.000Z",
+            "target": "Order Datetime",
+            "target-worksheet": "Total Orders BAR",
+            "type": "set_filter_daterange"
+        },
+        {
+            "check-values": true,
+            "filter-type": "QUANTITATIVE_DATERANGE",
+            "formatted-values": false,
+            "name": "asset filter - date",
+            "target": "Order Datetime",
+            "target-worksheet": "Total Orders BAR",
+            "type": "assert_filter_equals",
+            "value-end-datetime": "2015-08-07T00:00:00.000Z",
+            "value-start-datetime": "2015-03-08T00:00:00.000Z"
+        }
+    ]
+}

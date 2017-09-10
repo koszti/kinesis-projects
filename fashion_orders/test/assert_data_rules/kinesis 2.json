@@ -1,0 +1,57 @@
+{
+    "description": "assert data rules test with filters",
+    "name": "assert_data_rules1",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "login",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Viz",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/fashion_orders/Dashboard1"
+        },
+        {
+            "disabled": false,
+            "max": 30,
+            "min": 10,
+            "name": "set filter - item id",
+            "target": "Item Id",
+            "type": "set_filter_range"
+        },
+        {
+            "disabled": false,
+            "name": "Assert Data Rules - filter",
+            "rules": [
+                {
+                    "column": "Brand",
+                    "expression-value": "Ferragamo",
+                    "operator": "not-equals"
+                },
+                {
+                    "column": "Brand",
+                    "expression-value": "Prada|Hermes|Mulberry|Gucci",
+                    "operator": "regex"
+                },
+                {
+                    "column": "Amount",
+                    "expression-value": "100",
+                    "operator": "greater-than-or-equals"
+                }
+            ],
+            "tableau-export-csv": {
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target": "Breakdown by Brand",
+            "type": "assert_data_rule_meets"
+        }
+    ]
+}

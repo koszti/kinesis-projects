@@ -1,0 +1,13 @@
+{
+    "context-variables": {
+        "MSQL_JDBC_SU": "//ycoders.com:13306/kinesis",
+        "MSQL_PWD": "kinesis",
+        "MSQL_USER": "kinesis",
+        "TABLEAU_PROJECT": "Education",
+        "TABLEAU_PWD": "nemmondommeg",
+        "TABLEAU_REST_API_CONTEXT_PATH": "/api/2.5/",
+        "TABLEAU_SITE": "jenkins",
+        "TABLEAU_URL": "http://dev.kinesis-ci.com",
+        "TABLEAU_USER": "jenkins"
+    }
+}

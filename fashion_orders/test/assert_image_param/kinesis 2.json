@@ -1,0 +1,78 @@
+{
+    "description": "assert image equals after chart type parameter",
+    "name": "assert_image_param",
+    "tasks": [
+        {
+            "db-password": "{{ORA_PWD}}",
+            "db-username": "{{ORA_USER}}",
+            "disabled": false,
+            "name": "publish data source",
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/fashion_orders_datasource.tdsx",
+            "tabbed": false,
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "fashion_orders_datasource",
+            "type": "publish_tableau"
+        },
+        {
+            "db-username": "{{ORA_USER}}",
+            "disabled": false,
+            "name": "Publish Workbook",
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-path": "../../src/fashion_orders_dev1.twb",
+            "tabbed": true,
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "fashion_orders",
+            "type": "publish_tableau"
+        },
+        {
+            "disabled": false,
+            "name": "Refresh fashion_orders data",
+            "project": "{{TABLEAU_PROJECT}}",
+            "refresh-extracts-type": "datasource",
+            "site-id": "{{TABLEAU_SITE}}",
+            "tableau-server-password": "{{TABLEAU_PWD}}",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "fashion_orders_datasource",
+            "type": "refreshextracts_tableau"
+        },
+        {
+            "disabled": false,
+            "name": "login",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Viz",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/fashion_orders/Dashboard1"
+        },
+        {
+            "disabled": false,
+            "name": "set char type parameter",
+            "parameter-type": "string",
+            "target": "Chart Type",
+            "type": "set_parameter",
+            "value-string": "Map"
+        },
+        {
+            "disabled": false,
+            "expected-image-path": "resources/Dashboard_para_map.png",
+            "name": "assert image",
+            "sampling-size": 50,
+            "threshold-percentage": 10,
+            "type": "assert_image_equals"
+        }
+    ]
+}

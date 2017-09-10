@@ -1,0 +1,72 @@
+{
+    "description": "testing range filters",
+    "name": "filters3_range",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "login",
+            "password": "{{TABLEAU_PWD}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Dashboard",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/fashion_orders/Dashboard1"
+        },
+        {
+            "disabled": false,
+            "max": 30,
+            "min": 10,
+            "name": "set Item Id",
+            "target": "Item Id",
+            "target-worksheet": "Breakdown by Brand",
+            "type": "set_filter_range"
+        },
+        {
+            "check-values": true,
+            "disabled": false,
+            "filter-type": "QUANTITATIVE_RANGE",
+            "formatted-values": false,
+            "name": "assert filter - Item Id",
+            "target": "Item Id",
+            "target-worksheet": "Breakdown by Brand",
+            "type": "assert_filter_equals",
+            "value-max": 30,
+            "value-max-formatted": "30.00",
+            "value-min": 10,
+            "value-min-formatted": "10.00"
+        },
+        {
+            "disabled": false,
+            "name": "assert data - Item Id test",
+            "rules": [
+                {
+                    "column": "Item Id",
+                    "expression-value": "10",
+                    "operator": "greater-than-or-equals"
+                },
+                {
+                    "column": "Item Id",
+                    "expression-value": "30",
+                    "operator": "lower-than-or-equals"
+                },
+                {
+                    "column": "Gender",
+                    "expression-value": "Male|Female",
+                    "operator": "regex"
+                }
+            ],
+            "tableau-export-csv": {
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target": "Breakdown by Brand",
+            "type": "assert_data_rule_meets"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+﻿Amount,City,Country,Gender,Item Id,Order Datetime,Region,V_Chart Type
+160,Liverpool,United Kingdom,Male,3,01/01/2015 00:00:00,EMEA,Bar
+120,London,United Kingdom,Male,1,13/03/2015 00:00:00,EMEA,Bar
+510,Manchester,United Kingdom,Male,45,30/10/2015 00:00:00,EMEA,Bar
+310,Los Angeles,United States,Male,30,09/11/2015 00:00:00,Americas,Bar
+100,Manchester,United Kingdom,Male,4,08/12/2014 00:00:00,EMEA,Bar
+170,St Helens,United Kingdom,Male,3,17/12/2014 00:00:00,EMEA,Bar
+300,Dusseldorf,Germany,Male,2,04/03/2015 00:00:00,EMEA,Bar
+90,Bristol,United Kingdom,Female,3,22/01/2015 00:00:00,EMEA,Bar
+100,Liverpool,United Kingdom,Female,2,02/02/2015 00:00:00,EMEA,Bar
+75,Manchester,United Kingdom,Female,5,12/02/2015 00:00:00,EMEA,Bar
+410,Berlin,Germany,Female,50,08/01/2016 00:00:00,EMEA,Bar
+280,Birmingham,United Kingdom,Female,5,25/01/2015 00:00:00,EMEA,Bar
+50,St Helens,United Kingdom,Female,4,07/03/2015 00:00:00,EMEA,Bar
+710,Montreal,Canada,Male,36,30/09/2015 00:00:00,Americas,Bar
+610,Birmingham,United Kingdom,Male,49,16/12/2015 00:00:00,EMEA,Bar
+610,Brisbane,Australia,Female,36,30/08/2015 00:00:00,Asia Pacific,Bar
+110,Munich,Germany,Female,11,09/10/2015 00:00:00,EMEA,Bar
+210,Florence,Italy,Female,12,12/03/2015 00:00:00,EMEA,Bar
+1010,Sydney,Australia,Female,38,24/07/2015 00:00:00,Asia Pacific,Bar
+310,Singapore,Singapore,Female,37,24/08/2015 00:00:00,Asia Pacific,Bar
+610,Sydney,Australia,Female,39,26/08/2015 00:00:00,Asia Pacific,Bar
+610,San Francisco,United States,Female,25,12/04/2015 00:00:00,Americas,Bar
+910,Marseille,France,Male,30,01/06/2015 00:00:00,EMEA,Bar
+410,New York,United States,Male,21,11/06/2015 00:00:00,Americas,Bar
+510,Turin,Italy,Female,13,26/10/2014 00:00:00,EMEA,Bar
+1010,Rome,Italy,Female,16,12/02/2015 00:00:00,EMEA,Bar
+710,San Francisco,United States,Female,29,27/05/2015 00:00:00,Americas,Bar
+210,Montreal,Canada,Female,31,26/09/2015 00:00:00,Americas,Bar
+410,Lyon,France,Male,18,25/08/2014 00:00:00,EMEA,Bar
+410,Zurich,Switzerland,Male,27,24/06/2015 00:00:00,EMEA,Bar
