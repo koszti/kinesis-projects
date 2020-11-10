@@ -1,0 +1,10 @@
+{
+    "context-variables": {
+        "TABLEAU_PROJECT": "",
+        "TABLEAU_PWD": "tV1UJIUzfnnbkQ==;encrypted",
+        "TABLEAU_SITE": "development",
+        "TABLEAU_URL": "http://172.43.33.218",
+        "TABLEAU_USER": "testuser",
+        "TABLEAU_VERSION": "2020.3"
+    }
+}

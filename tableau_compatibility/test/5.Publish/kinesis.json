@@ -1,0 +1,85 @@
+{
+    "description": "publish",
+    "name": "5.Publish",
+    "tasks": [
+        {
+            "datasource": {
+                "connections": [],
+                "update-connected-data-source": false
+            },
+            "disabled": false,
+            "name": "Publish AI jobs twbx",
+            "overwrite": true,
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-location": "kinesis-project",
+            "source-doc-path": "../../src/AI-jobs.twbx",
+            "source-doc-type": "workbook",
+            "tabbed": false,
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-context": "-- Active Context --",
+            "target-doc-name": "AI-jobs_KINESIS_PUBLISHED",
+            "type": "publish_tableau"
+        },
+        {
+            "datasource": {
+                "connections": [
+                    {
+                        "embed-password": true,
+                        "password": "+FF3SYsvWlvErC3zhLXVlw==;encrypted",
+                        "server-address": "mariadb-dev.cwuhnkzxz2ia.eu-central-1.rds.amazonaws.com",
+                        "server-dbname": "worldbank",
+                        "server-port": "3306",
+                        "username": "gbsuser"
+                    }
+                ],
+                "update-connected-data-source": false
+            },
+            "disabled": false,
+            "name": "Publish Worldbank datasource",
+            "overwrite": true,
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-location": "kinesis-project",
+            "source-doc-path": "../../src/worldbank_development_indicators.tdsx",
+            "source-doc-type": "workbook",
+            "tabbed": false,
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-context": "-- Active Context --",
+            "target-doc-name": "worldbank_development_indicators_KINESIS_PUBLISHED",
+            "type": "publish_tableau"
+        },
+        {
+            "datasource": {
+                "connections": [
+                    {
+                        "embed-password": false,
+                        "server-address": "{TABLEAU_URL}",
+                        "server-dbname": "worldbank_development_indicators_KINESIS_PUBLISHED"
+                    }
+                ],
+                "update-connected-data-source": false
+            },
+            "disabled": false,
+            "name": "Publish Education and Innovation Workbook",
+            "overwrite": true,
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-location": "kinesis-project",
+            "source-doc-path": "../../src/Education and Innovation.twb",
+            "source-doc-type": "workbook",
+            "tabbed": false,
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-context": "-- Active Context --",
+            "target-doc-name": "Education and Innovation_KINESIS_PUBLISHED",
+            "type": "publish_tableau"
+        }
+    ],
+    "type": "functional"
+}

@@ -1,0 +1,1669 @@
+{
+    "name": "Dashboard",
+    "uniqueName": "AI-jobs-Dashboard",
+    "url": "https://10ax.online.tableau.com/t/kinesisbetaonlinesite/views/AI-jobs/Dashboard",
+    "urlWithSelmerTokens": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/AI-jobs/Dashboard",
+    "timestamp": 1604949642089,
+    "content": {
+        "filters": true,
+        "fullColumns": true,
+        "image": true,
+        "parameters": true,
+        "summaryColumns": true,
+        "summaryData": true,
+        "worksheets": true
+    },
+    "worksheets": [
+        {
+            "name": "Graphs",
+            "filters": [
+                {
+                    "caption": "Measure Names",
+                    "type": "categorical",
+                    "values": [
+                        {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        }
+                    ]
+                },
+                {
+                    "caption": "Industry",
+                    "type": "categorical",
+                    "values": [
+                        {
+                            "value": "Total for all sectors",
+                            "formattedValue": "Total for all sectors"
+                        }
+                    ]
+                }
+            ],
+            "columns": {
+                "summary": [
+                    {
+                        "name": "Industry",
+                        "dataType": "string",
+                        "index": 0
+                    },
+                    {
+                        "name": "Measure Names",
+                        "dataType": "string",
+                        "index": 1
+                    },
+                    {
+                        "name": "Measure Values",
+                        "dataType": "float",
+                        "index": 2
+                    },
+                    {
+                        "name": "SUM(Employment share of total jobs (%))",
+                        "dataType": "float",
+                        "index": 3
+                    },
+                    {
+                        "name": "SUM(Job automation (% at potential high risk))",
+                        "dataType": "float",
+                        "index": 4
+                    },
+                    {
+                        "name": "SUM(No. of Jobs at Risk)",
+                        "dataType": "float",
+                        "index": 5
+                    }
+                ],
+                "underlying": [
+                    {
+                        "name": "Industry",
+                        "dataType": "string",
+                        "index": 0
+                    },
+                    {
+                        "name": "Employment share of total jobs (%)",
+                        "dataType": "float",
+                        "index": 1
+                    },
+                    {
+                        "name": "Job automation (% at potential high risk)",
+                        "dataType": "float",
+                        "index": 2
+                    },
+                    {
+                        "name": "No. of Jobs at Risk",
+                        "dataType": "float",
+                        "index": 3
+                    }
+                ]
+            },
+            "data": {
+                "summary": [
+                    {
+                        "Industry": {
+                            "value": "Domestic personnel and self-subsistence",
+                            "formattedValue": "Domestic personnel and self-subsistence"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.003",
+                            "formattedValue": "0.003000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Domestic personnel and self-subsistence",
+                            "formattedValue": "Domestic personnel and self-subsistence"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.081",
+                            "formattedValue": "0.081000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Mining and quarrying",
+                            "formattedValue": "Mining and quarrying"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.002",
+                            "formattedValue": "0.002000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Mining and quarrying",
+                            "formattedValue": "Mining and quarrying"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.231",
+                            "formattedValue": "0.231000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Electricity and gas supply",
+                            "formattedValue": "Electricity and gas supply"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.004",
+                            "formattedValue": "0.004000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Electricity and gas supply",
+                            "formattedValue": "Electricity and gas supply"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.318",
+                            "formattedValue": "0.318000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Agriculture, forestry and fishing",
+                            "formattedValue": "Agriculture, forestry and fishing"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.011",
+                            "formattedValue": "0.011000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Agriculture, forestry and fishing",
+                            "formattedValue": "Agriculture, forestry and fishing"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.187",
+                            "formattedValue": "0.187000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Water, sewage and waste management",
+                            "formattedValue": "Water, sewage and waste management"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.006",
+                            "formattedValue": "0.006000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Water, sewage and waste management",
+                            "formattedValue": "Water, sewage and waste management"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.626",
+                            "formattedValue": "0.626000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Real estate",
+                            "formattedValue": "Real estate"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.017",
+                            "formattedValue": "0.017000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Real estate",
+                            "formattedValue": "Real estate"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.282",
+                            "formattedValue": "0.282000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Other services",
+                            "formattedValue": "Other services"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.027",
+                            "formattedValue": "0.027000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Other services",
+                            "formattedValue": "Other services"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.186",
+                            "formattedValue": "0.186000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Arts and entertainment",
+                            "formattedValue": "Arts and entertainment"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.029",
+                            "formattedValue": "0.029000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Arts and entertainment",
+                            "formattedValue": "Arts and entertainment"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.223",
+                            "formattedValue": "0.223000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Education",
+                            "formattedValue": "Education"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.087",
+                            "formattedValue": "0.087000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Education",
+                            "formattedValue": "Education"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.085",
+                            "formattedValue": "0.085000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Financial and insurance",
+                            "formattedValue": "Financial and insurance"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.032",
+                            "formattedValue": "0.032000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Financial and insurance",
+                            "formattedValue": "Financial and insurance"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.322",
+                            "formattedValue": "0.322000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Information and communication",
+                            "formattedValue": "Information and communication"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.041",
+                            "formattedValue": "0.041000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Information and communication",
+                            "formattedValue": "Information and communication"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.273",
+                            "formattedValue": "0.273000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Public administration and defence",
+                            "formattedValue": "Public administration and defence"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.043",
+                            "formattedValue": "0.043000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Public administration and defence",
+                            "formattedValue": "Public administration and defence"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.321",
+                            "formattedValue": "0.321000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Construction",
+                            "formattedValue": "Construction"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.064",
+                            "formattedValue": "0.064000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Construction",
+                            "formattedValue": "Construction"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.237",
+                            "formattedValue": "0.237000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Accommodation and food services",
+                            "formattedValue": "Accommodation and food services"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.067",
+                            "formattedValue": "0.067000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Accommodation and food services",
+                            "formattedValue": "Accommodation and food services"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.255",
+                            "formattedValue": "0.255000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Human health and social work",
+                            "formattedValue": "Human health and social work"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.124",
+                            "formattedValue": "0.124000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Human health and social work",
+                            "formattedValue": "Human health and social work"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.17",
+                            "formattedValue": "0.170000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Professional, scientific and technical",
+                            "formattedValue": "Professional, scientific and technical"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.088",
+                            "formattedValue": "0.088000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Professional, scientific and technical",
+                            "formattedValue": "Professional, scientific and technical"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.256",
+                            "formattedValue": "0.256000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Transportation and storage",
+                            "formattedValue": "Transportation and storage"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.049",
+                            "formattedValue": "0.049000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Transportation and storage",
+                            "formattedValue": "Transportation and storage"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.564",
+                            "formattedValue": "0.564000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Administrative and support services",
+                            "formattedValue": "Administrative and support services"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.084",
+                            "formattedValue": "0.084000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Administrative and support services",
+                            "formattedValue": "Administrative and support services"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.374",
+                            "formattedValue": "0.374000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Manufacturing",
+                            "formattedValue": "Manufacturing"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.076",
+                            "formattedValue": "0.076000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Manufacturing",
+                            "formattedValue": "Manufacturing"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.464",
+                            "formattedValue": "0.464000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Wholesale and retail trade",
+                            "formattedValue": "Wholesale and retail trade"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Employment share of total jobs (%):qk]",
+                            "formattedValue": "Employment share of total jobs (%)"
+                        },
+                        "Measure Values": {
+                            "value": "0.148",
+                            "formattedValue": "0.148000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Wholesale and retail trade",
+                            "formattedValue": "Wholesale and retail trade"
+                        },
+                        "Measure Names": {
+                            "value": "[federated.0mwp8xl0kuevpu18xw2ie0fh3w1e].[sum:Job automation (% at potential high risk):qk]",
+                            "formattedValue": "Job automation (% at potential high risk)"
+                        },
+                        "Measure Values": {
+                            "value": "0.44",
+                            "formattedValue": "0.440000"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Domestic personnel and self-subsistence",
+                            "formattedValue": "Domestic personnel and self-subsistence"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.003",
+                            "formattedValue": "0.003000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.081",
+                            "formattedValue": "0.081000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.0083960380835381",
+                            "formattedValue": "0.00840"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Mining and quarrying",
+                            "formattedValue": "Mining and quarrying"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.002",
+                            "formattedValue": "0.002000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.231",
+                            "formattedValue": "0.231000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.0159628378378378",
+                            "formattedValue": "0.01596"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Electricity and gas supply",
+                            "formattedValue": "Electricity and gas supply"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.004",
+                            "formattedValue": "0.004000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.318",
+                            "formattedValue": "0.318000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.0439496314496314",
+                            "formattedValue": "0.04395"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Agriculture, forestry and fishing",
+                            "formattedValue": "Agriculture, forestry and fishing"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.011",
+                            "formattedValue": "0.011000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.187",
+                            "formattedValue": "0.187000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.0710726351351351",
+                            "formattedValue": "0.07107"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Water, sewage and waste management",
+                            "formattedValue": "Water, sewage and waste management"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.006",
+                            "formattedValue": "0.006000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.626",
+                            "formattedValue": "0.626000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.1297757985257985",
+                            "formattedValue": "0.12978"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Real estate",
+                            "formattedValue": "Real estate"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.017",
+                            "formattedValue": "0.017000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.282",
+                            "formattedValue": "0.282000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.1656403562653562",
+                            "formattedValue": "0.16564"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Other services",
+                            "formattedValue": "Other services"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.027",
+                            "formattedValue": "0.027000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.186",
+                            "formattedValue": "0.186000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.1735181203931204",
+                            "formattedValue": "0.17352"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Arts and entertainment",
+                            "formattedValue": "Arts and entertainment"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.029",
+                            "formattedValue": "0.029000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.223",
+                            "formattedValue": "0.223000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.2234451781326781",
+                            "formattedValue": "0.22345"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Education",
+                            "formattedValue": "Education"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.087",
+                            "formattedValue": "0.087000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.085",
+                            "formattedValue": "0.085000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.2555090601965602",
+                            "formattedValue": "0.25551"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Financial and insurance",
+                            "formattedValue": "Financial and insurance"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.032",
+                            "formattedValue": "0.032000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.322",
+                            "formattedValue": "0.322000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.356019656019656",
+                            "formattedValue": "0.35602"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Information and communication",
+                            "formattedValue": "Information and communication"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.041",
+                            "formattedValue": "0.041000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.273",
+                            "formattedValue": "0.273000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.3867360257985258",
+                            "formattedValue": "0.38674"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Public administration and defence",
+                            "formattedValue": "Public administration and defence"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.043",
+                            "formattedValue": "0.043000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.321",
+                            "formattedValue": "0.321000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.476915694103194",
+                            "formattedValue": "0.47692"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Construction",
+                            "formattedValue": "Construction"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.064",
+                            "formattedValue": "0.064000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.237",
+                            "formattedValue": "0.237000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.524078624078624",
+                            "formattedValue": "0.52408"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Accommodation and food services",
+                            "formattedValue": "Accommodation and food services"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.067",
+                            "formattedValue": "0.067000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.255",
+                            "formattedValue": "0.255000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.5903140356265356",
+                            "formattedValue": "0.59031"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Human health and social work",
+                            "formattedValue": "Human health and social work"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.124",
+                            "formattedValue": "0.124000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.17",
+                            "formattedValue": "0.170000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.728347665847666",
+                            "formattedValue": "0.72835"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Professional, scientific and technical",
+                            "formattedValue": "Professional, scientific and technical"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.088",
+                            "formattedValue": "0.088000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.256",
+                            "formattedValue": "0.256000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.7783783783783784",
+                            "formattedValue": "0.77838"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Transportation and storage",
+                            "formattedValue": "Transportation and storage"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.049",
+                            "formattedValue": "0.049000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.564",
+                            "formattedValue": "0.564000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "0.954867936117936",
+                            "formattedValue": "0.95487"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Administrative and support services",
+                            "formattedValue": "Administrative and support services"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.084",
+                            "formattedValue": "0.084000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.374",
+                            "formattedValue": "0.374000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "1.0854729729729729",
+                            "formattedValue": "1.08547"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Manufacturing",
+                            "formattedValue": "Manufacturing"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.076",
+                            "formattedValue": "0.076000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.464",
+                            "formattedValue": "0.464000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "1.2184275184275184",
+                            "formattedValue": "1.21843"
+                        }
+                    },
+                    {
+                        "Industry": {
+                            "value": "Wholesale and retail trade",
+                            "formattedValue": "Wholesale and retail trade"
+                        },
+                        "Measure Names": {
+                            "value": "%null%",
+                            "formattedValue": "Null"
+                        },
+                        "Measure Values": {
+                            "value": "null",
+                            "formattedValue": "Null"
+                        },
+                        "SUM(Employment share of total jobs (%))": {
+                            "value": "0.148",
+                            "formattedValue": "0.148000"
+                        },
+                        "SUM(Job automation (% at potential high risk))": {
+                            "value": "0.44",
+                            "formattedValue": "0.440000"
+                        },
+                        "SUM(No. of Jobs at Risk)": {
+                            "value": "2.25",
+                            "formattedValue": "2.25000"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "parameters": [],
+    "image": "resources/snapshot-AI-jobs-Dashboard.png"
+}

@@ -1,0 +1,42 @@
+{
+    "description": "cross-env test",
+    "name": "9.Cross-environment",
+    "tasks": [
+        {
+            "check-columns-summary": true,
+            "check-columns-underlying": true,
+            "check-data-summary": true,
+            "check-filter-types": true,
+            "check-filter-values": true,
+            "check-filters-exist": true,
+            "check-image": true,
+            "check-parameter-types": true,
+            "check-parameter-values": true,
+            "check-parameters-exist": true,
+            "check-worksheets-exist": true,
+            "disabled": false,
+            "image": {
+                "sampling-size": 50,
+                "threshold-percentage": 10
+            },
+            "name": "cross-env",
+            "refresh-data": true,
+            "site-id": "{{TABLEAU_SITE}}",
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-env": {
+                "target-site-id": "kinesisbetaonlinesite",
+                "target-tableau-server-password": "4wFMBaobV3Ly/k7G;encrypted",
+                "target-tableau-server-url": "https://10ax.online.tableau.com",
+                "target-tableau-server-user": "peter.kosztolanyi-ext@360suite.io",
+                "target-tableau-server-version": "2020.3",
+                "target-url": "https://10ax.online.tableau.com/t/kinesisbetaonlinesite/views/EducationandInnovation/Dashboard"
+            },
+            "type": "crossenv_test",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/EducationandInnovation/Dashboard",
+            "use-formatted-values": true
+        }
+    ],
+    "type": "crossenv"
+}

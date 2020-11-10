@@ -1,0 +1,8 @@
+{
+    "kinesisVersion": "2.0.0",
+    "name": "test-tableau-compatibility",
+    "description": "Test Latest Tableau version",
+    "srcDir": "src",
+    "jobDir": "test",
+    "contextDir": "context"
+}

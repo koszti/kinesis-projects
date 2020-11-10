@@ -1,0 +1,2926 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.20.1030.1106                               -->
+<workbook source-build='2020.1.9 (20201.20.0913.2109)' source-platform='mac' version='18.1' xml:base='https://10ax.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ISO8601DefaultCalendarPref />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation?rev=1.2' id='EducationandInnovation' path='/t/kinesisdev829159/workbooks' revision='1.2' site='kinesisdev829159' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='clean' />
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Chart Type 1' datatype='string' name='[Category or Brand (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+        <calculation class='tableau' formula='&quot;Bar&quot;' />
+        <members>
+          <member value='&quot;Map&quot;' />
+          <member value='&quot;Bar&quot;' />
+        </members>
+      </column>
+      <column caption='Sorty By' datatype='string' name='[Chart Type (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Terciary&quot;'>
+        <calculation class='tableau' formula='&quot;Terciary&quot;' />
+        <members>
+          <member value='&quot;Primary&quot;' />
+          <member value='&quot;Secondary&quot;' />
+          <member value='&quot;Terciary&quot;' />
+        </members>
+      </column>
+      <column caption='Chart Type' datatype='string' name='[Country Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+        <calculation class='tableau' formula='&quot;Bar&quot;' />
+        <members>
+          <member value='&quot;Bar&quot;' />
+          <member value='&quot;Map&quot;' />
+        </members>
+      </column>
+      <column caption='Registered - Start Date' datatype='datetime' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2014-08-15 00:00:00#'>
+        <calculation class='tableau' formula='#2014-08-15 00:00:00#' />
+        <range max='#2016-01-06 00:00:00#' min='#2014-08-15 00:00:00#' />
+      </column>
+      <column caption='Registered - End Date' datatype='datetime' name='[Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='#2016-01-06 00:00:00#'>
+        <calculation class='tableau' formula='#2016-01-06 00:00:00#' />
+        <range max='#2016-01-06 00:00:00#' min='#2014-08-15 00:00:00#' />
+      </column>
+    </datasource>
+    <datasource caption='worldbank_development_indicators' inline='true' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' version='18.1'>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/datasources/worldbank_development_indicators?rev=1.1' id='worldbank_development_indicators' path='/t/kinesisdev829159/datasources' revision='1.2' site='kinesisdev829159' />
+      <connection channel='https' class='sqlproxy' dbname='worldbank_development_indicators' directory='/dataserver' port='443' server='10ax.online.tableau.com' server-ds-friendly-name='worldbank_development_indicators' server-oauth='' username='' workgroup-auth-mode='prompt'>
+        <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
+        <metadata-records>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>63</ordinal>
+            <layered>true</layered>
+            <caption>Number of Records</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>adult_literacy_rate_both_sexes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[adult_literacy_rate_both_sexes]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>adult_literacy_rate_both_sexes</remote-alias>
+            <ordinal>23</ordinal>
+            <layered>true</layered>
+            <caption>Adult Literacy Rate Both Sexes</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <caption>Country</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='1' name='LROOT_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country_code]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>country_code</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <caption>Country Code</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='1' name='LROOT_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>enrollment_in_primary_education</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[enrollment_in_primary_education]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>enrollment_in_primary_education</remote-alias>
+            <ordinal>27</ordinal>
+            <layered>true</layered>
+            <caption>Enrollment In Primary Education</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>enrollment_in_secondary_education</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[enrollment_in_secondary_education]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>enrollment_in_secondary_education</remote-alias>
+            <ordinal>28</ordinal>
+            <layered>true</layered>
+            <caption>Enrollment In Secondary Education</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>enrollment_in_secondary_general</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[enrollment_in_secondary_general]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>enrollment_in_secondary_general</remote-alias>
+            <ordinal>29</ordinal>
+            <layered>true</layered>
+            <caption>Enrollment In Secondary General</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>enrollment_in_secondary_vocational</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[enrollment_in_secondary_vocational]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>enrollment_in_secondary_vocational</remote-alias>
+            <ordinal>30</ordinal>
+            <layered>true</layered>
+            <caption>Enrollment In Secondary Vocational</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>fertility_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fertility_rate]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>fertility_rate</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>fixed_broadband_subscriptions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fixed_broadband_subscriptions]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>fixed_broadband_subscriptions</remote-alias>
+            <ordinal>54</ordinal>
+            <layered>true</layered>
+            <caption>Fixed Broadband Subscriptions</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>fixed_broadband_subscriptions_per_100ppl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fixed_broadband_subscriptions_per_100ppl]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>fixed_broadband_subscriptions_per_100ppl</remote-alias>
+            <ordinal>55</ordinal>
+            <layered>true</layered>
+            <caption>Fixed Broadband Subscriptions Per 100Ppl</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>fixed_phone_subscriptions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fixed_phone_subscriptions]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>fixed_phone_subscriptions</remote-alias>
+            <ordinal>52</ordinal>
+            <layered>true</layered>
+            <caption>Fixed Phone Subscriptions</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>fixed_phone_subscriptions_per_100ppl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fixed_phone_subscriptions_per_100ppl]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>fixed_phone_subscriptions_per_100ppl</remote-alias>
+            <ordinal>53</ordinal>
+            <layered>true</layered>
+            <caption>Fixed Phone Subscriptions Per 100Ppl</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>gdp_current_usd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp_current_usd]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>gdp_current_usd</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <caption>Gdp Current Usd</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>gdp_growth_annualpc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp_growth_annualpc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>gdp_growth_annualpc</remote-alias>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <caption>Gdp Growth Annualpc</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>gdp_percapita_current_usd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp_percapita_current_usd]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>gdp_percapita_current_usd</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <caption>Gdp Percapita Current Usd</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>gdp_percapita_growth_annualpc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp_percapita_growth_annualpc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>gdp_percapita_growth_annualpc</remote-alias>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <caption>Gdp Percapita Growth Annualpc</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>government_expenditure_on_education_pc_of_GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[government_expenditure_on_education_pc_of_GDP]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>government_expenditure_on_education_pc_of_GDP</remote-alias>
+            <ordinal>22</ordinal>
+            <layered>true</layered>
+            <caption>government expenditure on education pc of GDP</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>gross_enrollment_ratio_primary_both_sexes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gross_enrollment_ratio_primary_both_sexes]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>gross_enrollment_ratio_primary_both_sexes</remote-alias>
+            <ordinal>24</ordinal>
+            <layered>true</layered>
+            <caption>Gross Enrollment Ratio Primary Both Sexes</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>gross_enrollment_ratio_secondary_both_sexes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gross_enrollment_ratio_secondary_both_sexes]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>gross_enrollment_ratio_secondary_both_sexes</remote-alias>
+            <ordinal>25</ordinal>
+            <layered>true</layered>
+            <caption>Gross Enrollment Ratio Secondary Both Sexes</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>gross_enrollment_ratio_terciary_both_sexes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gross_enrollment_ratio_terciary_both_sexes]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>gross_enrollment_ratio_terciary_both_sexes</remote-alias>
+            <ordinal>26</ordinal>
+            <layered>true</layered>
+            <caption>Gross Enrollment Ratio Terciary Both Sexes</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>internet_users_per_100ppl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[internet_users_per_100ppl]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>internet_users_per_100ppl</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <caption>Internet Users Per 100Ppl</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>labor_force_participation_female</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[labor_force_participation_female]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>labor_force_participation_female</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>labor_force_participation_male</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[labor_force_participation_male]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>labor_force_participation_male</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>literacy_rate_adult_female</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[literacy_rate_adult_female]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>literacy_rate_adult_female</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>literacy_rate_adult_male</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[literacy_rate_adult_male]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>literacy_rate_adult_male</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>mobile_subscriptions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mobile_subscriptions]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>mobile_subscriptions</remote-alias>
+            <ordinal>50</ordinal>
+            <layered>true</layered>
+            <caption>Mobile Subscriptions</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>mobile_subscriptions_per_100ppl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mobile_subscriptions_per_100ppl]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>mobile_subscriptions_per_100ppl</remote-alias>
+            <ordinal>51</ordinal>
+            <layered>true</layered>
+            <caption>Mobile Subscriptions Per 100Ppl</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>patent_applications_nonresident</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[patent_applications_nonresident]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>patent_applications_nonresident</remote-alias>
+            <ordinal>56</ordinal>
+            <layered>true</layered>
+            <caption>Patent Applications Nonresident</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>patent_applications_resident</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[patent_applications_resident]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>patent_applications_resident</remote-alias>
+            <ordinal>57</ordinal>
+            <layered>true</layered>
+            <caption>Patent Applications Resident</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>population_ages_0_14_pcoftotal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population_ages_0_14_pcoftotal]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>population_ages_0_14_pcoftotal</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>population_ages_15_64_pcoftotal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population_ages_15_64_pcoftotal]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>population_ages_15_64_pcoftotal</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>population_ages_65_above_pcoftotal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population_ages_65_above_pcoftotal]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>population_ages_65_above_pcoftotal</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>population_density_ppl_persqkm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population_density_ppl_persqkm]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>population_density_ppl_persqkm</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>population_female_pcoftotal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population_female_pcoftotal]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>population_female_pcoftotal</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <caption>Population Female Pcoftotal</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>population_growth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population_growth]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>population_growth</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <caption>Population Growth</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>population_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population_total]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>population_total</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <caption>Population Total</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <caption>Region</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='1' name='LROOT_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>research_development_expenditure_pc_GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[research_development_expenditure_pc_GDP]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>research_development_expenditure_pc_GDP</remote-alias>
+            <ordinal>49</ordinal>
+            <layered>true</layered>
+            <caption>research development expenditure pc GDP</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>school_enrollment_primary_female_pc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[school_enrollment_primary_female_pc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>school_enrollment_primary_female_pc</remote-alias>
+            <ordinal>31</ordinal>
+            <layered>true</layered>
+            <caption>School Enrollment Primary Female Pc</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>school_enrollment_primary_male_pc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[school_enrollment_primary_male_pc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>school_enrollment_primary_male_pc</remote-alias>
+            <ordinal>32</ordinal>
+            <layered>true</layered>
+            <caption>School Enrollment Primary Male Pc</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>school_enrollment_secondary_female_pc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[school_enrollment_secondary_female_pc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>school_enrollment_secondary_female_pc</remote-alias>
+            <ordinal>33</ordinal>
+            <layered>true</layered>
+            <caption>School Enrollment Secondary Female Pc</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>school_enrollment_secondary_male_pc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[school_enrollment_secondary_male_pc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>school_enrollment_secondary_male_pc</remote-alias>
+            <ordinal>34</ordinal>
+            <layered>true</layered>
+            <caption>School Enrollment Secondary Male Pc</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>school_enrollment_terciary_female_pc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[school_enrollment_terciary_female_pc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>school_enrollment_terciary_female_pc</remote-alias>
+            <ordinal>35</ordinal>
+            <layered>true</layered>
+            <caption>School Enrollment Terciary Female Pc</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>school_enrollment_terciary_male_pc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[school_enrollment_terciary_male_pc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>school_enrollment_terciary_male_pc</remote-alias>
+            <ordinal>36</ordinal>
+            <layered>true</layered>
+            <caption>School Enrollment Terciary Male Pc</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>trademark_applications_nonresident</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trademark_applications_nonresident]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>trademark_applications_nonresident</remote-alias>
+            <ordinal>58</ordinal>
+            <layered>true</layered>
+            <caption>Trademark Applications Nonresident</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>trademark_applications_resident</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trademark_applications_resident]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>trademark_applications_resident</remote-alias>
+            <ordinal>59</ordinal>
+            <layered>true</layered>
+            <caption>Trademark Applications Resident</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>trademark_applications_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trademark_applications_total]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>trademark_applications_total</remote-alias>
+            <ordinal>60</ordinal>
+            <layered>true</layered>
+            <caption>Trademark Applications Total</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_total_female_pc_of_labourforce</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_total_female_pc_of_labourforce]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_total_female_pc_of_labourforce</remote-alias>
+            <ordinal>38</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_total_male_pc_of_labourforce</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_total_male_pc_of_labourforce]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_total_male_pc_of_labourforce</remote-alias>
+            <ordinal>39</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_total_pc_of_labourforce</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_total_pc_of_labourforce]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_total_pc_of_labourforce</remote-alias>
+            <ordinal>37</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_primary_edu_female_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_primary_edu_female_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_primary_edu_female_pc_of_unemployment</remote-alias>
+            <ordinal>47</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_primary_edu_male_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_primary_edu_male_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_primary_edu_male_pc_of_unemployment</remote-alias>
+            <ordinal>46</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_primary_edu_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_primary_edu_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_primary_edu_pc_of_unemployment</remote-alias>
+            <ordinal>48</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_secondary_edu_female_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_secondary_edu_female_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_secondary_edu_female_pc_of_unemployment</remote-alias>
+            <ordinal>44</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_secondary_edu_male_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_secondary_edu_male_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_secondary_edu_male_pc_of_unemployment</remote-alias>
+            <ordinal>43</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_secondary_edu_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_secondary_edu_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_secondary_edu_pc_of_unemployment</remote-alias>
+            <ordinal>45</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_terciary_edu_female_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_terciary_edu_female_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_terciary_edu_female_pc_of_unemployment</remote-alias>
+            <ordinal>41</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_terciary_edu_male_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_terciary_edu_male_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_terciary_edu_male_pc_of_unemployment</remote-alias>
+            <ordinal>42</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>unemployment_with_terciary_edu_pc_of_unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_with_terciary_edu_pc_of_unemployment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>unemployment_with_terciary_edu_pc_of_unemployment</remote-alias>
+            <ordinal>40</ordinal>
+            <layered>true</layered>
+            <family>worldbank_development_indicators</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <caption>Year</caption>
+            <family>worldbank_development_indicators</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_64BIT_CALCULATIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>296</attribute>
+              <attribute datatype='string' name='collation'>&quot;LROOT_S2&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource :source-version='18.1' formatted-name='worldbank_development_indicators (local copy)' inline='true' version='18.1' xml:base='https://10ax.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/datasources/worldbank_development_indicators?rev=1.1' id='worldbank_development_indicators' path='/t/kinesisdev829159/datasources' revision='1.2' site='kinesisdev829159' />
+  <connection channel='https' class='sqlproxy' dbname='worldbank_development_indicators' directory='/dataserver' port='443' server='10ax.online.tableau.com'>
+    <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <cols>
+      <map key='[Number of Records]' value='[sqlproxy].[Number of Records]' />
+      <map key='[adult_literacy_rate_both_sexes]' value='[sqlproxy].[adult_literacy_rate_both_sexes]' />
+      <map key='[country]' value='[sqlproxy].[country]' />
+      <map key='[country_code]' value='[sqlproxy].[country_code]' />
+      <map key='[enrollment_in_primary_education]' value='[sqlproxy].[enrollment_in_primary_education]' />
+      <map key='[enrollment_in_secondary_education]' value='[sqlproxy].[enrollment_in_secondary_education]' />
+      <map key='[enrollment_in_secondary_general]' value='[sqlproxy].[enrollment_in_secondary_general]' />
+      <map key='[enrollment_in_secondary_vocational]' value='[sqlproxy].[enrollment_in_secondary_vocational]' />
+      <map key='[fertility_rate]' value='[sqlproxy].[fertility_rate]' />
+      <map key='[fixed_broadband_subscriptions]' value='[sqlproxy].[fixed_broadband_subscriptions]' />
+      <map key='[fixed_broadband_subscriptions_per_100ppl]' value='[sqlproxy].[fixed_broadband_subscriptions_per_100ppl]' />
+      <map key='[fixed_phone_subscriptions]' value='[sqlproxy].[fixed_phone_subscriptions]' />
+      <map key='[fixed_phone_subscriptions_per_100ppl]' value='[sqlproxy].[fixed_phone_subscriptions_per_100ppl]' />
+      <map key='[gdp_current_usd]' value='[sqlproxy].[gdp_current_usd]' />
+      <map key='[gdp_growth_annualpc]' value='[sqlproxy].[gdp_growth_annualpc]' />
+      <map key='[gdp_percapita_current_usd]' value='[sqlproxy].[gdp_percapita_current_usd]' />
+      <map key='[gdp_percapita_growth_annualpc]' value='[sqlproxy].[gdp_percapita_growth_annualpc]' />
+      <map key='[government_expenditure_on_education_pc_of_GDP]' value='[sqlproxy].[government_expenditure_on_education_pc_of_GDP]' />
+      <map key='[gross_enrollment_ratio_primary_both_sexes]' value='[sqlproxy].[gross_enrollment_ratio_primary_both_sexes]' />
+      <map key='[gross_enrollment_ratio_secondary_both_sexes]' value='[sqlproxy].[gross_enrollment_ratio_secondary_both_sexes]' />
+      <map key='[gross_enrollment_ratio_terciary_both_sexes]' value='[sqlproxy].[gross_enrollment_ratio_terciary_both_sexes]' />
+      <map key='[internet_users_per_100ppl]' value='[sqlproxy].[internet_users_per_100ppl]' />
+      <map key='[labor_force_participation_female]' value='[sqlproxy].[labor_force_participation_female]' />
+      <map key='[labor_force_participation_male]' value='[sqlproxy].[labor_force_participation_male]' />
+      <map key='[literacy_rate_adult_female]' value='[sqlproxy].[literacy_rate_adult_female]' />
+      <map key='[literacy_rate_adult_male]' value='[sqlproxy].[literacy_rate_adult_male]' />
+      <map key='[mobile_subscriptions]' value='[sqlproxy].[mobile_subscriptions]' />
+      <map key='[mobile_subscriptions_per_100ppl]' value='[sqlproxy].[mobile_subscriptions_per_100ppl]' />
+      <map key='[patent_applications_nonresident]' value='[sqlproxy].[patent_applications_nonresident]' />
+      <map key='[patent_applications_resident]' value='[sqlproxy].[patent_applications_resident]' />
+      <map key='[population_ages_0_14_pcoftotal]' value='[sqlproxy].[population_ages_0_14_pcoftotal]' />
+      <map key='[population_ages_15_64_pcoftotal]' value='[sqlproxy].[population_ages_15_64_pcoftotal]' />
+      <map key='[population_ages_65_above_pcoftotal]' value='[sqlproxy].[population_ages_65_above_pcoftotal]' />
+      <map key='[population_density_ppl_persqkm]' value='[sqlproxy].[population_density_ppl_persqkm]' />
+      <map key='[population_female_pcoftotal]' value='[sqlproxy].[population_female_pcoftotal]' />
+      <map key='[population_growth]' value='[sqlproxy].[population_growth]' />
+      <map key='[population_total]' value='[sqlproxy].[population_total]' />
+      <map key='[region]' value='[sqlproxy].[region]' />
+      <map key='[research_development_expenditure_pc_GDP]' value='[sqlproxy].[research_development_expenditure_pc_GDP]' />
+      <map key='[school_enrollment_primary_female_pc]' value='[sqlproxy].[school_enrollment_primary_female_pc]' />
+      <map key='[school_enrollment_primary_male_pc]' value='[sqlproxy].[school_enrollment_primary_male_pc]' />
+      <map key='[school_enrollment_secondary_female_pc]' value='[sqlproxy].[school_enrollment_secondary_female_pc]' />
+      <map key='[school_enrollment_secondary_male_pc]' value='[sqlproxy].[school_enrollment_secondary_male_pc]' />
+      <map key='[school_enrollment_terciary_female_pc]' value='[sqlproxy].[school_enrollment_terciary_female_pc]' />
+      <map key='[school_enrollment_terciary_male_pc]' value='[sqlproxy].[school_enrollment_terciary_male_pc]' />
+      <map key='[trademark_applications_nonresident]' value='[sqlproxy].[trademark_applications_nonresident]' />
+      <map key='[trademark_applications_resident]' value='[sqlproxy].[trademark_applications_resident]' />
+      <map key='[trademark_applications_total]' value='[sqlproxy].[trademark_applications_total]' />
+      <map key='[unemployment_total_female_pc_of_labourforce]' value='[sqlproxy].[unemployment_total_female_pc_of_labourforce]' />
+      <map key='[unemployment_total_male_pc_of_labourforce]' value='[sqlproxy].[unemployment_total_male_pc_of_labourforce]' />
+      <map key='[unemployment_total_pc_of_labourforce]' value='[sqlproxy].[unemployment_total_pc_of_labourforce]' />
+      <map key='[unemployment_with_primary_edu_female_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_primary_edu_female_pc_of_unemployment]' />
+      <map key='[unemployment_with_primary_edu_male_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_primary_edu_male_pc_of_unemployment]' />
+      <map key='[unemployment_with_primary_edu_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_primary_edu_pc_of_unemployment]' />
+      <map key='[unemployment_with_secondary_edu_female_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_secondary_edu_female_pc_of_unemployment]' />
+      <map key='[unemployment_with_secondary_edu_male_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_secondary_edu_male_pc_of_unemployment]' />
+      <map key='[unemployment_with_secondary_edu_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_secondary_edu_pc_of_unemployment]' />
+      <map key='[unemployment_with_terciary_edu_female_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_terciary_edu_female_pc_of_unemployment]' />
+      <map key='[unemployment_with_terciary_edu_male_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_terciary_edu_male_pc_of_unemployment]' />
+      <map key='[unemployment_with_terciary_edu_pc_of_unemployment]' value='[sqlproxy].[unemployment_with_terciary_edu_pc_of_unemployment]' />
+      <map key='[year]' value='[sqlproxy].[year]' />
+    </cols>
+  </connection>
+  <aliases enabled='yes' />
+  <column aggregation='Sum' datatype='integer' default-type='quantitative' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <column aggregation='Sum' caption='Adult Literacy Rate Both Sexes' datatype='real' default-type='quantitative' name='[adult_literacy_rate_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Country Code' datatype='string' default-type='nominal' name='[country_code]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Enrollment In Primary Education' datatype='real' default-type='quantitative' name='[enrollment_in_primary_education]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Enrollment In Secondary Education' datatype='real' default-type='quantitative' name='[enrollment_in_secondary_education]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Enrollment In Secondary General' datatype='real' default-type='quantitative' name='[enrollment_in_secondary_general]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Enrollment In Secondary Vocational' datatype='real' default-type='quantitative' name='[enrollment_in_secondary_vocational]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Fixed Broadband Subscriptions' datatype='real' default-type='quantitative' name='[fixed_broadband_subscriptions]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Fixed Broadband Subscriptions Per 100Ppl' datatype='real' default-type='quantitative' name='[fixed_broadband_subscriptions_per_100ppl]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Fixed Phone Subscriptions' datatype='real' default-type='quantitative' name='[fixed_phone_subscriptions]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Fixed Phone Subscriptions Per 100Ppl' datatype='real' default-type='quantitative' name='[fixed_phone_subscriptions_per_100ppl]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Gdp Current Usd' datatype='real' default-type='quantitative' name='[gdp_current_usd]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Gdp Growth Annualpc' datatype='real' default-type='quantitative' name='[gdp_growth_annualpc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Gdp Percapita Current Usd' datatype='real' default-type='quantitative' name='[gdp_percapita_current_usd]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Gdp Percapita Growth Annualpc' datatype='real' default-type='quantitative' name='[gdp_percapita_growth_annualpc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Gross Enrollment Ratio Primary Both Sexes' datatype='real' default-type='quantitative' name='[gross_enrollment_ratio_primary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Gross Enrollment Ratio Secondary Both Sexes' datatype='real' default-type='quantitative' name='[gross_enrollment_ratio_secondary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Gross Enrollment Ratio Terciary Both Sexes' datatype='real' default-type='quantitative' name='[gross_enrollment_ratio_terciary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Internet Users Per 100Ppl' datatype='real' default-type='quantitative' name='[internet_users_per_100ppl]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Mobile Subscriptions' datatype='real' default-type='quantitative' name='[mobile_subscriptions]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Mobile Subscriptions Per 100Ppl' datatype='real' default-type='quantitative' name='[mobile_subscriptions_per_100ppl]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Patent Applications Nonresident' datatype='real' default-type='quantitative' name='[patent_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Patent Applications Resident' datatype='real' default-type='quantitative' name='[patent_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Population Female Pcoftotal' datatype='real' default-type='quantitative' name='[population_female_pcoftotal]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Population Growth' datatype='real' default-type='quantitative' name='[population_growth]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Population Total' datatype='integer' default-type='quantitative' name='[population_total]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='research development expenditure pc GDP' datatype='real' default-type='quantitative' name='[research_development_expenditure_pc_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='School Enrollment Primary Female Pc' datatype='real' default-type='quantitative' name='[school_enrollment_primary_female_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='School Enrollment Primary Male Pc' datatype='real' default-type='quantitative' name='[school_enrollment_primary_male_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='School Enrollment Secondary Female Pc' datatype='real' default-type='quantitative' name='[school_enrollment_secondary_female_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='School Enrollment Secondary Male Pc' datatype='real' default-type='quantitative' name='[school_enrollment_secondary_male_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='School Enrollment Terciary Female Pc' datatype='real' default-type='quantitative' name='[school_enrollment_terciary_female_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='School Enrollment Terciary Male Pc' datatype='real' default-type='quantitative' name='[school_enrollment_terciary_male_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Trademark Applications Nonresident' datatype='real' default-type='quantitative' name='[trademark_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Trademark Applications Resident' datatype='real' default-type='quantitative' name='[trademark_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Sum' caption='Trademark Applications Total' datatype='real' default-type='quantitative' name='[trademark_applications_total]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Count' caption='Year' datatype='integer' default-type='quantitative' name='[year]' pivot='key' role='dimension' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;Reino Unido&quot;' />
+  </semantic-values>
+  <date-options start-of-week='monday' />
+</datasource>
+]]>&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;<![CDATA[<dialect-definition>
+  <primary-dialect class='mysql' version='4.1.0-standard'>
+  </primary-dialect>
+  <overlay-dialect-set>
+    <overlay-dialect class='vizengine' version='0.1.0'>
+    </overlay-dialect>
+  </overlay-dialect-set>
+</dialect-definition>
+]]>&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>false</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='monday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column caption='V_Chart Type' datatype='string' name='[Calculation_124200882719707136]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='If [Parameters].[Country Parameter]=&quot;Bar&quot; THEN &quot;Bar&quot;&#10;ELSEIF [Parameters].[Country Parameter]=&quot;Map&quot; THEN &quot;Map&quot;&#10;END' />
+      </column>
+      <column caption='Sort By Filter' datatype='real' name='[Calculation_124200882721333249]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Chart Type (copy)]&#10;WHEN &quot;Primary&quot; then [gross_enrollment_ratio_primary_both_sexes]&#10;WHEN &quot;Secondary&quot; then [gross_enrollment_ratio_secondary_both_sexes]&#10;WHEN &quot;Terciary&quot; then [gross_enrollment_ratio_terciary_both_sexes]&#10;END' />
+      </column>
+      <column caption='Patent Applications Total' datatype='real' name='[Calculation_142285667957362688]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[patent_applications_resident]+[patent_applications_nonresident]' />
+      </column>
+      <column caption='Patent and Trade Mark Applications, total' datatype='real' name='[Calculation_36521426800525313]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_142285667957362688]+[trademark_applications_total]' />
+      </column>
+      <column caption='AVG Government expenditure on education' datatype='real' name='[Calculation_36521426804232197]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([government_expenditure_on_education_pc_of_GDP])&#10;&#10;&#10;//IF AVG([government expenditure on education pc of GDP])&lt;&gt;0&#10;//THEN AVG([government expenditure on education pc of GDP])&#10;//ELSE AVG({ EXCLUDE [government expenditure on education pc of GDP]: AVG([government expenditure on education pc of GDP])})&#10;//END' />
+      </column>
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' caption='Adult Literacy Rate Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[adult_literacy_rate_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Country Code' datatype='string' default-type='nominal' layered='true' name='[country_code]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Enrollment In Primary Education' datatype='real' default-type='quantitative' layered='true' name='[enrollment_in_primary_education]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Enrollment In Secondary Education' datatype='real' default-type='quantitative' layered='true' name='[enrollment_in_secondary_education]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Enrollment In Secondary General' datatype='real' default-type='quantitative' layered='true' name='[enrollment_in_secondary_general]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Enrollment In Secondary Vocational' datatype='real' default-type='quantitative' layered='true' name='[enrollment_in_secondary_vocational]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[fertility_rate]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Fixed Broadband Subscriptions' datatype='real' default-type='quantitative' layered='true' name='[fixed_broadband_subscriptions]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Fixed Broadband Subscriptions Per 100Ppl' datatype='real' default-type='quantitative' layered='true' name='[fixed_broadband_subscriptions_per_100ppl]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Fixed Phone Subscriptions' datatype='real' default-type='quantitative' layered='true' name='[fixed_phone_subscriptions]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Fixed Phone Subscriptions Per 100Ppl' datatype='real' default-type='quantitative' layered='true' name='[fixed_phone_subscriptions_per_100ppl]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Gdp Current Usd' datatype='real' default-type='quantitative' layered='true' name='[gdp_current_usd]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Gdp Growth Annualpc' datatype='real' default-type='quantitative' layered='true' name='[gdp_growth_annualpc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Gdp Percapita Current Usd' datatype='real' default-type='quantitative' layered='true' name='[gdp_percapita_current_usd]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Gdp Percapita Growth Annualpc' datatype='real' default-type='quantitative' layered='true' name='[gdp_percapita_growth_annualpc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Gross Enrollment Ratio Primary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_primary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Gross Enrollment Ratio Secondary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_secondary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Gross Enrollment Ratio Terciary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_terciary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Internet Users Per 100Ppl' datatype='real' default-type='quantitative' layered='true' name='[internet_users_per_100ppl]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[labor_force_participation_female]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[labor_force_participation_male]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[literacy_rate_adult_female]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[literacy_rate_adult_male]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Mobile Subscriptions' datatype='real' default-type='quantitative' layered='true' name='[mobile_subscriptions]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Mobile Subscriptions Per 100Ppl' datatype='real' default-type='quantitative' layered='true' name='[mobile_subscriptions_per_100ppl]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Patent Applications Nonresident' datatype='real' default-type='quantitative' layered='true' name='[patent_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Patent Applications Resident' datatype='real' default-type='quantitative' layered='true' name='[patent_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[population_ages_0_14_pcoftotal]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[population_ages_15_64_pcoftotal]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[population_ages_65_above_pcoftotal]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[population_density_ppl_persqkm]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Population Female Pcoftotal' datatype='real' default-type='quantitative' layered='true' name='[population_female_pcoftotal]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Population Growth' datatype='real' default-type='quantitative' layered='true' name='[population_growth]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Population Total' datatype='integer' default-type='quantitative' layered='true' name='[population_total]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='research development expenditure pc GDP' datatype='real' default-type='quantitative' layered='true' name='[research_development_expenditure_pc_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='School Enrollment Primary Female Pc' datatype='real' default-type='quantitative' layered='true' name='[school_enrollment_primary_female_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='School Enrollment Primary Male Pc' datatype='real' default-type='quantitative' layered='true' name='[school_enrollment_primary_male_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='School Enrollment Secondary Female Pc' datatype='real' default-type='quantitative' layered='true' name='[school_enrollment_secondary_female_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='School Enrollment Secondary Male Pc' datatype='real' default-type='quantitative' layered='true' name='[school_enrollment_secondary_male_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='School Enrollment Terciary Female Pc' datatype='real' default-type='quantitative' layered='true' name='[school_enrollment_terciary_female_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='School Enrollment Terciary Male Pc' datatype='real' default-type='quantitative' layered='true' name='[school_enrollment_terciary_male_pc]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Trademark Applications Nonresident' datatype='real' default-type='quantitative' layered='true' name='[trademark_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Trademark Applications Resident' datatype='real' default-type='quantitative' layered='true' name='[trademark_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Trademark Applications Total' datatype='real' default-type='quantitative' layered='true' name='[trademark_applications_total]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_total_female_pc_of_labourforce]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_total_male_pc_of_labourforce]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_total_pc_of_labourforce]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_primary_edu_female_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_primary_edu_male_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_primary_edu_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_secondary_edu_female_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_secondary_edu_male_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_secondary_edu_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_terciary_edu_female_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_terciary_edu_male_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[unemployment_with_terciary_edu_pc_of_unemployment]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_142285667957362688]' derivation='Sum' name='[sum:Calculation_142285667957362688:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[trademark_applications_total]' derivation='Sum' name='[sum:trademark_applications_total:qk]' pivot='key' type='quantitative' />
+      <group name='[Government Expenditure above 4% of GDP]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter expression='[Calculation_36521426804232197] &gt;= 4.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+          <groupfilter function='level-members' level='[country_code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </group>
+      <group name='[Patent and Trademark Top 30]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='30' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='SUM([Calculation_36521426800525313])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[country]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='Education expenditure above 4% and terciary enrolment above 50%' delimiter=',' name='[Set 1]' name-style='unqualified'>
+        <groupfilter function='intersection'>
+          <groupfilter field='[Government Expenditure above 4% of GDP]' function='reference' />
+          <groupfilter field='[Terciary Enrolment above 50%]' function='reference' />
+        </groupfilter>
+      </group>
+      <group name='[Terciary Enrolment above 50%]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter expression='AVG([gross_enrollment_ratio_terciary_both_sexes]) &gt;= 50.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+          <groupfilter function='level-members' level='[country_code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.233333' group-percentage='0.151852' measure-ordering='alphabetic' measure-percentage='0.494444' parameter-percentage='0.12037' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau-20' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrollment ratio, primary, both sexes (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, secondary, both sexes (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Gross enrolment ratio, secondary, both sexes (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio]&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Gross enrolment ratio, tertiary, both sexes (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Calculation_36521426798497792:qk]&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Calculation_142285667957362688:qk]&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Calculation_36521426798497792:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Gross enrollment ratio, primary, both sexes (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Trademark applications, total:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:trademark_applications_total:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, tertiary, both sexes (\%):qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:region:nk]' palette='tableau-10' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;North America&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;Middle East&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Latin America &amp; the Caribbean&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Reino Unido&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Sorty By' datatype='string' name='[Chart Type (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Terciary&quot;'>
+          <calculation class='tableau' formula='&quot;Terciary&quot;' />
+        </column>
+        <column caption='Chart Type' datatype='string' name='[Country Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+          <calculation class='tableau' formula='&quot;Bar&quot;' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+      <datasources>
+        <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+      </datasources>
+      <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+        <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+        <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+        <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]'>
+        <groupfilter function='level-members' level='[none:region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='quantitative' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]' included-values='in-range'>
+        <min>2000</min>
+        <max>2015</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Patent and Trademark BAR' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Patent and Trademark BAR' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Educated Countries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Patent &amp; Trademark Applications in Highly Educated Countries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation/EducatedCountries?rev=' id='195000' path='/t/kinesisdev829159/workbooks/EducationandInnovation' revision='' site='kinesisdev829159' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+            <column caption='Patent Applications Total' datatype='real' name='[Calculation_142285667957362688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[patent_applications_resident]+[patent_applications_nonresident]' />
+            </column>
+            <column caption='Patent and Trade Mark Applications, total' datatype='real' name='[Calculation_36521426800525313]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_142285667957362688]+[trademark_applications_total]' />
+            </column>
+            <column caption='AVG Government expenditure on education' datatype='real' name='[Calculation_36521426804232197]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([government_expenditure_on_education_pc_of_GDP])&#10;&#10;&#10;//IF AVG([government expenditure on education pc of GDP])&lt;&gt;0&#10;//THEN AVG([government expenditure on education pc of GDP])&#10;//ELSE AVG({ EXCLUDE [government expenditure on education pc of GDP]: AVG([government expenditure on education pc of GDP])})&#10;//END' />
+            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Country Code' datatype='string' default-type='nominal' layered='true' name='[country_code]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Sum' caption='Gross Enrollment Ratio Terciary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_terciary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Patent Applications Nonresident' datatype='real' default-type='quantitative' layered='true' name='[patent_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Sum' caption='Patent Applications Resident' datatype='real' default-type='quantitative' layered='true' name='[patent_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Calculation_36521426800525313]' derivation='Sum' name='[sum:Calculation_36521426800525313:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Trademark Applications Total' datatype='real' default-type='quantitative' layered='true' name='[trademark_applications_total]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Set 1]' />
+          <slices>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Set 1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' />
+              <size column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Calculation_36521426800525313:qk]' />
+              <text column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BE01D67F-039F-4D6F-84FD-9C58C29AAEE9}' />
+    </worksheet>
+    <worksheet name='Enrolment in Education'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>&lt;</run>
+            <run fontsize='10'>Sheet Name</run>
+            <run fontsize='10'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation/EnrolmentinEducation?rev=' id='194996' path='/t/kinesisdev829159/workbooks/EducationandInnovation' revision='' site='kinesisdev829159' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Sorty By' datatype='string' name='[Chart Type (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Terciary&quot;'>
+              <calculation class='tableau' formula='&quot;Terciary&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+            <column caption='Sort By Filter' datatype='real' name='[Calculation_124200882721333249]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Chart Type (copy)]&#10;WHEN &quot;Primary&quot; then [gross_enrollment_ratio_primary_both_sexes]&#10;WHEN &quot;Secondary&quot; then [gross_enrollment_ratio_secondary_both_sexes]&#10;WHEN &quot;Terciary&quot; then [gross_enrollment_ratio_terciary_both_sexes]&#10;END' />
+            </column>
+            <column-instance column='[Calculation_124200882721333249]' derivation='Avg' name='[avg:Calculation_124200882721333249:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gross_enrollment_ratio_primary_both_sexes]' derivation='Avg' name='[avg:gross_enrollment_ratio_primary_both_sexes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gross_enrollment_ratio_secondary_both_sexes]' derivation='Avg' name='[avg:gross_enrollment_ratio_secondary_both_sexes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gross_enrollment_ratio_terciary_both_sexes]' derivation='Avg' name='[avg:gross_enrollment_ratio_terciary_both_sexes:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='Gross Enrollment Ratio Primary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_primary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Sum' caption='Gross Enrollment Ratio Secondary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_secondary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Sum' caption='Gross Enrollment Ratio Terciary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_terciary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+          </datasource-dependencies>
+          <computed-sort column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' direction='DESC' using='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Calculation_124200882721333249:qk]' />
+          <slices>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' value='21' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' />
+              <lod column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrollment ratio, primary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrollment ratio, primary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, secondary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, secondary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, tertiary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, tertiary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#686868' fontsize='8'>
+Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-disallow' x-axis-name='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:gross_enrollment_ratio_primary_both_sexes:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' />
+              <lod column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrollment ratio, primary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrollment ratio, primary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, secondary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, secondary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, tertiary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, tertiary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#686868' fontsize='8'>
+Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-disallow' x-axis-name='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:gross_enrollment_ratio_secondary_both_sexes:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' />
+              <lod column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrollment ratio, primary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrollment ratio, primary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, secondary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, secondary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, tertiary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, tertiary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#686868' fontsize='8'>
+Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-disallow' x-axis-name='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:gross_enrollment_ratio_terciary_both_sexes:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' />
+              <lod column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrollment ratio, primary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrollment ratio, primary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, secondary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, secondary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, tertiary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, tertiary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#686868' fontsize='8'>
+Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</rows>
+        <cols>([sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:gross_enrollment_ratio_primary_both_sexes:qk] + ([sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:gross_enrollment_ratio_secondary_both_sexes:qk] + [sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:gross_enrollment_ratio_terciary_both_sexes:qk]))</cols>
+      </table>
+      <simple-id uuid='{0C23962C-7DEC-4F76-AE17-31D9A0D9CE26}' />
+    </worksheet>
+    <worksheet name='Gvt Spending on Education BAR'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Government Spending on Education as a % of GDP</run>
+            <run fontname='Helvetica'>Æ </run>
+            <run bold='false' fontname='Helvetica' fontsize='10'>(above 4% only)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation/GvtSpendingonEducationBAR?rev=' id='194993' path='/t/kinesisdev829159/workbooks/EducationandInnovation' revision='' site='kinesisdev829159' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Chart Type' datatype='string' name='[Country Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+              <calculation class='tableau' formula='&quot;Bar&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+            <column caption='V_Chart Type' datatype='string' name='[Calculation_124200882719707136]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='If [Parameters].[Country Parameter]=&quot;Bar&quot; THEN &quot;Bar&quot;&#10;ELSEIF [Parameters].[Country Parameter]=&quot;Map&quot; THEN &quot;Map&quot;&#10;END' />
+            </column>
+            <column caption='AVG Government expenditure on education' datatype='real' name='[Calculation_36521426804232197]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([government_expenditure_on_education_pc_of_GDP])&#10;&#10;&#10;//IF AVG([government expenditure on education pc of GDP])&lt;&gt;0&#10;//THEN AVG([government expenditure on education pc of GDP])&#10;//ELSE AVG({ EXCLUDE [government expenditure on education pc of GDP]: AVG([government expenditure on education pc of GDP])})&#10;//END' />
+            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Country Code' datatype='string' default-type='nominal' layered='true' name='[country_code]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[Calculation_124200882719707136]' derivation='None' name='[none:Calculation_124200882719707136:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Calculation_36521426804232197]' derivation='User' name='[usr:Calculation_36521426804232197:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Government Expenditure above 4% of GDP]' />
+          <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:Calculation_124200882719707136:nk]'>
+            <groupfilter function='member' level='[none:Calculation_124200882719707136:nk]' member='&quot;Bar&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]'>
+            <groupfilter function='level-members' level='[none:country:nk]' />
+          </filter>
+          <computed-sort column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' direction='DESC' using='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' />
+          <slices>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Government Expenditure above 4% of GDP]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:Calculation_124200882719707136:nk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' value='161' />
+            <format attr='title' class='0' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' scope='rows' value='' />
+            <format attr='subtitle' class='0' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' scope='rows' value='true' />
+            <format attr='width' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' value='32' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' value='n#,##0.00;(#,##0.00)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-visibility' id='refline1' value='on' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' value='100' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#fff2bf' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' />
+            </encodings>
+            <reference-line axis-column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' enable-instant-analytics='true' formula='average' id='refline1' label='AVG:&lt;Value&gt;' label-type='custom' probability='95' scope='per-pane' value-column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]>]]></run>
+                <run fontcolor='#787878'>
+Government expenditure on education as a % of GDP:	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='324' />
+                <format attr='maxheight' value='324' />
+                <format attr='minwidth' value='4340' />
+                <format attr='maxwidth' value='4340' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]</rows>
+        <cols>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</cols>
+      </table>
+      <simple-id uuid='{97EB408B-F5F5-4721-BF37-817ABE8B010F}' />
+    </worksheet>
+    <worksheet name='Gvt Spending on Education MAP'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Government Spending on Education</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation/GvtSpendingonEducationMAP?rev=' id='194995' path='/t/kinesisdev829159/workbooks/EducationandInnovation' revision='' site='kinesisdev829159' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+            <datasource name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Chart Type' datatype='string' name='[Country Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+              <calculation class='tableau' formula='&quot;Bar&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+            <column caption='V_Chart Type' datatype='string' name='[Calculation_124200882719707136]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='If [Parameters].[Country Parameter]=&quot;Bar&quot; THEN &quot;Bar&quot;&#10;ELSEIF [Parameters].[Country Parameter]=&quot;Map&quot; THEN &quot;Map&quot;&#10;END' />
+            </column>
+            <column caption='AVG Government expenditure on education' datatype='real' name='[Calculation_36521426804232197]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([government_expenditure_on_education_pc_of_GDP])&#10;&#10;&#10;//IF AVG([government expenditure on education pc of GDP])&lt;&gt;0&#10;//THEN AVG([government expenditure on education pc of GDP])&#10;//ELSE AVG({ EXCLUDE [government expenditure on education pc of GDP]: AVG([government expenditure on education pc of GDP])})&#10;//END' />
+            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[Calculation_124200882719707136]' derivation='None' name='[none:Calculation_124200882719707136:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Calculation_36521426804232197]' derivation='User' name='[usr:Calculation_36521426804232197:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:Calculation_124200882719707136:nk]'>
+            <groupfilter function='member' level='[none:Calculation_124200882719707136:nk]' member='&quot;Map&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' direction='ASC' using='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' />
+          <slices>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:Calculation_124200882719707136:nk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' value='n#,##0.0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' value='n#,##0.0;(#,##0.0)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' num-steps='5' palette='area-brown' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-visibility' id='refline1' value='on' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+            <format attr='map-snap-zoom' value='true' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#fff8de' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' />
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' />
+              <geometry column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'><![CDATA[Country:	<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]>
+Government expenditure on education as a % of GDP:	]]></run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Latitude (generated)]</rows>
+        <cols>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A5795CF8-8F36-4B9A-94E1-15560AD51A4A}' />
+    </worksheet>
+    <worksheet name='Patent and Trademark BAR'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Patent and Trademark Applications</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation/PatentandTrademarkBAR?rev=' id='194998' path='/t/kinesisdev829159/workbooks/EducationandInnovation' revision='' site='kinesisdev829159' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+            <column caption='Patent Applications Total' datatype='real' name='[Calculation_142285667957362688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[patent_applications_resident]+[patent_applications_nonresident]' />
+            </column>
+            <column caption='Patent and Trade Mark Applications, total' datatype='real' name='[Calculation_36521426800525313]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_142285667957362688]+[trademark_applications_total]' />
+            </column>
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Patent Applications Nonresident' datatype='real' default-type='quantitative' layered='true' name='[patent_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Sum' caption='Patent Applications Resident' datatype='real' default-type='quantitative' layered='true' name='[patent_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Calculation_142285667957362688]' derivation='Sum' name='[sum:Calculation_142285667957362688:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[trademark_applications_total]' derivation='Sum' name='[sum:trademark_applications_total:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Trademark Applications Total' datatype='real' default-type='quantitative' layered='true' name='[trademark_applications_total]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:trademark_applications_total:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Calculation_142285667957362688:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:trademark_applications_total:qk]&quot;</bucket>
+              <bucket>&quot;[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Calculation_142285667957362688:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Patent and Trademark Top 30]' />
+          <manual-sort column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;China&quot;</bucket>
+              <bucket>&quot;United States&quot;</bucket>
+              <bucket>&quot;Japan&quot;</bucket>
+              <bucket>&quot;Korea, Rep.&quot;</bucket>
+              <bucket>&quot;India&quot;</bucket>
+              <bucket>&quot;Brazil&quot;</bucket>
+              <bucket>&quot;Germany&quot;</bucket>
+              <bucket>&quot;France&quot;</bucket>
+              <bucket>&quot;Mexico&quot;</bucket>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+              <bucket>&quot;Canada&quot;</bucket>
+              <bucket>&quot;Australia&quot;</bucket>
+              <bucket>&quot;Argentina&quot;</bucket>
+              <bucket>&quot;Turkey&quot;</bucket>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+              <bucket>&quot;Spain&quot;</bucket>
+              <bucket>&quot;Italy&quot;</bucket>
+              <bucket>&quot;Indonesia&quot;</bucket>
+              <bucket>&quot;Thailand&quot;</bucket>
+              <bucket>&quot;Hong Kong SAR, China&quot;</bucket>
+              <bucket>&quot;Chile&quot;</bucket>
+              <bucket>&quot;South Africa&quot;</bucket>
+              <bucket>&quot;Iran, Islamic Rep.&quot;</bucket>
+              <bucket>&quot;Ukraine&quot;</bucket>
+              <bucket>&quot;Belgium&quot;</bucket>
+              <bucket>&quot;Malaysia&quot;</bucket>
+              <bucket>&quot;Switzerland&quot;</bucket>
+              <bucket>&quot;Singapore&quot;</bucket>
+              <bucket>&quot;Vietnam&quot;</bucket>
+              <bucket>&quot;New Zealand&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Patent and Trademark Top 30]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Multiple Values]' value='52' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline0' value='on' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Multiple Values]' enable-instant-analytics='true' formula='average' id='refline0' label='AVG: &lt;Value&gt;' label-type='custom' probability='95' scope='per-pane' value-column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Multiple Values]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Multiple Values]</rows>
+        <cols>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</cols>
+      </table>
+      <simple-id uuid='{801BED7D-8245-4C9E-B15F-B59782744D4E}' />
+    </worksheet>
+    <worksheet name='Patent and Trademark apps AVG'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='8'>Average of Patent and Trademark Applications worldwide</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation/PatentandTrademarkappsAVG?rev=' id='194999' path='/t/kinesisdev829159/workbooks/EducationandInnovation' revision='' site='kinesisdev829159' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+            <column caption='Patent Applications Total' datatype='real' name='[Calculation_142285667957362688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[patent_applications_resident]+[patent_applications_nonresident]' />
+            </column>
+            <column caption='Patent and Trade Mark Applications, total' datatype='real' name='[Calculation_36521426800525313]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_142285667957362688]+[trademark_applications_total]' />
+            </column>
+            <column-instance column='[Calculation_36521426800525313]' derivation='Avg' name='[avg:Calculation_36521426800525313:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Patent Applications Nonresident' datatype='real' default-type='quantitative' layered='true' name='[patent_applications_nonresident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Sum' caption='Patent Applications Resident' datatype='real' default-type='quantitative' layered='true' name='[patent_applications_resident]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='Trademark Applications Total' datatype='real' default-type='quantitative' layered='true' name='[trademark_applications_total]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+          </datasource-dependencies>
+          <slices>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='19' />
+            <format attr='text-align' value='center' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='none' />
+            <format attr='cell-w' value='54' />
+            <format attr='cell-h' value='18' />
+            <format attr='cell' value='18' />
+            <format attr='cell-q' value='90' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#f2e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Calculation_36521426800525313:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Average Patent and Trade Mark Applications worldwide:	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Calculation_36521426800525313:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8717F32D-27FA-4E0F-8BE7-E3E414756914}' />
+    </worksheet>
+    <worksheet name='Spending on Edu vs Terciarty Scatter'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Spending on Education &amp; Enrolment in Terciary Education</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation/SpendingonEduvsTerciartyScatter?rev=' id='194997' path='/t/kinesisdev829159/workbooks/EducationandInnovation' revision='' site='kinesisdev829159' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+            <column caption='AVG Government expenditure on education' datatype='real' name='[Calculation_36521426804232197]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([government_expenditure_on_education_pc_of_GDP])&#10;&#10;&#10;//IF AVG([government expenditure on education pc of GDP])&lt;&gt;0&#10;//THEN AVG([government expenditure on education pc of GDP])&#10;//ELSE AVG({ EXCLUDE [government expenditure on education pc of GDP]: AVG([government expenditure on education pc of GDP])})&#10;//END' />
+            </column>
+            <column-instance column='[gross_enrollment_ratio_terciary_both_sexes]' derivation='Avg' name='[avg:gross_enrollment_ratio_terciary_both_sexes:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Country' datatype='string' default-type='nominal' layered='true' name='[country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='government expenditure on education pc of GDP' datatype='real' default-type='quantitative' layered='true' name='[government_expenditure_on_education_pc_of_GDP]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Sum' caption='Gross Enrollment Ratio Terciary Both Sexes' datatype='real' default-type='quantitative' layered='true' name='[gross_enrollment_ratio_terciary_both_sexes]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Calculation_36521426804232197]' derivation='User' name='[usr:Calculation_36521426804232197:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+          </datasource-dependencies>
+          <slices>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</column>
+            <column>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' scope='cols' value='Government expenditure on education (% of GDP)' />
+            <format attr='subtitle' class='0' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' value='70' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' />
+              <lod column='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]>]]></run>
+                <run fontcolor='#787878'>
+Gross enrolment ratio, tertiary, both sexes (%):	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:Gross enrolment ratio, tertiary, both sexes (%):qk]>]]></run>
+                <run fontcolor='#787878'>
+Government expenditure on education as % of GDP:	</run>
+                <run bold='true'><![CDATA[<[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[avg:gross_enrollment_ratio_terciary_both_sexes:qk]</rows>
+        <cols>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]</cols>
+      </table>
+      <simple-id uuid='{13054AC0-B5D6-4A37-97FC-2EB34B4D0BBF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <repository-location derived-from='https://10ax.online.tableau.com/t/kinesisdev829159/workbooks/EducationandInnovation/Dashboard?rev=' id='194994' path='/t/kinesisdev829159/workbooks/EducationandInnovation' revision='' site='kinesisdev829159' />
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='background-color' value='#dbf0cc' />
+        </style-rule>
+      </style>
+      <size maxheight='1169' maxwidth='827' minheight='1169' minwidth='827' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='worldbank_development_indicators' name='sqlproxy.04uhldh18eh91y13occx30zvwzio' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Sorty By' datatype='string' name='[Chart Type (copy)]' param-domain-type='list' role='measure' type='nominal' value='&quot;Terciary&quot;'>
+          <calculation class='tableau' formula='&quot;Terciary&quot;' />
+          <members>
+            <member value='&quot;Primary&quot;' />
+            <member value='&quot;Secondary&quot;' />
+            <member value='&quot;Terciary&quot;' />
+          </members>
+        </column>
+        <column caption='Chart Type' datatype='string' name='[Country Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+          <calculation class='tableau' formula='&quot;Bar&quot;' />
+          <members>
+            <member value='&quot;Bar&quot;' />
+            <member value='&quot;Map&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='sqlproxy.04uhldh18eh91y13occx30zvwzio'>
+        <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+        <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+        <column aggregation='Count' caption='Region' datatype='string' default-type='nominal' layered='true' name='[region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' caption='Year' datatype='integer' default-type='ordinal' layered='true' name='[year]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98632' id='10' param='horz' type='layout-flow' w='98066' x='967' y='684'>
+            <zone fixed-size='699' h='98632' id='8' is-fixed='true' type='layout-basic' w='98066' x='967' y='684'>
+              <zone forceUpdate='true' h='5652' id='1' type='text' w='98066' x='967' y='684'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontname='Helvetica' fontsize='14'>Education and Innovation</run>
+                  <run bold='true' fontcolor='#000000' fontsize='14'>Æ&#10;</run>
+                  <run fontcolor='#000000' fontname='Helvetica' fontsize='10'>
+Relationship between spending on education, enrolment in higher education and innovation in the world</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-top' value='0' />
+                  <format attr='margin-right' value='0' />
+                  <format attr='margin-left' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='54757' id='3' param='vert' type='layout-flow' w='98066' x='967' y='11062'>
+                <zone h='54757' id='6' param='vert' type='layout-flow' w='98066' x='967' y='11062'>
+                  <zone h='2310' id='37' name='Gvt Spending on Education MAP' w='98066' x='967' y='11062'>
+                    <layout-cache has-max-size-h='true' maxheight='27' minheight='27' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-right' value='0' />
+                      <format attr='margin-left' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='27126' id='7' name='Gvt Spending on Education BAR' show-title='false' w='98066' x='967' y='13372'>
+                    <layout-cache has-max-size-h='true' maxheight='486' minheight='486' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-right' value='0' />
+                      <format attr='margin-left' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='296' h='25321' id='14' is-fixed='true' param='vert' type='layout-flow' w='98066' x='967' y='40498'>
+                    <zone h='25321' id='15' param='horz' type='layout-flow' w='98066' x='967' y='40498'>
+                      <zone fixed-size='401' h='25321' id='16' is-fixed='true' name='Enrolment in Education' w='48973' x='967' y='40498'>
+                        <layout-cache fixed-size-h='4620' minwidth='382' type-h='fixed' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                          <format attr='margin-left' value='0' />
+                        </zone-style>
+                      </zone>
+                      <zone h='25321' id='18' param='horz' type='layout-flow' w='49093' x='49940' y='40498'>
+                        <zone h='25321' id='19' name='Spending on Edu vs Terciarty Scatter' w='49093' x='49940' y='40498'>
+                          <layout-cache minheight='163' minwidth='146' type-h='scalable' type-w='scalable' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='33497' id='20' param='vert' type='layout-flow' w='98066' x='967' y='65819'>
+                <zone h='31957' id='28' type='layout-basic' w='98066' x='967' y='65819'>
+                  <zone h='31957' id='21' param='vert' type='layout-flow' w='54547' x='967' y='65819'>
+                    <zone h='31957' id='22' name='Patent and Trademark BAR' w='54547' x='967' y='65819'>
+                      <layout-cache minheight='264' type-h='scalable' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                        <format attr='margin-left' value='0' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='31957' id='29' param='vert' type='layout-flow' w='43519' x='55514' y='65819'>
+                    <zone h='4020' id='36' name='Patent and Trademark apps AVG' w='43519' x='55514' y='65819'>
+                      <layout-cache fixed-size-h='39' type-h='fixed' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                        <format attr='margin-right' value='0' />
+                      </zone-style>
+                    </zone>
+                    <zone h='27937' id='24' name='Educated Countries' w='43519' x='55514' y='69839'>
+                      <layout-cache cell-count-h='1' non-cell-size-h='39' type-h='cell' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                        <format attr='margin-right' value='0' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='1540' id='34' type='text' w='98066' x='967' y='97776'>
+                  <formatted-text>
+                    <run>Source: Worldbank, World Development Indicators, </run>
+                    <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;http://data.worldbank.org/data-catalog/world-development-indicators&amp;quot;'>http://data.worldbank.org/data-catalog/world-development-indicators</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='margin-right' value='0' />
+                    <format attr='margin-bottom' value='0' />
+                    <format attr='margin-left' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='4726' id='26' param='horz' type='layout-flow' w='68065' x='30968' y='6336'>
+                <zone h='3593' id='27' param='horz' type='layout-flow' w='68065' x='30968' y='6336'>
+                  <zone h='3593' id='35' leg-item-layout='horz' name='Spending on Edu vs Terciarty Scatter' pane-specification-id='0' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' type='color' w='68065' x='30968' y='6336'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-right' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='4726' id='33' mode='compact' param='[Parameters].[Country Parameter]' type='paramctrl' w='9250' x='11283' y='6336'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='4726' id='38' name='Gvt Spending on Education MAP' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' values='relevant' w='10316' x='967' y='6336'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-left' value='0' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='4726' id='39' mode='checkdropdown' name='Gvt Spending on Education BAR' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' type='filter' w='10435' x='20533' y='6336'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+            <format attr='margin-top' value='8' />
+            <format attr='margin-right' value='8' />
+            <format attr='margin-bottom' value='8' />
+            <format attr='margin-left' value='8' />
+          </zone-style>
+        </zone>
+        <zone custom-title='true' fixed-size='154' h='4192' id='17' is-fixed='true' mode='compact' param='[Parameters].[Chart Type (copy)]' type='paramctrl' w='19347' x='27690' y='38580'>
+          <formatted-text>
+            <run>Sort by Education Type</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='3422' id='30' name='Patent and Trademark BAR' pane-specification-id='4' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]' show-title='false' type='color' w='20435' x='25756' y='74080' />
+      </zones>
+      <simple-id uuid='{D4DA9851-3F65-463C-BDF7-60B28E491A4A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Gvt Spending on Education BAR'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='2' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' type='filter' />
+            <card mode='compact' param='[Parameters].[Country Parameter]' type='parameter' />
+            <card param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='77'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Government Expenditure above 4% of GDP]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Set 2]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:Calculation_124200882719707136:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D2F12907-DF1D-428B-988E-7E0EF6F8D935}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Educated Countries'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Enrolment in Education' />
+        <viewpoint name='Gvt Spending on Education BAR'>
+          <zoom type='entire-view' />
+          <highlight field='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Gvt Spending on Education MAP'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Patent and Trademark BAR'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Patent and Trademark apps AVG'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Spending on Edu vs Terciarty Scatter'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E04F5F17-5C4F-4D8C-B266-327AA4868C4C}' />
+    </window>
+    <window class='worksheet' name='Gvt Spending on Education MAP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' values='relevant' />
+            <card mode='compact' param='[Parameters].[Country Parameter]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Government Expenditure above 4% of GDP]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:Calculation_124200882719707136:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[usr:Calculation_36521426804232197:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CCFF679E-7C4A-4CE6-91BC-9662BB311941}' />
+    </window>
+    <window class='worksheet' name='Enrolment in Education'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='5' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Chart Type (copy)]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Multiple Values]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Gross enrolment ratio, tertiary, both sexes (%):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1FE3CADF-1A72-4C83-83BE-84E564C4485E}' />
+    </window>
+    <window class='worksheet' name='Spending on Edu vs Terciarty Scatter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Govt Expanditure &gt;0]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Terciary Enrolment &gt;0]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{72D4F082-EF48-4267-A28B-19A589BE5ED0}' />
+    </window>
+    <window class='worksheet' name='Patent and Trademark BAR'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='4' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]' show-title='false' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[:Measure Names]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Patent and Trademark Top 30]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Trademark applications, total:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C046C6C7-E56F-4409-9AD2-82F877C2E466}' />
+    </window>
+    <window class='worksheet' name='Patent and Trademark apps AVG'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='77'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Patent and Trademark Top 30]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[sum:Trademark applications, total:qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7271ADC1-849B-456E-947A-10FDB42F99D1}' />
+    </window>
+    <window class='worksheet' name='Educated Countries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Patent and Trademark Top 30]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Set 1]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[Set 2]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:country:nk]</field>
+            <field>[sqlproxy.04uhldh18eh91y13occx30zvwzio].[none:region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4B5F7444-4D74-4A35-A7D5-7FE48AB4F40F}' />
+    </window>
+  </windows>
+</workbook>

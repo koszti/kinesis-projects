@@ -1,0 +1,34 @@
+{
+    "description": "Preformance test",
+    "name": "13.Performance",
+    "tasks": [
+        {
+            "SLA": {
+                "apdex-goal": 0.85,
+                "availability-goal": 99.5,
+                "response-time-goal": 3000
+            },
+            "advanced": {
+                "compatibility-mode": false,
+                "force-login": true,
+                "think-time-before-interaction": 0,
+                "think-time-between-test": 0,
+                "tolerated-apdex-multiplier": 4
+            },
+            "clients": 2,
+            "disabled": false,
+            "duration": 60,
+            "load-mix": "InteractVizLoadTest",
+            "name": "Performance test",
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "type": "performance_test",
+            "user-pool": [],
+            "view-pool": [
+                "/site/{{TABLEAU_SITE}}/views/EducationandInnovation/Dashboard"
+            ]
+        }
+    ],
+    "type": "performance"
+}
