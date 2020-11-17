@@ -35,28 +35,13 @@ def archiveReports() {
 }
 
 def jobStarted() {
-    hipchatSend (color: 'YELLOW', notify: true,
-        message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
-    )
-    bitbucketStatusNotify (buildState: 'INPROGRESS',
-        buildKey: "${env.BUILD_NUMBER}", buildName: "${env.JOB_NAME}"
-    )
+    echo "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
 }
 
 def jobSuccessful() {
-    hipchatSend (color: 'GREEN', notify: true,
-        message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
-    )
-    bitbucketStatusNotify (buildState: 'SUCCESSFUL',
-        buildKey: "${env.BUILD_NUMBER}", buildName: "${env.JOB_NAME}"
-    )
+    echo "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
 }
 
 def jobFailed() {
-    hipchatSend (color: 'RED', notify: true,
-        message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
-    )
-    bitbucketStatusNotify (buildState: 'FAILED',
-        buildKey: "${env.BUILD_NUMBER}", buildName: "${env.JOB_NAME}"
-    )
+    echo "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
 }
