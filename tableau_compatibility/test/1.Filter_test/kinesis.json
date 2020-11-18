@@ -12272,6 +12272,12 @@
                 "Asia",
                 "Europe"
             ]
+        },
+        {
+            "disabled": false,
+            "name": "test swtich view",
+            "type": "switch_view",
+            "view-name": "new worksheet"
         }
     ],
     "type": "functional"
